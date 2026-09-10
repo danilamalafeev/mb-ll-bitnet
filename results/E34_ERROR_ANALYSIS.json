@@ -1,0 +1,2555 @@
+{
+  "analysis": {
+    "float128_seed0": {
+      "denominator": 3072,
+      "examples": {
+        "introduced": [
+          {
+            "length": 4,
+            "new_final_correct": false,
+            "new_first_divergence": "4",
+            "new_predicted_trace": [
+              [
+                4,
+                11
+              ],
+              [
+                15,
+                11
+              ],
+              [
+                10,
+                11
+              ],
+              [
+                1,
+                11
+              ]
+            ],
+            "parent_final_correct": true,
+            "parent_first_divergence": "none",
+            "parent_predicted_trace": [
+              [
+                4,
+                11
+              ],
+              [
+                15,
+                11
+              ],
+              [
+                10,
+                11
+              ],
+              [
+                5,
+                11
+              ]
+            ],
+            "program": [
+              "ADD",
+              "XOR",
+              "ADD",
+              "ADD"
+            ],
+            "state": [
+              9,
+              11
+            ],
+            "stratum": "validation",
+            "target_trace": [
+              [
+                4,
+                11
+              ],
+              [
+                15,
+                11
+              ],
+              [
+                10,
+                11
+              ],
+              [
+                5,
+                11
+              ]
+            ]
+          },
+          {
+            "length": 4,
+            "new_final_correct": false,
+            "new_first_divergence": "4",
+            "new_predicted_trace": [
+              [
+                12,
+                11
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                2,
+                11
+              ],
+              [
+                1,
+                11
+              ]
+            ],
+            "parent_final_correct": true,
+            "parent_first_divergence": "none",
+            "parent_predicted_trace": [
+              [
+                12,
+                11
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                2,
+                11
+              ],
+              [
+                13,
+                11
+              ]
+            ],
+            "program": [
+              "SWAP",
+              "XOR",
+              "ADD",
+              "ADD"
+            ],
+            "state": [
+              11,
+              12
+            ],
+            "stratum": "train",
+            "target_trace": [
+              [
+                12,
+                11
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                2,
+                11
+              ],
+              [
+                13,
+                11
+              ]
+            ]
+          }
+        ],
+        "persistent_error": [
+          {
+            "length": 5,
+            "new_final_correct": false,
+            "new_first_divergence": "5",
+            "new_predicted_trace": [
+              [
+                5,
+                3
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                8,
+                5
+              ],
+              [
+                13,
+                5
+              ],
+              [
+                5,
+                9
+              ]
+            ],
+            "parent_final_correct": false,
+            "parent_first_divergence": "4",
+            "parent_predicted_trace": [
+              [
+                5,
+                3
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                8,
+                5
+              ],
+              [
+                15,
+                5
+              ],
+              [
+                5,
+                11
+              ]
+            ],
+            "program": [
+              "ADD",
+              "SWAP",
+              "ADD",
+              "XOR",
+              "SWAP"
+            ],
+            "state": [
+              2,
+              3
+            ],
+            "stratum": "validation",
+            "target_trace": [
+              [
+                5,
+                3
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                8,
+                5
+              ],
+              [
+                13,
+                5
+              ],
+              [
+                5,
+                13
+              ]
+            ]
+          },
+          {
+            "length": 5,
+            "new_final_correct": false,
+            "new_first_divergence": "5",
+            "new_predicted_trace": [
+              [
+                5,
+                1
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                6,
+                5
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                5,
+                2
+              ]
+            ],
+            "parent_final_correct": false,
+            "parent_first_divergence": "5",
+            "parent_predicted_trace": [
+              [
+                5,
+                1
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                6,
+                5
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                5,
+                2
+              ]
+            ],
+            "program": [
+              "ADD",
+              "SWAP",
+              "ADD",
+              "XOR",
+              "SWAP"
+            ],
+            "state": [
+              4,
+              1
+            ],
+            "stratum": "train",
+            "target_trace": [
+              [
+                5,
+                1
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                6,
+                5
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                5,
+                3
+              ]
+            ]
+          }
+        ],
+        "recovered": [
+          {
+            "length": 4,
+            "new_final_correct": true,
+            "new_first_divergence": "none",
+            "new_predicted_trace": [
+              [
+                7,
+                3
+              ],
+              [
+                10,
+                3
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                9,
+                10
+              ]
+            ],
+            "parent_final_correct": false,
+            "parent_first_divergence": "4",
+            "parent_predicted_trace": [
+              [
+                7,
+                3
+              ],
+              [
+                10,
+                3
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                13,
+                10
+              ]
+            ],
+            "program": [
+              "SWAP",
+              "ADD",
+              "SWAP",
+              "XOR"
+            ],
+            "state": [
+              3,
+              7
+            ],
+            "stratum": "train",
+            "target_trace": [
+              [
+                7,
+                3
+              ],
+              [
+                10,
+                3
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                9,
+                10
+              ]
+            ]
+          },
+          {
+            "length": 4,
+            "new_final_correct": true,
+            "new_first_divergence": "none",
+            "new_predicted_trace": [
+              [
+                11,
+                3
+              ],
+              [
+                14,
+                3
+              ],
+              [
+                3,
+                14
+              ],
+              [
+                13,
+                14
+              ]
+            ],
+            "parent_final_correct": false,
+            "parent_first_divergence": "4",
+            "parent_predicted_trace": [
+              [
+                11,
+                3
+              ],
+              [
+                14,
+                3
+              ],
+              [
+                3,
+                14
+              ],
+              [
+                9,
+                14
+              ]
+            ],
+            "program": [
+              "SWAP",
+              "ADD",
+              "SWAP",
+              "XOR"
+            ],
+            "state": [
+              3,
+              11
+            ],
+            "stratum": "validation",
+            "target_trace": [
+              [
+                11,
+                3
+              ],
+              [
+                14,
+                3
+              ],
+              [
+                3,
+                14
+              ],
+              [
+                13,
+                14
+              ]
+            ]
+          }
+        ]
+      },
+      "final": {
+        "denominator": 3072,
+        "final_recovery_after_earlier_error": 6,
+        "final_register_mismatch": {
+          "a_mismatch_only": 53,
+          "b_mismatch_only": 105,
+          "both_mismatch": 13,
+          "exact": 2901
+        },
+        "first_divergence": {
+          "4": 40,
+          "5": 137,
+          "none": 2895
+        },
+        "per_opcode_first_divergence": {
+          "ADD": {
+            "eligible_prefix_correct": 6144,
+            "first_divergence": 17,
+            "positions": {
+              "1": {
+                "eligible_prefix_correct": 1024,
+                "first_divergence": 0
+              },
+              "2": {
+                "eligible_prefix_correct": 1536,
+                "first_divergence": 0
+              },
+              "3": {
+                "eligible_prefix_correct": 2304,
+                "first_divergence": 0
+              },
+              "4": {
+                "eligible_prefix_correct": 1280,
+                "first_divergence": 17
+              }
+            }
+          },
+          "SWAP": {
+            "eligible_prefix_correct": 4575,
+            "first_divergence": 103,
+            "positions": {
+              "1": {
+                "eligible_prefix_correct": 768,
+                "first_divergence": 0
+              },
+              "2": {
+                "eligible_prefix_correct": 1024,
+                "first_divergence": 0
+              },
+              "3": {
+                "eligible_prefix_correct": 512,
+                "first_divergence": 0
+              },
+              "4": {
+                "eligible_prefix_correct": 1024,
+                "first_divergence": 3
+              },
+              "5": {
+                "eligible_prefix_correct": 1247,
+                "first_divergence": 100
+              }
+            }
+          },
+          "XOR": {
+            "eligible_prefix_correct": 3070,
+            "first_divergence": 57,
+            "positions": {
+              "1": {
+                "eligible_prefix_correct": 1280,
+                "first_divergence": 0
+              },
+              "2": {
+                "eligible_prefix_correct": 512,
+                "first_divergence": 0
+              },
+              "3": {
+                "eligible_prefix_correct": 256,
+                "first_divergence": 0
+              },
+              "4": {
+                "eligible_prefix_correct": 768,
+                "first_divergence": 20
+              },
+              "5": {
+                "eligible_prefix_correct": 254,
+                "first_divergence": 37
+              }
+            }
+          }
+        },
+        "per_program": {
+          "4": {
+            "ADDADDADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 256
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "none": 256
+              },
+              "program": [
+                "ADD",
+                "ADD",
+                "ADD",
+                "SWAP"
+              ]
+            },
+            "ADDXORADDADD": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 1,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 255
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 1,
+                "none": 255
+              },
+              "program": [
+                "ADD",
+                "XOR",
+                "ADD",
+                "ADD"
+              ]
+            },
+            "SWAPADDSWAPXOR": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 2,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 254
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 2,
+                "none": 254
+              },
+              "program": [
+                "SWAP",
+                "ADD",
+                "SWAP",
+                "XOR"
+              ]
+            },
+            "SWAPXORADDADD": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 1,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 255
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 1,
+                "none": 255
+              },
+              "program": [
+                "SWAP",
+                "XOR",
+                "ADD",
+                "ADD"
+              ]
+            },
+            "XORADDADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 256
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "none": 256
+              },
+              "program": [
+                "XOR",
+                "ADD",
+                "ADD",
+                "SWAP"
+              ]
+            },
+            "XORSWAPADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 1,
+                "both_mismatch": 0,
+                "exact": 255
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 1,
+                "none": 255
+              },
+              "program": [
+                "XOR",
+                "SWAP",
+                "ADD",
+                "SWAP"
+              ]
+            }
+          },
+          "5": {
+            "ADDSWAPADDSWAPXOR": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 30,
+                "b_mismatch_only": 3,
+                "both_mismatch": 6,
+                "exact": 217
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 2,
+                "5": 37,
+                "none": 217
+              },
+              "program": [
+                "ADD",
+                "SWAP",
+                "ADD",
+                "SWAP",
+                "XOR"
+              ]
+            },
+            "ADDSWAPADDXORSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 2,
+              "final_register_mismatch": {
+                "a_mismatch_only": 9,
+                "b_mismatch_only": 29,
+                "both_mismatch": 5,
+                "exact": 213
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 14,
+                "5": 31,
+                "none": 211
+              },
+              "program": [
+                "ADD",
+                "SWAP",
+                "ADD",
+                "XOR",
+                "SWAP"
+              ]
+            },
+            "SWAPADDSWAPADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 8,
+                "b_mismatch_only": 5,
+                "both_mismatch": 1,
+                "exact": 242
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 1,
+                "5": 13,
+                "none": 242
+              },
+              "program": [
+                "SWAP",
+                "ADD",
+                "SWAP",
+                "ADD",
+                "SWAP"
+              ]
+            },
+            "XORADDADDXORSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 27,
+                "both_mismatch": 0,
+                "exact": 229
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 4,
+                "5": 23,
+                "none": 229
+              },
+              "program": [
+                "XOR",
+                "ADD",
+                "ADD",
+                "XOR",
+                "SWAP"
+              ]
+            },
+            "XORADDXORADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 2,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 14,
+                "both_mismatch": 0,
+                "exact": 242
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 6,
+                "5": 10,
+                "none": 240
+              },
+              "program": [
+                "XOR",
+                "ADD",
+                "XOR",
+                "ADD",
+                "SWAP"
+              ]
+            },
+            "XORSWAPADDADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 2,
+              "final_register_mismatch": {
+                "a_mismatch_only": 2,
+                "b_mismatch_only": 26,
+                "both_mismatch": 1,
+                "exact": 227
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 8,
+                "5": 23,
+                "none": 225
+              },
+              "program": [
+                "XOR",
+                "SWAP",
+                "ADD",
+                "ADD",
+                "SWAP"
+              ]
+            }
+          }
+        }
+      },
+      "final_l5_final_errors": 166,
+      "first_divergence_transition": {
+        "4": {
+          "4": 9,
+          "5": 4,
+          "none": 24
+        },
+        "5": {
+          "4": 4,
+          "5": 47,
+          "none": 70
+        },
+        "none": {
+          "4": 27,
+          "5": 86,
+          "none": 2801
+        }
+      },
+      "groups": {
+        "introduced": 108,
+        "persistent_correct": 2811,
+        "persistent_error": 63,
+        "recovered": 90
+      },
+      "parent": {
+        "denominator": 3072,
+        "final_recovery_after_earlier_error": 5,
+        "final_register_mismatch": {
+          "a_mismatch_only": 66,
+          "b_mismatch_only": 81,
+          "both_mismatch": 6,
+          "exact": 2919
+        },
+        "first_divergence": {
+          "4": 37,
+          "5": 121,
+          "none": 2914
+        },
+        "per_opcode_first_divergence": {
+          "ADD": {
+            "eligible_prefix_correct": 6144,
+            "first_divergence": 11,
+            "positions": {
+              "1": {
+                "eligible_prefix_correct": 1024,
+                "first_divergence": 0
+              },
+              "2": {
+                "eligible_prefix_correct": 1536,
+                "first_divergence": 0
+              },
+              "3": {
+                "eligible_prefix_correct": 2304,
+                "first_divergence": 0
+              },
+              "4": {
+                "eligible_prefix_correct": 1280,
+                "first_divergence": 11
+              }
+            }
+          },
+          "SWAP": {
+            "eligible_prefix_correct": 4579,
+            "first_divergence": 70,
+            "positions": {
+              "1": {
+                "eligible_prefix_correct": 768,
+                "first_divergence": 0
+              },
+              "2": {
+                "eligible_prefix_correct": 1024,
+                "first_divergence": 0
+              },
+              "3": {
+                "eligible_prefix_correct": 512,
+                "first_divergence": 0
+              },
+              "4": {
+                "eligible_prefix_correct": 1024,
+                "first_divergence": 1
+              },
+              "5": {
+                "eligible_prefix_correct": 1251,
+                "first_divergence": 69
+              }
+            }
+          },
+          "XOR": {
+            "eligible_prefix_correct": 3071,
+            "first_divergence": 77,
+            "positions": {
+              "1": {
+                "eligible_prefix_correct": 1280,
+                "first_divergence": 0
+              },
+              "2": {
+                "eligible_prefix_correct": 512,
+                "first_divergence": 0
+              },
+              "3": {
+                "eligible_prefix_correct": 256,
+                "first_divergence": 0
+              },
+              "4": {
+                "eligible_prefix_correct": 768,
+                "first_divergence": 25
+              },
+              "5": {
+                "eligible_prefix_correct": 255,
+                "first_divergence": 52
+              }
+            }
+          }
+        },
+        "per_program": {
+          "4": {
+            "ADDADDADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 256
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "none": 256
+              },
+              "program": [
+                "ADD",
+                "ADD",
+                "ADD",
+                "SWAP"
+              ]
+            },
+            "ADDXORADDADD": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 256
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "none": 256
+              },
+              "program": [
+                "ADD",
+                "XOR",
+                "ADD",
+                "ADD"
+              ]
+            },
+            "SWAPADDSWAPXOR": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 7,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 249
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 7,
+                "none": 249
+              },
+              "program": [
+                "SWAP",
+                "ADD",
+                "SWAP",
+                "XOR"
+              ]
+            },
+            "SWAPXORADDADD": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 256
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "none": 256
+              },
+              "program": [
+                "SWAP",
+                "XOR",
+                "ADD",
+                "ADD"
+              ]
+            },
+            "XORADDADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 256
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "none": 256
+              },
+              "program": [
+                "XOR",
+                "ADD",
+                "ADD",
+                "SWAP"
+              ]
+            },
+            "XORSWAPADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 256
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "none": 256
+              },
+              "program": [
+                "XOR",
+                "SWAP",
+                "ADD",
+                "SWAP"
+              ]
+            }
+          },
+          "5": {
+            "ADDSWAPADDSWAPXOR": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 52,
+                "b_mismatch_only": 0,
+                "both_mismatch": 1,
+                "exact": 203
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 1,
+                "5": 52,
+                "none": 203
+              },
+              "program": [
+                "ADD",
+                "SWAP",
+                "ADD",
+                "SWAP",
+                "XOR"
+              ]
+            },
+            "ADDSWAPADDXORSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 4,
+              "final_register_mismatch": {
+                "a_mismatch_only": 3,
+                "b_mismatch_only": 31,
+                "both_mismatch": 3,
+                "exact": 219
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 16,
+                "5": 25,
+                "none": 215
+              },
+              "program": [
+                "ADD",
+                "SWAP",
+                "ADD",
+                "XOR",
+                "SWAP"
+              ]
+            },
+            "SWAPADDSWAPADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 1,
+              "final_register_mismatch": {
+                "a_mismatch_only": 2,
+                "b_mismatch_only": 9,
+                "both_mismatch": 1,
+                "exact": 244
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 4,
+                "5": 9,
+                "none": 243
+              },
+              "program": [
+                "SWAP",
+                "ADD",
+                "SWAP",
+                "ADD",
+                "SWAP"
+              ]
+            },
+            "XORADDADDXORSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 17,
+                "both_mismatch": 0,
+                "exact": 239
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 2,
+                "5": 15,
+                "none": 239
+              },
+              "program": [
+                "XOR",
+                "ADD",
+                "ADD",
+                "XOR",
+                "SWAP"
+              ]
+            },
+            "XORADDXORADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 3,
+                "both_mismatch": 0,
+                "exact": 253
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 3,
+                "none": 253
+              },
+              "program": [
+                "XOR",
+                "ADD",
+                "XOR",
+                "ADD",
+                "SWAP"
+              ]
+            },
+            "XORSWAPADDADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 2,
+                "b_mismatch_only": 21,
+                "both_mismatch": 1,
+                "exact": 232
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 7,
+                "5": 17,
+                "none": 232
+              },
+              "program": [
+                "XOR",
+                "SWAP",
+                "ADD",
+                "ADD",
+                "SWAP"
+              ]
+            }
+          }
+        }
+      },
+      "parent_l5_final_errors": 146
+    },
+    "w4128_seed0": {
+      "denominator": 3072,
+      "examples": {
+        "introduced": [
+          {
+            "length": 4,
+            "new_final_correct": false,
+            "new_first_divergence": "4",
+            "new_predicted_trace": [
+              [
+                7,
+                7
+              ],
+              [
+                14,
+                7
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                7,
+                7
+              ]
+            ],
+            "parent_final_correct": true,
+            "parent_first_divergence": "none",
+            "parent_predicted_trace": [
+              [
+                7,
+                7
+              ],
+              [
+                14,
+                7
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                7,
+                5
+              ]
+            ],
+            "program": [
+              "ADD",
+              "ADD",
+              "ADD",
+              "SWAP"
+            ],
+            "state": [
+              0,
+              7
+            ],
+            "stratum": "train",
+            "target_trace": [
+              [
+                7,
+                7
+              ],
+              [
+                14,
+                7
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                7,
+                5
+              ]
+            ]
+          },
+          {
+            "length": 4,
+            "new_final_correct": false,
+            "new_first_divergence": "4",
+            "new_predicted_trace": [
+              [
+                6,
+                15
+              ],
+              [
+                9,
+                15
+              ],
+              [
+                8,
+                15
+              ],
+              [
+                15,
+                15
+              ]
+            ],
+            "parent_final_correct": true,
+            "parent_first_divergence": "none",
+            "parent_predicted_trace": [
+              [
+                6,
+                15
+              ],
+              [
+                9,
+                15
+              ],
+              [
+                8,
+                15
+              ],
+              [
+                7,
+                15
+              ]
+            ],
+            "program": [
+              "ADD",
+              "XOR",
+              "ADD",
+              "ADD"
+            ],
+            "state": [
+              7,
+              15
+            ],
+            "stratum": "train",
+            "target_trace": [
+              [
+                6,
+                15
+              ],
+              [
+                9,
+                15
+              ],
+              [
+                8,
+                15
+              ],
+              [
+                7,
+                15
+              ]
+            ]
+          }
+        ],
+        "persistent_error": [
+          {
+            "length": 4,
+            "new_final_correct": false,
+            "new_first_divergence": "4",
+            "new_predicted_trace": [
+              [
+                0,
+                5
+              ],
+              [
+                5,
+                5
+              ],
+              [
+                10,
+                5
+              ],
+              [
+                3,
+                5
+              ]
+            ],
+            "parent_final_correct": false,
+            "parent_first_divergence": "4",
+            "parent_predicted_trace": [
+              [
+                0,
+                5
+              ],
+              [
+                5,
+                5
+              ],
+              [
+                10,
+                5
+              ],
+              [
+                3,
+                5
+              ]
+            ],
+            "program": [
+              "ADD",
+              "XOR",
+              "ADD",
+              "ADD"
+            ],
+            "state": [
+              11,
+              5
+            ],
+            "stratum": "test",
+            "target_trace": [
+              [
+                0,
+                5
+              ],
+              [
+                5,
+                5
+              ],
+              [
+                10,
+                5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          },
+          {
+            "length": 5,
+            "new_final_correct": false,
+            "new_first_divergence": "5",
+            "new_predicted_trace": [
+              [
+                5,
+                3
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                8,
+                5
+              ],
+              [
+                13,
+                5
+              ],
+              [
+                5,
+                6
+              ]
+            ],
+            "parent_final_correct": false,
+            "parent_first_divergence": "5",
+            "parent_predicted_trace": [
+              [
+                5,
+                3
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                8,
+                5
+              ],
+              [
+                13,
+                5
+              ],
+              [
+                5,
+                8
+              ]
+            ],
+            "program": [
+              "ADD",
+              "SWAP",
+              "ADD",
+              "XOR",
+              "SWAP"
+            ],
+            "state": [
+              2,
+              3
+            ],
+            "stratum": "validation",
+            "target_trace": [
+              [
+                5,
+                3
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                8,
+                5
+              ],
+              [
+                13,
+                5
+              ],
+              [
+                5,
+                13
+              ]
+            ]
+          }
+        ],
+        "recovered": [
+          {
+            "length": 4,
+            "new_final_correct": true,
+            "new_first_divergence": "none",
+            "new_predicted_trace": [
+              [
+                5,
+                3
+              ],
+              [
+                8,
+                3
+              ],
+              [
+                11,
+                3
+              ],
+              [
+                3,
+                11
+              ]
+            ],
+            "parent_final_correct": false,
+            "parent_first_divergence": "4",
+            "parent_predicted_trace": [
+              [
+                5,
+                3
+              ],
+              [
+                8,
+                3
+              ],
+              [
+                11,
+                3
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "program": [
+              "ADD",
+              "ADD",
+              "ADD",
+              "SWAP"
+            ],
+            "state": [
+              2,
+              3
+            ],
+            "stratum": "validation",
+            "target_trace": [
+              [
+                5,
+                3
+              ],
+              [
+                8,
+                3
+              ],
+              [
+                11,
+                3
+              ],
+              [
+                3,
+                11
+              ]
+            ]
+          },
+          {
+            "length": 4,
+            "new_final_correct": true,
+            "new_first_divergence": "none",
+            "new_predicted_trace": [
+              [
+                10,
+                5
+              ],
+              [
+                15,
+                5
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                5,
+                4
+              ]
+            ],
+            "parent_final_correct": false,
+            "parent_first_divergence": "4",
+            "parent_predicted_trace": [
+              [
+                10,
+                5
+              ],
+              [
+                15,
+                5
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                5,
+                5
+              ]
+            ],
+            "program": [
+              "ADD",
+              "ADD",
+              "ADD",
+              "SWAP"
+            ],
+            "state": [
+              5,
+              5
+            ],
+            "stratum": "train",
+            "target_trace": [
+              [
+                10,
+                5
+              ],
+              [
+                15,
+                5
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                5,
+                4
+              ]
+            ]
+          }
+        ]
+      },
+      "final": {
+        "denominator": 3072,
+        "final_recovery_after_earlier_error": 3,
+        "final_register_mismatch": {
+          "a_mismatch_only": 21,
+          "b_mismatch_only": 108,
+          "both_mismatch": 11,
+          "exact": 2932
+        },
+        "first_divergence": {
+          "4": 24,
+          "5": 119,
+          "none": 2929
+        },
+        "per_opcode_first_divergence": {
+          "ADD": {
+            "eligible_prefix_correct": 6144,
+            "first_divergence": 10,
+            "positions": {
+              "1": {
+                "eligible_prefix_correct": 1024,
+                "first_divergence": 0
+              },
+              "2": {
+                "eligible_prefix_correct": 1536,
+                "first_divergence": 0
+              },
+              "3": {
+                "eligible_prefix_correct": 2304,
+                "first_divergence": 0
+              },
+              "4": {
+                "eligible_prefix_correct": 1280,
+                "first_divergence": 10
+              }
+            }
+          },
+          "SWAP": {
+            "eligible_prefix_correct": 4591,
+            "first_divergence": 106,
+            "positions": {
+              "1": {
+                "eligible_prefix_correct": 768,
+                "first_divergence": 0
+              },
+              "2": {
+                "eligible_prefix_correct": 1024,
+                "first_divergence": 0
+              },
+              "3": {
+                "eligible_prefix_correct": 512,
+                "first_divergence": 0
+              },
+              "4": {
+                "eligible_prefix_correct": 1024,
+                "first_divergence": 1
+              },
+              "5": {
+                "eligible_prefix_correct": 1263,
+                "first_divergence": 105
+              }
+            }
+          },
+          "XOR": {
+            "eligible_prefix_correct": 3072,
+            "first_divergence": 27,
+            "positions": {
+              "1": {
+                "eligible_prefix_correct": 1280,
+                "first_divergence": 0
+              },
+              "2": {
+                "eligible_prefix_correct": 512,
+                "first_divergence": 0
+              },
+              "3": {
+                "eligible_prefix_correct": 256,
+                "first_divergence": 0
+              },
+              "4": {
+                "eligible_prefix_correct": 768,
+                "first_divergence": 13
+              },
+              "5": {
+                "eligible_prefix_correct": 256,
+                "first_divergence": 14
+              }
+            }
+          }
+        },
+        "per_program": {
+          "4": {
+            "ADDADDADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 1,
+                "both_mismatch": 0,
+                "exact": 255
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 1,
+                "none": 255
+              },
+              "program": [
+                "ADD",
+                "ADD",
+                "ADD",
+                "SWAP"
+              ]
+            },
+            "ADDXORADDADD": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 5,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 251
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 5,
+                "none": 251
+              },
+              "program": [
+                "ADD",
+                "XOR",
+                "ADD",
+                "ADD"
+              ]
+            },
+            "SWAPADDSWAPXOR": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 1,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 255
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 1,
+                "none": 255
+              },
+              "program": [
+                "SWAP",
+                "ADD",
+                "SWAP",
+                "XOR"
+              ]
+            },
+            "SWAPXORADDADD": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 256
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "none": 256
+              },
+              "program": [
+                "SWAP",
+                "XOR",
+                "ADD",
+                "ADD"
+              ]
+            },
+            "XORADDADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 256
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "none": 256
+              },
+              "program": [
+                "XOR",
+                "ADD",
+                "ADD",
+                "SWAP"
+              ]
+            },
+            "XORSWAPADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 256
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "none": 256
+              },
+              "program": [
+                "XOR",
+                "SWAP",
+                "ADD",
+                "SWAP"
+              ]
+            }
+          },
+          "5": {
+            "ADDSWAPADDSWAPXOR": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 14,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 242
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 14,
+                "none": 242
+              },
+              "program": [
+                "ADD",
+                "SWAP",
+                "ADD",
+                "SWAP",
+                "XOR"
+              ]
+            },
+            "ADDSWAPADDXORSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 1,
+              "final_register_mismatch": {
+                "a_mismatch_only": 1,
+                "b_mismatch_only": 38,
+                "both_mismatch": 5,
+                "exact": 212
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 7,
+                "5": 38,
+                "none": 211
+              },
+              "program": [
+                "ADD",
+                "SWAP",
+                "ADD",
+                "XOR",
+                "SWAP"
+              ]
+            },
+            "SWAPADDSWAPADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 8,
+                "both_mismatch": 1,
+                "exact": 247
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 9,
+                "none": 247
+              },
+              "program": [
+                "SWAP",
+                "ADD",
+                "SWAP",
+                "ADD",
+                "SWAP"
+              ]
+            },
+            "XORADDADDXORSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 2,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 23,
+                "both_mismatch": 4,
+                "exact": 229
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 5,
+                "5": 24,
+                "none": 227
+              },
+              "program": [
+                "XOR",
+                "ADD",
+                "ADD",
+                "XOR",
+                "SWAP"
+              ]
+            },
+            "XORADDXORADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 14,
+                "both_mismatch": 0,
+                "exact": 242
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 4,
+                "5": 10,
+                "none": 242
+              },
+              "program": [
+                "XOR",
+                "ADD",
+                "XOR",
+                "ADD",
+                "SWAP"
+              ]
+            },
+            "XORSWAPADDADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 24,
+                "both_mismatch": 1,
+                "exact": 231
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 1,
+                "5": 24,
+                "none": 231
+              },
+              "program": [
+                "XOR",
+                "SWAP",
+                "ADD",
+                "ADD",
+                "SWAP"
+              ]
+            }
+          }
+        }
+      },
+      "final_l5_final_errors": 133,
+      "first_divergence_transition": {
+        "4": {
+          "4": 2,
+          "5": 5,
+          "none": 31
+        },
+        "5": {
+          "4": 4,
+          "5": 28,
+          "none": 106
+        },
+        "none": {
+          "4": 18,
+          "5": 86,
+          "none": 2792
+        }
+      },
+      "groups": {
+        "introduced": 102,
+        "persistent_correct": 2800,
+        "persistent_error": 38,
+        "recovered": 132
+      },
+      "parent": {
+        "denominator": 3072,
+        "final_recovery_after_earlier_error": 6,
+        "final_register_mismatch": {
+          "a_mismatch_only": 43,
+          "b_mismatch_only": 124,
+          "both_mismatch": 3,
+          "exact": 2902
+        },
+        "first_divergence": {
+          "4": 38,
+          "5": 138,
+          "none": 2896
+        },
+        "per_opcode_first_divergence": {
+          "ADD": {
+            "eligible_prefix_correct": 6144,
+            "first_divergence": 14,
+            "positions": {
+              "1": {
+                "eligible_prefix_correct": 1024,
+                "first_divergence": 0
+              },
+              "2": {
+                "eligible_prefix_correct": 1536,
+                "first_divergence": 0
+              },
+              "3": {
+                "eligible_prefix_correct": 2304,
+                "first_divergence": 0
+              },
+              "4": {
+                "eligible_prefix_correct": 1280,
+                "first_divergence": 14
+              }
+            }
+          },
+          "SWAP": {
+            "eligible_prefix_correct": 4581,
+            "first_divergence": 113,
+            "positions": {
+              "1": {
+                "eligible_prefix_correct": 768,
+                "first_divergence": 0
+              },
+              "2": {
+                "eligible_prefix_correct": 1024,
+                "first_divergence": 0
+              },
+              "3": {
+                "eligible_prefix_correct": 512,
+                "first_divergence": 0
+              },
+              "4": {
+                "eligible_prefix_correct": 1024,
+                "first_divergence": 3
+              },
+              "5": {
+                "eligible_prefix_correct": 1253,
+                "first_divergence": 110
+              }
+            }
+          },
+          "XOR": {
+            "eligible_prefix_correct": 3072,
+            "first_divergence": 49,
+            "positions": {
+              "1": {
+                "eligible_prefix_correct": 1280,
+                "first_divergence": 0
+              },
+              "2": {
+                "eligible_prefix_correct": 512,
+                "first_divergence": 0
+              },
+              "3": {
+                "eligible_prefix_correct": 256,
+                "first_divergence": 0
+              },
+              "4": {
+                "eligible_prefix_correct": 768,
+                "first_divergence": 21
+              },
+              "5": {
+                "eligible_prefix_correct": 256,
+                "first_divergence": 28
+              }
+            }
+          }
+        },
+        "per_program": {
+          "4": {
+            "ADDADDADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 3,
+                "both_mismatch": 0,
+                "exact": 253
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 3,
+                "none": 253
+              },
+              "program": [
+                "ADD",
+                "ADD",
+                "ADD",
+                "SWAP"
+              ]
+            },
+            "ADDXORADDADD": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 5,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 251
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 5,
+                "none": 251
+              },
+              "program": [
+                "ADD",
+                "XOR",
+                "ADD",
+                "ADD"
+              ]
+            },
+            "SWAPADDSWAPXOR": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 1,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 255
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 1,
+                "none": 255
+              },
+              "program": [
+                "SWAP",
+                "ADD",
+                "SWAP",
+                "XOR"
+              ]
+            },
+            "SWAPXORADDADD": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 2,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 254
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 2,
+                "none": 254
+              },
+              "program": [
+                "SWAP",
+                "XOR",
+                "ADD",
+                "ADD"
+              ]
+            },
+            "XORADDADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 256
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "none": 256
+              },
+              "program": [
+                "XOR",
+                "ADD",
+                "ADD",
+                "SWAP"
+              ]
+            },
+            "XORSWAPADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 0,
+                "both_mismatch": 0,
+                "exact": 256
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "none": 256
+              },
+              "program": [
+                "XOR",
+                "SWAP",
+                "ADD",
+                "SWAP"
+              ]
+            }
+          },
+          "5": {
+            "ADDSWAPADDSWAPXOR": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 27,
+                "b_mismatch_only": 0,
+                "both_mismatch": 1,
+                "exact": 228
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 28,
+                "none": 228
+              },
+              "program": [
+                "ADD",
+                "SWAP",
+                "ADD",
+                "SWAP",
+                "XOR"
+              ]
+            },
+            "ADDSWAPADDXORSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 1,
+              "final_register_mismatch": {
+                "a_mismatch_only": 3,
+                "b_mismatch_only": 40,
+                "both_mismatch": 1,
+                "exact": 212
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 9,
+                "5": 36,
+                "none": 211
+              },
+              "program": [
+                "ADD",
+                "SWAP",
+                "ADD",
+                "XOR",
+                "SWAP"
+              ]
+            },
+            "SWAPADDSWAPADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 2,
+                "b_mismatch_only": 6,
+                "both_mismatch": 1,
+                "exact": 247
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 1,
+                "5": 8,
+                "none": 247
+              },
+              "program": [
+                "SWAP",
+                "ADD",
+                "SWAP",
+                "ADD",
+                "SWAP"
+              ]
+            },
+            "XORADDADDXORSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 5,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 28,
+                "both_mismatch": 0,
+                "exact": 228
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 11,
+                "5": 22,
+                "none": 223
+              },
+              "program": [
+                "XOR",
+                "ADD",
+                "ADD",
+                "XOR",
+                "SWAP"
+              ]
+            },
+            "XORADDXORADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 0,
+                "b_mismatch_only": 21,
+                "both_mismatch": 0,
+                "exact": 235
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 5,
+                "5": 16,
+                "none": 235
+              },
+              "program": [
+                "XOR",
+                "ADD",
+                "XOR",
+                "ADD",
+                "SWAP"
+              ]
+            },
+            "XORSWAPADDADDSWAP": {
+              "denominator": 256,
+              "final_recovery_after_earlier_error": 0,
+              "final_register_mismatch": {
+                "a_mismatch_only": 3,
+                "b_mismatch_only": 26,
+                "both_mismatch": 0,
+                "exact": 227
+              },
+              "first_divergence": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 1,
+                "5": 28,
+                "none": 227
+              },
+              "program": [
+                "XOR",
+                "SWAP",
+                "ADD",
+                "ADD",
+                "SWAP"
+              ]
+            }
+          }
+        }
+      },
+      "parent_l5_final_errors": 159
+    }
+  },
+  "analysis_seconds": 0.302822333000222,
+  "inputs": {
+    "float128_seed0": {
+      "final": {
+        "bytes": 12154872,
+        "path": "runs/e33_continuation/float128_seed0/report.json",
+        "sha256": "2eb90e7a253c8f6f0867af3cb5828a753cbc4d3690841ced92a5b9661fff7b7d"
+      },
+      "parent": {
+        "bytes": 12299580,
+        "path": "runs/e32_width/float128_seed0/report.json",
+        "sha256": "e07655ad09d31831c51dad40e03ba74c5e2ad94fabcf02340cb33d8a955bd46d"
+      }
+    },
+    "w4128_seed0": {
+      "final": {
+        "bytes": 12154793,
+        "path": "runs/e33_continuation/w4128_seed0/report.json",
+        "sha256": "bfc7c6c67961ec3819328b00383c5834bd988996e5f19b3934a864f463156ac0"
+      },
+      "parent": {
+        "bytes": 12299647,
+        "path": "runs/e32_width/w4128_seed0/report.json",
+        "sha256": "fc7f4c0f7300f9a7bdff7c4ac8cf0d236c9130c76a7052f586e91b5d27efd270"
+      }
+    }
+  },
+  "model_cost": {
+    "checkpoint_loads": 0,
+    "forwards": 0,
+    "model_imports": 0,
+    "training_updates": 0
+  },
+  "schema": "e34_saved_error_analysis_v1",
+  "scope": "seed0 h128 float/W4 E32 parent versus E33 u32000 L4/L5 saved predictions only",
+  "status": "complete"
+}

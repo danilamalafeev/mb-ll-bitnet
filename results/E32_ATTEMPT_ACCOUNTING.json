@@ -1,0 +1,64 @@
+{
+  "schema": "e32_attempt_accounting_v2",
+  "date": "2026-09-08",
+  "scientific_attempts": [
+    {
+      "id": "canonical_e32_width128",
+      "command": "python scripts/width_e32.py --train-cleared --out runs/e32_width --preflight-dir runs/e32_width_preflight",
+      "preflight_path": "runs/e32_width_preflight",
+      "run_path": "runs/e32_width",
+      "process_session_id": 95479,
+      "exit_status": 0,
+      "status": "complete",
+      "retry_count": 0,
+      "wall_seconds": null,
+      "user_seconds": null,
+      "system_seconds": null,
+      "timing_note": "The command was launched without /usr/bin/time; null values are retained rather than inferred.",
+      "model_order": [
+        "float128_seed0",
+        "w4128_seed0",
+        "float128_seed1",
+        "w4128_seed1",
+        "float128_seed2",
+        "w4128_seed2"
+      ],
+      "models": {
+        "float128_seed0": {"status": "complete", "attempted_updates": 16000, "completed_updates": 16000, "training_seconds": 245.75882983300016, "training_cost": {"program_forwards": 16000, "program_state_cases": 1024000, "readout_positions": 2048000, "internal_state_substeps": 16384000}, "evaluation_cost": {"program_forwards": 83, "program_state_cases": 12032, "readout_positions": 37312, "internal_state_substeps": 298496}},
+        "w4128_seed0": {"status": "complete", "attempted_updates": 16000, "completed_updates": 16000, "training_seconds": 393.2330509170001, "training_cost": {"program_forwards": 16000, "program_state_cases": 1024000, "readout_positions": 2048000, "internal_state_substeps": 16384000}, "evaluation_cost": {"program_forwards": 83, "program_state_cases": 12032, "readout_positions": 37312, "internal_state_substeps": 298496}},
+        "float128_seed1": {"status": "complete", "attempted_updates": 16000, "completed_updates": 16000, "training_seconds": 295.99256108300006, "training_cost": {"program_forwards": 16000, "program_state_cases": 1024000, "readout_positions": 2048000, "internal_state_substeps": 16384000}, "evaluation_cost": {"program_forwards": 83, "program_state_cases": 12032, "readout_positions": 37312, "internal_state_substeps": 298496}},
+        "w4128_seed1": {"status": "complete", "attempted_updates": 16000, "completed_updates": 16000, "training_seconds": 417.97517266600016, "training_cost": {"program_forwards": 16000, "program_state_cases": 1024000, "readout_positions": 2048000, "internal_state_substeps": 16384000}, "evaluation_cost": {"program_forwards": 83, "program_state_cases": 12032, "readout_positions": 37312, "internal_state_substeps": 298496}},
+        "float128_seed2": {"status": "complete", "attempted_updates": 16000, "completed_updates": 16000, "training_seconds": 325.1255472500002, "training_cost": {"program_forwards": 16000, "program_state_cases": 1024000, "readout_positions": 2048000, "internal_state_substeps": 16384000}, "evaluation_cost": {"program_forwards": 83, "program_state_cases": 12032, "readout_positions": 37312, "internal_state_substeps": 298496}},
+        "w4128_seed2": {"status": "complete", "attempted_updates": 16000, "completed_updates": 16000, "training_seconds": 475.7532636669998, "training_cost": {"program_forwards": 16000, "program_state_cases": 1024000, "readout_positions": 2048000, "internal_state_substeps": 16384000}, "evaluation_cost": {"program_forwards": 83, "program_state_cases": 12032, "readout_positions": 37312, "internal_state_substeps": 298496}}
+      },
+      "totals": {
+        "training_updates": 96000,
+        "training_cost": {"program_forwards": 96000, "program_state_cases": 6144000, "readout_positions": 12288000, "internal_state_substeps": 98304000},
+        "evaluation_cost": {"program_forwards": 498, "program_state_cases": 72192, "readout_positions": 223872, "internal_state_substeps": 1790976},
+        "training_seconds_sum": 2153.8384254160005
+      },
+      "final_report_status": "complete",
+      "final_acceptance_status": "ACCEPT",
+      "independent_final_review": {
+        "status": "PASS",
+        "review_path": "results/E32_WIDTH_REVIEW.md",
+        "replay_path": "runs/e32_review_final/review.json",
+        "replay_seconds": 24.1059918750002,
+        "replay_cost": {"program_forwards": 498, "program_state_cases": 72192, "readout_positions": 223872, "internal_state_substeps": 1790976},
+        "all_six_exact_replay": true,
+        "raw_audit_path": "results/E32_review_raw_counts.json",
+        "raw_audit_status": "PASS",
+        "raw_audit_seconds": null,
+        "historical_comparison_path": "results/E32_review_comparison_counts.json",
+        "historical_comparison_status": "PASS",
+        "historical_comparison_seconds": 2.1277886670000044,
+        "additional_scientific_updates": 0,
+        "additional_scientific_forwards": 498
+      }
+    }
+  ],
+  "source_hash_review": "results/E32_WIDTH_CODE_REVIEW.md",
+  "source_hashes_verified_before_preflight": true,
+  "protected_hashes_verified_by_runner": true,
+  "no_automatic_retry": true
+}

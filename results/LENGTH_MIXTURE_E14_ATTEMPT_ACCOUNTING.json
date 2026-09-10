@@ -1,0 +1,45 @@
+{
+  "purpose": "Post-run accounting; supplements frozen artifacts, not pre-training evidence",
+  "attempts": 2,
+  "training_updates_per_attempt": 6000,
+  "total_training_updates": 12000,
+  "total_training_examples": 768000,
+  "total_example_steps": 6144000,
+  "canonical_attempt_example_steps": 3072000,
+  "first_attempt_frozen_files_verified": {
+    "preflight.json": true,
+    "protocol.json": true,
+    "seed0/mixture/checkpoint.pt": true,
+    "seed0/mixture/checkpoint_best.pt": true,
+    "seed0/mixture/report.json": true,
+    "seed1/mixture/checkpoint.pt": true,
+    "seed1/mixture/checkpoint_best.pt": true,
+    "seed1/mixture/report.json": true,
+    "seed2/mixture/checkpoint.pt": true,
+    "seed2/mixture/checkpoint_best.pt": true,
+    "seed2/mixture/report.json": true,
+    "test_manifest.json": true,
+    "validation_manifest.json": true
+  },
+  "selected_weight_comparison": [
+    {
+      "seed": 0,
+      "first_updates": 2000,
+      "repaired_updates": 2000,
+      "selected_weights_exact": true
+    },
+    {
+      "seed": 1,
+      "first_updates": 2000,
+      "repaired_updates": 2000,
+      "selected_weights_exact": true
+    },
+    {
+      "seed": 2,
+      "first_updates": 2000,
+      "repaired_updates": 2000,
+      "selected_weights_exact": true
+    }
+  ],
+  "limitation": "Metadata-only repair was followed by redundant full retraining; include both attempts in cost. Scientific acceptance belongs to external follow-up review; relocation itself is not validation."
+}

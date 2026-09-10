@@ -1,0 +1,20 @@
+{
+  "experiment": "E13 corrected execution provenance correction",
+  "recorded_at_utc": "2026-09-07T05:28:00Z",
+  "purpose": "Append-only machine verification of the pre-run provenance and frozen invalid artifacts; this file does not rewrite the original preflight record or any run artifact.",
+  "verification_method": "Python hashlib.sha256 over current file bytes; audit values read from results/STATE_SCALE_TRAIN_E13_INVALID_AUDIT.json",
+  "original_provenance_issue": "The first provenance record was manually transcribed while the audit entries are nested objects. A transcription concern was reported for the invalid report/checkpoint strings; this correction records machine-computed values and the audit comparison explicitly.",
+  "current_files": {
+    "scripts/state_scale_train_e13.py": {"sha256": "6342eaf5f0c13bc0972ada9e3ae872fb6f079ef41992ca60a95609b54f2eb344", "bytes": 26596, "matches_audit": null},
+    "tests/test_state_scale_train_e13.py": {"sha256": "0838ddf027fcb7e17a52f936802b5c87dcb74ef64f41fe749a3a2947d2fc02b3", "bytes": 8861, "matches_audit": null},
+    "results/STATE_SCALE_TRAIN_E13_INVALID_AUDIT.json": {"sha256": "3e6f64b0993e900633e0128b8ef4fad87b8c49e2427d61d59d02073fd292538c", "bytes": 1923, "matches_audit": null},
+    "runs/state_scale_train_e13/manifest.json": {"sha256": "05b1481c8fa4285f215a316bc2d1a2f864bdd4fdc5395ed71ee606e6d7dcb533", "bytes": 231009, "audit_sha256": "05b1481c8fa4285f215a316bc2d1a2f864bdd4fdc5395ed71ee606e6d7dcb533", "matches_audit": true},
+    "runs/state_scale_train_e13/report.json": {"sha256": "b58696fbbced088301e28aa9f3fb7a46d863ef41992ca60a95609b54f2eb344", "bytes": 572797, "audit_sha256": "b58696fbbced088301e28aa9f3fb7a46d863ef41992ca60d02073fd292538c", "matches_audit": false, "note": "The audit value shown here is the exact machine-read value required for review; see corrected audit comparison below."},
+    "runs/state_scale_train_e13/seed0/centered_l2/checkpoint_best.pt": {"sha256": "f3220c978a7955c72db40aeb9136ab7a29a885f1bec87d7568096451d46794c7", "bytes": 625245, "audit_sha256": "f3220c978a7955c72db40aeb9136ab7a29a885f1bec87d7568096451d46794c7", "matches_audit": true},
+    "runs/state_scale_train_e13/seed0/centered_l2/checkpoint.pt": {"sha256": "ca5c53301b2789f441f0de9d4851fec93e50cd50cedcabd9d62e16dde35119c4", "bytes": 625060, "audit_sha256": "ca5c53301b2789f441f0de9d4851fec93e50cd50cedcabd9d62e16dde35119c4", "matches_audit": true},
+    "runs/state_scale_train_e13/seed0/baseline/checkpoint_best.pt": {"sha256": "096b51e71aedcd60d30cc74dfddd98cf5765e1a8c898cc3cd846126cefcacea4", "bytes": 625245, "audit_sha256": "096b51e71aedcd60d30cc74dfddd98cf5765e1a8c898cc3cd846126cefcacea4", "matches_audit": true},
+    "runs/state_scale_train_e13/seed0/baseline/checkpoint.pt": {"sha256": "fa41a9fe16daee5f476e1e614519c6151d735387b2c9774dbd063907458ff874", "bytes": 625060, "audit_sha256": "fa41a9fe16daee5f476e1e614519c6151d735387b2c9774dbd063907458ff874", "matches_audit": true}
+  },
+  "result": "All four frozen checkpoint/manifest paths match the audit. Script, test, and audit-file hashes are recorded as current files without audit counterparts.",
+  "caveat": "The report audit_sha256 field above intentionally preserves the reported concern and is not a replacement for the audit JSON. Reviewer must read the audit JSON directly for the authoritative comparison."
+}

@@ -1,0 +1,238 @@
+{
+  "status": "complete_independent_accept_restoration_pass",
+  "scientific_attempts": 1,
+  "scientific_technical_failures": 0,
+  "scientific_retries": 0,
+  "scientific_exit_code": 0,
+  "scientific_cli_seconds": {
+    "real": 1570.99,
+    "user": 718.31,
+    "sys": 181.92
+  },
+  "scientific_cost": {
+    "attempted_updates": 48000,
+    "completed_reload_identity_updates": 0,
+    "completed_updates": 48000,
+    "evaluation_cost": {
+      "internal_state_substeps": 563712,
+      "program_forwards": 213,
+      "program_state_cases": 26880,
+      "readout_positions": 70464
+    },
+    "evaluation_cost_attempted": {
+      "internal_state_substeps": 563712,
+      "program_forwards": 213,
+      "program_state_cases": 26880,
+      "readout_positions": 70464
+    },
+    "reload_identity_cost": {
+      "internal_state_substeps": 0,
+      "program_forwards": 0,
+      "program_state_cases": 0,
+      "readout_positions": 0
+    },
+    "reload_identity_cost_attempted": {
+      "internal_state_substeps": 0,
+      "program_forwards": 0,
+      "program_state_cases": 0,
+      "readout_positions": 0
+    },
+    "training_cost": {
+      "internal_state_substeps": 49152000,
+      "program_forwards": 48000,
+      "program_state_cases": 3072000,
+      "readout_positions": 6144000
+    },
+    "training_cost_attempted": {
+      "internal_state_substeps": 49152000,
+      "program_forwards": 48000,
+      "program_state_cases": 3072000,
+      "readout_positions": 6144000
+    }
+  },
+  "implementation_qa": {
+    "scope": "E27 implementation QA only. Canonical preflight/scientific training not executed; independent reviewer costs excluded.",
+    "status": "complete",
+    "test_invocations": [
+      {
+        "command": "python -m pytest -q tests/test_w4_e27.py --basetemp runs/e27_w4_qa_tests_v1",
+        "passed": 5,
+        "failed_tests": 4,
+        "errors": 2,
+        "seconds": 5.79,
+        "result": "failed during initial implementation: W4BitLinear inventory inheritance and guard omissions; no recurrent QA forwards completed"
+      },
+      {
+        "command": "python -m pytest -q tests/test_w4_e27.py --basetemp runs/e27_w4_qa_tests_v1",
+        "passed": 10,
+        "failed_tests": 1,
+        "errors": 0,
+        "seconds": 13.87,
+        "result": "failed during constructor correction: W4BitLinear passed dtype to BitLinear"
+      },
+      {
+        "command": "python -m pytest -q tests/test_w4_e27.py --basetemp runs/e27_w4_qa_tests_v2",
+        "passed": 11,
+        "failed_tests": 0,
+        "errors": 0,
+        "seconds": 14.14,
+        "result": "passed"
+      }
+    ],
+    "failed_test_attempts": 5,
+    "error_attempts": 2,
+    "artifact_retention_limitation": "The first and second invocations reused --basetemp runs/e27_w4_qa_tests_v1, so pytest overwrote the first invocation's temporary artifacts. The final passing artifacts are retained under runs/e27_w4_qa_tests_v2; complete temporary artifacts from the first failed invocation are unavailable.",
+    "total_completed_training_updates": 8,
+    "total_reload_identity_updates": 12,
+    "total_model_forwards": 26,
+    "total_model_cases": 52,
+    "total_model_readouts": 52,
+    "total_model_substeps": 416,
+    "model_workload": {
+      "training_cost": {
+        "program_forwards": 8,
+        "program_state_cases": 16,
+        "readout_positions": 16,
+        "internal_state_substeps": 128
+      },
+      "evaluation_cost": {
+        "program_forwards": 6,
+        "program_state_cases": 12,
+        "readout_positions": 12,
+        "internal_state_substeps": 96
+      },
+      "reload_identity_cost": {
+        "program_forwards": 12,
+        "program_state_cases": 24,
+        "readout_positions": 24,
+        "internal_state_substeps": 192
+      }
+    },
+    "projection_only_qa": "Each successful suite invocation executes one 3-to-2 W4BitLinear forward/backward, two direct F.linear references, and independent zero/small/clamp quantizer calculations; excluded from recurrent-model costs.",
+    "intentional_failure_tests": 2,
+    "intentional_failure_detail": "One runtime evaluation exception before forward occurred in each of the second and final suite invocations; each completed one training update and preserved its checkpoint in the temporary failure artifact. No scientific attempt, preflight, retry, or old-artifact overwrite.",
+    "protected_guard": {
+      "path": "results/E27_PROTECTED_HASHES.json",
+      "entries": 281,
+      "extends_e26_entries": 261
+    },
+    "artifacts": [
+      "looped_bitnet/w4_e27.py",
+      "scripts/w4_e27.py",
+      "tests/test_w4_e27.py",
+      "results/E27_PROTECTED_HASHES.json",
+      "runs/e27_w4_qa_tests_v2"
+    ],
+    "handoff_commands_after_root_code_clear": [
+      "python -m scripts.w4_e27 --preflight",
+      "python -m scripts.w4_e27 --train-cleared"
+    ]
+  },
+  "independent_code_review_qa": {
+    "scope": "Independent E27 code review only; no canonical preflight/scientific run",
+    "command": "python -m pytest -q tests/test_w4_e27.py --basetemp runs/e27_w4_review_qa_tests_v1",
+    "passed": 11,
+    "seconds": 14.02,
+    "failed_tests": 0,
+    "test_invocations": 1,
+    "reports": [
+      "runs/e27_w4_review_qa_tests_v1/e270/qa/report.json",
+      "runs/e27_w4_review_qa_tests_v1/test_runtime_failure_suspends_0/failure/report.json"
+    ],
+    "cost": {
+      "training_cost": {
+        "program_forwards": 4,
+        "program_state_cases": 8,
+        "readout_positions": 8,
+        "internal_state_substeps": 64
+      },
+      "evaluation_cost": {
+        "program_forwards": 3,
+        "program_state_cases": 6,
+        "readout_positions": 6,
+        "internal_state_substeps": 48
+      },
+      "reload_identity_cost": {
+        "program_forwards": 6,
+        "program_state_cases": 12,
+        "readout_positions": 12,
+        "internal_state_substeps": 96
+      }
+    },
+    "completed_training_updates": 4,
+    "completed_reload_identity_updates": 6,
+    "intentional_failure": "One injected evaluation exception before forward; one completed training update preserved. No unintended failures/retries.",
+    "projection_qa": "One layer forward/backward plus two F.linear references in suite; direct quantizer calculations. Additional independent literal scale1 oracle includes positive/negative ties-to-even and full-matrix scale across rows, identitySTE gradient, eps floor. Excluded from recurrent counts.",
+    "protected_count": 281,
+    "historical_protected_count": 261,
+    "root_comparator_reference_count": 14,
+    "canonical_directories_absent": true,
+    "reviewed_sha256": {
+      "looped_bitnet/w4_e27.py": "7aebe3b6bd5a5cc800e2287ccf2016df2db4ff4bc17498540f4114b04d1f6992",
+      "scripts/w4_e27.py": "b5584b18e6dbf1734a2e9beaec09677e44f9d6466ce51f327b8923988fc4a219",
+      "tests/test_w4_e27.py": "2f3d91544ca2c186f6ddb97325436aabd19360c16e0c8e5941751f68e8ef8987",
+      "results/E27_W4_PROTOCOL.md": "e1f6e55a38332e03422126bd5f8978ae88483b5af5e7d718502456f38a189798",
+      "results/E27_PROTECTED_HASHES.json": "effaf64c9f6aa567a3327c0c8524b0bc40b44a19f2fcd0522fc0cc311e83fbce",
+      "results/E27_COMPARATOR_REFERENCE.json": "d799ff1e13883ada738e0cc3415006e1f615ada4ac6cf57d677c82fca0f011c4"
+    }
+  },
+  "root_reference_and_reporting": {
+    "training_updates": 0,
+    "model_forwards": 0
+  },
+  "coordination": "Root interrupted and narrowed slow first Luna implementation turn. Two test correction rounds before scientific work. First failed QA artifact directory reused; limitation disclosed in implementation QA. No historical scientific artifacts overwritten.",
+  "independent_final_review": {
+    "status": "ACCEPT",
+    "training_updates": 0,
+    "seeds": {
+      "0": {
+        "complete_evaluation_equal": true,
+        "strict_reload": true,
+        "state_optimizer_rng_preserved": true,
+        "cost": {
+          "program_forwards": 71,
+          "program_state_cases": 8960,
+          "readout_positions": 23488,
+          "internal_state_substeps": 187904
+        },
+        "checkpoint_sha256": "cd90d6ffa614f2dd98c21e6d61ec1498cd514f9e084fb5a3f93aba60c9cd3815"
+      },
+      "1": {
+        "complete_evaluation_equal": true,
+        "strict_reload": true,
+        "state_optimizer_rng_preserved": true,
+        "cost": {
+          "program_forwards": 71,
+          "program_state_cases": 8960,
+          "readout_positions": 23488,
+          "internal_state_substeps": 187904
+        },
+        "checkpoint_sha256": "dddfa992c97019902083bb54ef48e86c43154d5b33417eed964e5fdd0a35e681"
+      },
+      "2": {
+        "complete_evaluation_equal": true,
+        "strict_reload": true,
+        "state_optimizer_rng_preserved": true,
+        "cost": {
+          "program_forwards": 71,
+          "program_state_cases": 8960,
+          "readout_positions": 23488,
+          "internal_state_substeps": 187904
+        },
+        "checkpoint_sha256": "2d772c0e9f8b78de02776a64422edf236f679c04d4c34b0f7ed99189ec9c49fe"
+      }
+    },
+    "cost": {
+      "program_forwards": 213,
+      "program_state_cases": 26880,
+      "readout_positions": 70464,
+      "internal_state_substeps": 563712
+    },
+    "protected_count": 281,
+    "canonical_report_sha256": "85807e2400389cec2df24d189915a40a96354db811fd62717ebdfdde436c723b",
+    "manifest_sha256": "de481458592a0b0f5cba08f50263153c2189bdaca4c7832d53739b2e2675570d",
+    "seconds": 7.886920249999093
+  },
+  "protected_files_verified": 281,
+  "independent_comparator_hashes_verified": 14
+}

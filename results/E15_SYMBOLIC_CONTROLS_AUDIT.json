@@ -1,0 +1,87 @@
+{
+  "purpose": "Exact symbolic shortcut audit before neural training; not learned model evidence",
+  "rows": [
+    {
+      "program": [
+        "ADD",
+        "XOR"
+      ],
+      "joint_correct_out_of256": {
+        "identity": 108,
+        "first_only": 16,
+        "last_only": 16,
+        "sorted_opcode": 256
+      }
+    },
+    {
+      "program": [
+        "ADD",
+        "ADD",
+        "XOR"
+      ],
+      "joint_correct_out_of256": {
+        "identity": 16,
+        "first_only": 108,
+        "last_only": 32,
+        "sorted_opcode": 256
+      }
+    },
+    {
+      "program": [
+        "ADD",
+        "XOR",
+        "ADD"
+      ],
+      "joint_correct_out_of256": {
+        "identity": 16,
+        "first_only": 108,
+        "last_only": 108,
+        "sorted_opcode": 32
+      }
+    },
+    {
+      "program": [
+        "ADD",
+        "XOR",
+        "SWAP"
+      ],
+      "joint_correct_out_of256": {
+        "identity": 2,
+        "first_only": 1,
+        "last_only": 108,
+        "sorted_opcode": 256
+      }
+    },
+    {
+      "program": [
+        "XOR",
+        "ADD",
+        "XOR"
+      ],
+      "joint_correct_out_of256": {
+        "identity": 16,
+        "first_only": 108,
+        "last_only": 108,
+        "sorted_opcode": 32
+      }
+    },
+    {
+      "program": [
+        "SWAP",
+        "ADD",
+        "XOR"
+      ],
+      "joint_correct_out_of256": {
+        "identity": 2,
+        "first_only": 108,
+        "last_only": 1,
+        "sorted_opcode": 108
+      }
+    }
+  ],
+  "sort_order": [
+    "ADD",
+    "XOR",
+    "SWAP"
+  ]
+}

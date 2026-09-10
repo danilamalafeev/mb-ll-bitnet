@@ -1,0 +1,21 @@
+# Latent padding diagnostic — independent saved-data review
+
+Verdict: ACCEPT. Standalone stdlib audit audit_padding_diagnostic.py (with the prior independent stdlib audit_science.py for shared DSL/aggregate checks) reconstructs saved results, without checkpoint deserialization or model replay. Outputs diagnostic_raw_audit.json and diagnostic_summary.json reside in code-project runs/pc_latent_slots_v1. Original diagnostic files are unchanged.
+
+## Findings
+
+All69program/all256state decoded traces exactly match the accepted final latent evaluation. All eighteen detailed padding programs contain4608cases/129024positions. There are4572correct full traces and36failed traces, first errors at21(12cases) or22(24cases), with no subsequent recovery. Those first errors occur in the padding extension. Across all wrong positions there are228 padding-extension errors and36 useful-op errors (the final suffix); therefore this is not a padding-only error pattern. No finite failures occurred.
+
+None of the4608traces has a nondecreasing slot norm throughout the full trace or throughout the extension, in either slot. None meets75% concentration by slot or within-slot channel. For failed traces, largest slot fraction ranges56.74–57.76% (median57.30%); largest within-slot channel fraction15.82–17.17% (median16.45%). Correct traces have median largest slot55.47%, channel18.22%, with maxima66.04% and25.80%. The specified concentration signature does not explain these failures.
+
+The abrupt first-error test is available for all36failed traces and qualifies for none. First-error-side z-delta L1 divided by the preceding median ranges0.9205–0.9259 (median0.9247), below even1× rather than the registered4× threshold. Correct traces have no first error, so this test is unavailable for them, not negative evidence about a matched artificial error point.
+
+An additional descriptive norm comparison, computed from the existing saved reductions, finds two-position lag differences smaller than one-position lag differences for36/36failed and4509/4572correct traces. In failed traces the median mean absolute norm difference is0.5699 at lag1 versus0.05869 at lag2; for correct traces0.4119 versus0.01765. These statistics pool two slot norms over extension positions within each trace, then take the median across traces. They support an alternating/oscillatory norm pattern in both groups. Failed traces have larger residual two-step norm variation descriptively, but the distributions overlap and this is neither a prospective test nor evidence of causation. No claim of a stable full-vector two-cycle: norms discard direction and saved channel deltas discard signs. Repeated SWAP tokens also make alternation a plausible operation-related pattern rather than proof of harmful drift.
+
+The diagnostic thus does not support the predeclared monotonic-norm,75%-concentration or abrupt-jump signatures. Smooth changes within alternating states, readout sensitivity or other mechanisms remain possible; no intervention/control was run. Positive cumulative absolute deltas are inevitable under any movement and cannot by themselves demonstrate accumulating error.
+
+## Audit coverage and limits
+
+Recomputed DSL targets, all final/trace/first-error/recovery flags, E15 hash-ranked strata, program/opcode/role joins, per-program/length/stratum/joint aggregates, role errors, finite checks, per-channel L1 totals/fractions and threshold median/availability. Recomputed L2 delta norms from absolute channel deltas. Writer output norms match next-position input-z norms, and writer deltas match the corresponding shifted z deltas. Raw tensor writer=z equality remains the reviewed runtime's check; original vectors were intentionally not saved. Hidden/output norms were checked finite/nonnegative, not reconstructed from unsaved hidden/logit tensors. No semantic bit/channel meaning is claimed.
+
+Immutable input/source/checkpoint/science hashes agree. Exact successful accounting:69forwards17664cases331776positions2654208native steps; detailed18forwards4608cases129024positions1032192steps; one parent load/one endpoint restore/three underlying deserializations;0updates/backwards/optimizer steps, no failures. Review used0model calls and0deserializations. This is an observational accepted diagnostic, not independent numerical replication or a controlled causal explanation.

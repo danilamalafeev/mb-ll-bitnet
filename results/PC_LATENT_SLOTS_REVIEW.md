@@ -1,0 +1,19 @@
+# Latent slots pilot — independent saved-data review
+
+Verdict: ACCEPT for this completed bounded pilot and its saved numerical evidence. No model calls, checkpoint deserialization or replay were performed by reviewer. Reproduce with `py -3.12 runs/pc_latent_slots_v1/audit_science.py` from the code project. Outputs: science_raw_audit.json and science_summary.json in that directory.
+
+## Result and attribution
+
+Before training, the randomly initialized latent interface achieved0/17664 fully correct trajectories and68/17664 correct final states. After2000 updates, both full-trace and final-state correctness are17628/17664 (99.7962%). The endpoint repairs17628 full-trace failures and17560 final-state failures relative to its own initial evaluation, introducing none. This is a substantial within-child training gain after initial architectural disruption. Parent weights and6464 adapter parameters were trained together; the experiment does not isolate write-head learning alone.
+
+Final compositions are6144/6144 fully correct; padding11484/11520. Lengths4,12,16 are perfect. Length24 and32 each have18 errors, all padding (two states per padding program at each of those lengths). First error is position21 in12cases and22 in24cases; none subsequently recovers. Across state strata,30 errors are train states,6validation,0test. Heldout64 pooled full/final4410/4416; test32 alone2208/2208. Repeated cases across programs are not independent samples.
+
+The saved initial structured soft-register reference remains17664/17664 perfect. Final latent is36cases below it; this pilot demonstrates near-complete attainment and length transfer using unconstrained continuous slots, not superiority over the structured reference. The opened program/state pool, one seed, jointly trained parent/adapter, different representation capacity and no matched trained reference prevent broad causal/generalization claims. No arbitrary-length or arbitrary-memory guarantee follows. Training-batch loss goes from19.579288482666016 on the first batch to0.0000754739812691696 on the last; those are different batches/lengths and are not a paired loss evaluation.
+
+## Audit coverage
+
+Independently recomputed all35328 new trajectories/663552 positions and joined the saved17664-case structured reference by program/state/targets. Recomputed DSL targets for all447744 frozen training positions, checked2000-entry cyclic stream/ledger indices, finite losses and endpoint42000. All saved per-case exactness/first-error/recovery fields, perprogram/marginal/joint suite-length-stratum/heldout aggregates and three paired candidate/reference tables match reconstruction. Audit initially omitted the paired heldout64 aggregation in its own comparison; corrected the audit to include that saved extra group. No experiment artifact was edited.
+
+84 file hashes checked/recorded, including immutable manifest/input/source inventories, accepted QA lineage, all nine checkpoint byte hashes and background files. Full checkpoints are at0,250,...,2000 with matching reported local/absolute/next-index metadata. Accounting matches2138 forwards,2000 backwards/optimizer updates,163328cases,1111296positions,8890368forward native steps; two underlying deserializations for one endpoint load, no snapshot reload or failures. Initial/final evaluations each69forwards; checkpoint saves9. Wrapper exit0 and one queued wake. Old failed/partial experiments and disposable QA costs remain separate.
+
+State-preservation and internal tensor/checkpoint-digest equality are accepted as checks executed by the reviewed runtime, supported by accepted QA; the reviewer verified their reported flags and file bytes without independently loading tensors. Snapshot internal payloads and slot norm diagnostics were not recomputed from unsaved tensors. No logits/training replay is claimed. This is sufficient for the prospectively registered saved-data audit, not independent numerical replication.

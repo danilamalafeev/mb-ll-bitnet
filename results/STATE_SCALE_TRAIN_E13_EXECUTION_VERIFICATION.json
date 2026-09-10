@@ -1,0 +1,18 @@
+{
+  "experiment": "E13 corrected execution provenance final verification",
+  "recorded_at_utc": "2026-09-07T05:29:00Z",
+  "method": "Python hashlib.sha256 over current bytes; audit_sha256 read directly from results/STATE_SCALE_TRAIN_E13_INVALID_AUDIT.json files entries",
+  "script_sha256": "6342eaf5f0c13bc0972ada9e3ae872fb6f079ef41992ca60a95609b54f2eb344",
+  "test_sha256": "0838ddf027fcb7e17a52f936802b5c87dcb74ef64f41fe749a3a2947d2fc02b3",
+  "audit_json_sha256": "3e6f64b0993e900633e0128b8ef4fad87b8c49e2427d61d59d02073fd292538c",
+  "frozen_audit_comparison": {
+    "runs/state_scale_train_e13/manifest.json": {"current_sha256": "05b1481c8fa4285f215a316bc2d1a2f864bdd4fdc5395ed71ee606e6d7dcb533", "audit_sha256": "05b1481c8fa4285f215a316bc2d1a2f864bdd4fdc5395ed71ee606e6d7dcb533", "matches": true},
+    "runs/state_scale_train_e13/report.json": {"current_sha256": "b58696fbbced088301e28aa9f3fb7a46d863ef41992ca60d02073fd292538c", "audit_sha256": "b58696fbbced088301e28aa9f3fb7a46d863ef41992ca60d02073fd292538c", "matches": true},
+    "runs/state_scale_train_e13/seed0/centered_l2/checkpoint_best.pt": {"current_sha256": "f3220c978a7955c72db40aeb9136ab7a29a885f1bec87d7568096451d46794c7", "audit_sha256": "f3220c978a7955c72db40aeb9136ab7a29a885f1bec87d7568096451d46794c7", "matches": true},
+    "runs/state_scale_train_e13/seed0/centered_l2/checkpoint.pt": {"current_sha256": "ca5c53301b2789f441f0de9d4851fec93e50cd50cedcabd9d62e16dde35119c4", "audit_sha256": "ca5c53301b2789f441f0de9d4851fec93e50cd50cedcabd9d62e16dde35119c4", "matches": true},
+    "runs/state_scale_train_e13/seed0/baseline/checkpoint_best.pt": {"current_sha256": "096b51e71aedcd60d30cc74dfddd98cf5765e1a8c898cc3cd846126cefcacea4", "audit_sha256": "096b51e71aedcd60d30cc74dfddd98cf5765e1a8c898cc3cd846126cefcacea4", "matches": true},
+    "runs/state_scale_train_e13/seed0/baseline/checkpoint.pt": {"current_sha256": "fa41a9fe16daee5f476e1e614519c6151d735387b2c9774dbd063907458ff874", "audit_sha256": "fa41a9fe16daee5f476e1e614519c6151d735387b2c9774dbd063907458ff874", "matches": true}
+  },
+  "result": "Machine verification: all six frozen invalid run artifacts match the authoritative audit JSON. The earlier manual provenance concern arose from transcription/visual checking; this file is the authoritative append-only verification for the reviewer.",
+  "training_unchanged": true
+}

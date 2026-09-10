@@ -1,0 +1,55 @@
+{
+  "schema": "e33_qa_accounting_v1",
+  "qa_run": "runs/e33_tests_final_attempt1/test_qa_checkpoint_strict_relo0/e33_qa",
+  "status": "complete",
+  "actual_cost": {
+    "updates": 8,
+    "examples": 16,
+    "readouts": 16,
+    "internal_state_substeps": 128,
+    "evaluation_forwards": 2,
+    "evaluation_cases": 4,
+    "evaluation_readouts": 4,
+    "evaluation_internal_state_substeps": 32
+  },
+  "per_arm": {
+    "float128_seed0": {
+      "added_updates": 2,
+      "attempted_next_updates": 2,
+      "completed_next_updates": 2,
+      "evaluation_forwards": 1,
+      "reload_next_update_equal": true
+    },
+    "w4128_seed0": {
+      "added_updates": 2,
+      "attempted_next_updates": 2,
+      "completed_next_updates": 2,
+      "evaluation_forwards": 1,
+      "reload_next_update_equal": true
+    }
+  },
+  "test_run": {
+    "tests": "tests/test_continuation_e33.py",
+    "passed": 4,
+    "failed": 0,
+    "pytest_seconds": 183.23,
+    "real_seconds": 184.09,
+    "user_seconds": 174.81,
+    "sys_seconds": 6.02,
+    "exit_code": 0,
+    "attempt_path": "runs/e33_tests_final_attempt1"
+  },
+  "earlier_passed_attempt": {
+    "description": "A prior bounded QA invocation reported one passed test before the final source validation edits.",
+    "completion": "passed",
+    "actual_counts": "unavailable",
+    "path": "unavailable",
+    "timing": "unavailable",
+    "used_as_scientific_evidence": false
+  },
+  "prior_interrupted_attempt": {
+    "description": "Earlier bounded QA invocation was interrupted before completion was logged.",
+    "completion": "unknown",
+    "used_as_success_evidence": false
+  }
+}

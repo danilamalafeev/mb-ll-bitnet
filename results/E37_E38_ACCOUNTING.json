@@ -1,0 +1,305 @@
+{
+  "schema": "e37_e38_accounting_v1",
+  "status": "ACCEPT",
+  "artifact_gate": "ACCEPT",
+  "source": "saved_json_reports_only; no checkpoint loads, model forwards, training, preflight, or QA rerun",
+  "background": {
+    "job_dir": "runs/e37_e38_science_background_v3",
+    "status": "completed",
+    "exit_code": 0,
+    "delivery_status": "queued",
+    "delivery_attempts": 1,
+    "started_at": "2026-09-08T16:05:07+00:00",
+    "finished_at": "2026-09-08T18:16:57+00:00",
+    "wall_seconds": 7910,
+    "command": [
+      ".venv/bin/python",
+      "scripts/followup_e37_e38.py",
+      "--train-cleared",
+      "--preflight-dir",
+      "runs/e37_e38_preflight_v2",
+      "--out",
+      "runs/e37_e38_science_v3"
+    ]
+  },
+  "provenance": {
+    "base_manifest": {
+      "path": "runs/e37_e38_preflight_v2/manifest.json",
+      "sha256": "593cd1fb98ee180b13f968060a329d11936f61f514a45517b97d8227ffddb9b2",
+      "canonical_digest": "42bd72d9a4f2e7119282278c9e96eb40b888117eb1f4b59de63076b4dff5a956"
+    },
+    "source_reference": {
+      "path": "results/E37_E38_SCIENCE_REFERENCE_V3.json",
+      "sha256": "d02e663f717953b224f56b2081dca5269909612bd89afcd8b7e945a7df4d8dd0"
+    },
+    "protocol": {
+      "path": "results/E37_E38_PROTOCOL.md",
+      "sha256": "1725543ba5d9bf787bb8190d47fc2b8c6b4e9fdcadeafc292c20585f7975bbbb"
+    },
+    "accepted_qa": {
+      "path": "results/E37_E38_QA_REVIEW.json",
+      "sha256": "f26033868d9fdcb51bedf1710ffe41798d780b66b887219a30f6654b24fe9ee4",
+      "updates": 28,
+      "scientific_updates": 0
+    },
+    "science_reports": {
+      "combined": {
+        "path": "runs/e37_e38_science_v3/report.json",
+        "sha256": "4e74d3f1b2611069cb8553e519c93a3e8e98cb422eac7f1bf5405b24b0924031"
+      },
+      "e37": {
+        "path": "runs/e37_e38_science_v3/e37/report.json",
+        "sha256": "240f164729766d125ef86e8f2abb70916af2ebf5cb6dd77516b52e188d672415"
+      },
+      "e38": {
+        "path": "runs/e37_e38_science_v3/e38/report.json",
+        "sha256": "eccc92ed82ed8e89a2a13c79975e367a3abe583495d41d6c57dde6c20b052aa7"
+      },
+      "runtime_lineage": {
+        "path": "runs/e37_e38_science_v3/e38/runtime_lineage.json",
+        "sha256": "4398e0e7b883ffc04ed143d5a313c53713dfc1ceeba5252281b0f1f1c8f8eb62",
+        "schema": "e37_e38_runtime_lineage_v2",
+        "registered_parents": 4
+      }
+    }
+  },
+  "training": {
+    "e37": {
+      "updates": 0,
+      "examples": 0,
+      "readout_positions": 0,
+      "native_internal_steps": 0
+    },
+    "e38": {
+      "updates": 128000,
+      "examples": 8192000,
+      "readout_positions": 19456000,
+      "native_internal_steps": 155648000,
+      "parent_extensions": 4,
+      "parent_updates_per_model": 16000,
+      "A_trajectories": 4,
+      "B_trajectories": 4,
+      "A_updates_per_model": 8000,
+      "B_updates_per_model": 8000,
+      "B_match_snapshot_updates": 0
+    },
+    "combined": {
+      "updates": 128000,
+      "examples": 8192000,
+      "readout_positions": 19456000,
+      "native_internal_steps": 155648000
+    }
+  },
+  "evaluation": {
+    "e37": {
+      "program_forwards": 216,
+      "state_cases": 55296,
+      "readout_positions": 331776,
+      "native_internal_steps": 2654208,
+      "endpoints": 6,
+      "programs_per_endpoint": 36,
+      "cases_per_length": 2304,
+      "states_per_program": 256
+    },
+    "e38_parent_endpoints": {
+      "program_forwards": 332,
+      "state_cases": 48128,
+      "readout_positions": 149248,
+      "native_internal_steps": 1193984,
+      "endpoints": 4,
+      "forwards_per_endpoint": 83
+    },
+    "e38_branch_endpoints": {
+      "program_forwards": 2748,
+      "state_cases": 682752,
+      "readout_positions": 4192512,
+      "native_internal_steps": 33540096,
+      "A_endpoints": 4,
+      "B_match_endpoints": 4,
+      "B_endpoints": 4
+    },
+    "e38": {
+      "program_forwards": 3080,
+      "state_cases": 730880,
+      "readout_positions": 4341760,
+      "native_internal_steps": 34734080
+    },
+    "combined": {
+      "program_forwards": 3296,
+      "state_cases": 786176,
+      "readout_positions": 4673536,
+      "native_internal_steps": 37388288
+    }
+  },
+  "gates": {
+    "e38_seed1_seed2": {
+      "float_seed1": {
+        "B_match_vs_A": true,
+        "B_vs_A": true
+      },
+      "float_seed2": {
+        "B_match_vs_A": true,
+        "B_vs_A": true
+      },
+      "w4_seed1": {
+        "B_match_vs_A": true,
+        "B_vs_A": true
+      },
+      "w4_seed2": {
+        "B_match_vs_A": true,
+        "B_vs_A": true
+      }
+    },
+    "accepted_seed0": {
+      "float": {
+        "B_match_vs_A": true,
+        "B_vs_A": true
+      },
+      "w4": {
+        "B_match_vs_A": true,
+        "B_vs_A": true
+      }
+    },
+    "all_three_seed_conjunction": {
+      "float": {
+        "B_match_vs_A": true,
+        "B_vs_A": true
+      },
+      "w4": {
+        "B_match_vs_A": true,
+        "B_vs_A": true
+      }
+    },
+    "artifact_accept": true,
+    "numerical_failure": false
+  },
+  "independent_final_review": {
+    "status": "ACCEPT",
+    "raw_audit": {
+      "path": "runs/e37_e38_review_v3/raw.json",
+      "sha256": "192545d57a3c000b2098d2b4e396c3b950d1a0286e9d3f56a5a4aa2bb78c803f",
+      "updates": 0,
+      "seconds": 10.417973332994734,
+      "audited_scientific_evaluation_scope": {
+        "program_forwards": 3296,
+        "state_cases": 786176,
+        "readout_positions": 4673536,
+        "native_internal_steps": 37388288
+      },
+      "actual_model_evaluation_cost": {
+        "program_forwards": 0,
+        "state_cases": 0,
+        "readout_positions": 0,
+        "native_internal_steps": 0
+      },
+      "checkpoint_deserializations": 0,
+      "model_constructions": 0,
+      "scope_note": "Saved scientific coverage only; raw audit executes no model forwards. Do not add audited scope to reviewer compute."
+    },
+    "strict_replay": {
+      "path": "runs/e37_e38_review_v3/replay.json",
+      "sha256": "eb55206a2e221745336a78aa7dea321ec09c547bee80e5977461d32cc0596698",
+      "loader_calls": 22,
+      "checkpoint_deserializations": 388,
+      "program_forwards": 3296,
+      "state_cases": 786176,
+      "readout_positions": 4673536,
+      "native_internal_steps": 37388288,
+      "updates": 0,
+      "seconds": 615.7775021670022,
+      "exact_saved_outputs": true
+    }
+  },
+  "attainment": {
+    "threshold": 0.99,
+    "A": {
+      "cases": 2880,
+      "full_trace_correct": 2880,
+      "rate": 1.0,
+      "by_length": {
+        "1": "576/576",
+        "2": "1152/1152",
+        "3": "1152/1152"
+      }
+    },
+    "B_match": {
+      "cases": 6336,
+      "full_trace_correct": 6336,
+      "rate": 1.0,
+      "by_length": {
+        "1": "576/576",
+        "2": "1152/1152",
+        "3": "1152/1152",
+        "4": "1152/1152",
+        "5": "1152/1152",
+        "6": "1152/1152"
+      }
+    },
+    "B": {
+      "cases": 6336,
+      "full_trace_correct": 6336,
+      "rate": 1.0,
+      "by_length": {
+        "1": "576/576",
+        "2": "1152/1152",
+        "3": "1152/1152",
+        "4": "1152/1152",
+        "5": "1152/1152",
+        "6": "1152/1152"
+      }
+    },
+    "applies_to_each_e38_model": true,
+    "scope": "sampled_training_probes; not exhaustive training-set mastery"
+  },
+  "e37_paired": {
+    "denominator_per_comparison": 9216,
+    "float_A_vs_B_match": {
+      "final": {
+        "introduced": 9,
+        "recovered": 2209,
+        "both_wrong": 64
+      },
+      "full_trace": {
+        "introduced": 4,
+        "recovered": 2447,
+        "both_wrong": 69
+      }
+    },
+    "float_A_vs_B": {
+      "final": {
+        "introduced": 7,
+        "recovered": 2224,
+        "both_wrong": 49
+      },
+      "full_trace": {
+        "introduced": 1,
+        "recovered": 2457,
+        "both_wrong": 59
+      }
+    },
+    "w4_A_vs_B_match": {
+      "final": {
+        "introduced": 14,
+        "recovered": 3234,
+        "both_wrong": 194
+      },
+      "full_trace": {
+        "introduced": 3,
+        "recovered": 3431,
+        "both_wrong": 215
+      }
+    },
+    "w4_A_vs_B": {
+      "final": {
+        "introduced": 16,
+        "recovered": 3288,
+        "both_wrong": 140
+      },
+      "full_trace": {
+        "introduced": 1,
+        "recovered": 3485,
+        "both_wrong": 161
+      }
+    }
+  }
+}

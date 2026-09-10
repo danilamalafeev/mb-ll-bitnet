@@ -1,0 +1,190 @@
+{
+  "schema": "e33_attempt_accounting_v1",
+  "date": "2026-09-08",
+  "status": "ACCEPT",
+  "scope": {
+    "seed_selection": "seed0 selected by index for both arms",
+    "arms": ["float128_seed0", "w4128_seed0"],
+    "parent_update": 16000,
+    "added_updates_per_arm": 16000,
+    "cumulative_final_update": 32000,
+    "scientific_retries": 0,
+    "additional_seeds": 0,
+    "equal_budget_h64_comparison": false,
+    "adaptive_opened_data_diagnostic": true
+  },
+  "scientific_attempts": [
+    {
+      "id": "canonical_e33_seed0_width128",
+      "command": "/usr/bin/time -p python scripts/continuation_e33.py --train-cleared --out runs/e33_continuation --preflight-dir runs/e33_continuation_preflight",
+      "preflight_path": "runs/e33_continuation_preflight",
+      "run_path": "runs/e33_continuation",
+      "stdout_path": "results/E33_SCIENCE_STDOUT.txt",
+      "timing_path": "results/E33_SCIENCE_TIME.txt",
+      "exit_status": 0,
+      "status": "complete",
+      "retry_count": 0,
+      "wall_seconds": 848.30,
+      "user_seconds": 668.52,
+      "system_seconds": 183.04,
+      "model_order": ["float128_seed0", "w4128_seed0"],
+      "models": {
+        "float128_seed0": {
+          "status": "complete",
+          "parent_checkpoint": "runs/e32_width/float128_seed0/u16000.pt",
+          "final_checkpoint": "runs/e33_continuation/float128_seed0/u32000.pt",
+          "final_checkpoint_sha256": "8a58c04d6b0baed644075dcf4cd23accb8ef5406b2eb72d0f0152cf934cdea4f",
+          "attempted_updates": 16000,
+          "completed_updates": 16000,
+          "added_training_cost": {
+            "program_forwards": 16000,
+            "program_state_cases": 1024000,
+            "readout_positions": 2048000,
+            "internal_state_substeps": 16384000
+          },
+          "evaluation_cost": {
+            "program_forwards": 83,
+            "program_state_cases": 12032,
+            "readout_positions": 37312,
+            "internal_state_substeps": 298496
+          },
+          "training_benefit": {
+            "parent_l5_final_errors": 146,
+            "new_l5_final_errors": 166,
+            "strictly_reduces_l5_final_errors": false
+          },
+          "gates": {
+            "seen_prerequisite": true,
+            "e21_primary_conjunction": true,
+            "l4_conjunction": true,
+            "l4_full_trace": true,
+            "l5_conjunction": false,
+            "l5_full_trace": false,
+            "combined_conjunction": false
+          }
+        },
+        "w4128_seed0": {
+          "status": "complete",
+          "parent_checkpoint": "runs/e32_width/w4128_seed0/u16000.pt",
+          "final_checkpoint": "runs/e33_continuation/w4128_seed0/u32000.pt",
+          "final_checkpoint_sha256": "da7677541003cf7d260d8258cbe1f24a379d6ca07044e7042eea67fe7a464a4a",
+          "attempted_updates": 16000,
+          "completed_updates": 16000,
+          "added_training_cost": {
+            "program_forwards": 16000,
+            "program_state_cases": 1024000,
+            "readout_positions": 2048000,
+            "internal_state_substeps": 16384000
+          },
+          "evaluation_cost": {
+            "program_forwards": 83,
+            "program_state_cases": 12032,
+            "readout_positions": 37312,
+            "internal_state_substeps": 298496
+          },
+          "training_benefit": {
+            "parent_l5_final_errors": 159,
+            "new_l5_final_errors": 133,
+            "strictly_reduces_l5_final_errors": true
+          },
+          "gates": {
+            "seen_prerequisite": true,
+            "e21_primary_conjunction": true,
+            "l4_conjunction": true,
+            "l4_full_trace": true,
+            "l5_conjunction": false,
+            "l5_full_trace": false,
+            "combined_conjunction": false
+          }
+        }
+      },
+      "totals": {
+        "added_training_cost": {
+          "program_forwards": 32000,
+          "program_state_cases": 2048000,
+          "readout_positions": 4096000,
+          "internal_state_substeps": 32768000
+        },
+        "evaluation_cost": {
+          "program_forwards": 166,
+          "program_state_cases": 24064,
+          "readout_positions": 74624,
+          "internal_state_substeps": 596992
+        }
+      },
+      "final_report": "runs/e33_continuation/report.json",
+      "paired_benefit": false,
+      "signed_l5_error_gap_w4_minus_float": -33,
+      "final_acceptance_status": "ACCEPT",
+      "independent_final_review": {
+        "status": "PASS",
+        "review_path": "results/E33_CONTINUATION_REVIEW.md",
+        "replay_path": "runs/e33_review_final/review.json",
+        "replay_seconds": 78.96,
+        "replay_cost": {
+          "program_forwards": 166,
+          "program_state_cases": 24064,
+          "readout_positions": 74624,
+          "internal_state_substeps": 596992
+        },
+        "additional_scientific_updates": 0,
+        "additional_scientific_forwards": 166,
+        "raw_audit_path": "results/E33_review_raw_counts.json",
+        "raw_audit_status": "PASS",
+        "raw_audit_seconds": 1.38,
+        "raw_audit_forwards": 0,
+        "raw_audit_updates": 0,
+        "initial_raw_audit_attempt": {
+          "status": "stopped_on_reviewer_field_name_mismatch",
+          "log": "E33_review_raw_attempt1.log",
+          "forwards": 0,
+          "updates": 0,
+          "real_seconds": 0.58,
+          "retry_was_script_only": true
+        }
+      }
+    }
+  ],
+  "qa_accounting": {
+    "path": "results/E33_QA_ACCOUNTING.json",
+    "final_test_run": {
+      "passed": 4,
+      "failed": 0,
+      "pytest_seconds": 183.23,
+      "real_seconds": 184.09,
+      "user_seconds": 174.81,
+      "sys_seconds": 6.02,
+      "exit_code": 0,
+      "known_qa_cost": {
+        "updates": 8,
+        "examples": 16,
+        "readouts": 16,
+        "internal_state_substeps": 128,
+        "evaluation_forwards": 2
+      }
+    },
+    "earlier_passed_attempt": {
+      "status": "passed",
+      "path": null,
+      "actual_counts": null,
+      "timing": null,
+      "used_as_scientific_evidence": false
+    },
+    "prior_interrupted_attempt": {
+      "status": "unknown_completion",
+      "path": null,
+      "actual_counts": null,
+      "timing": null,
+      "used_as_success_evidence": false
+    }
+  },
+  "source_and_artifacts": {
+    "protocol": "results/E33_CONTINUATION_PROTOCOL.md",
+    "code_review": "results/E33_CODE_REVIEW.md",
+    "implementation": "results/E33_IMPLEMENTATION.md",
+    "canonical_report": "runs/e33_continuation/report.json",
+    "science_stdout": "results/E33_SCIENCE_STDOUT.txt",
+    "science_timing": "results/E33_SCIENCE_TIME.txt",
+    "no_automatic_retry": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "verification": "Independent full 2000x64 base h2 streams before E14 training",
+  "rows": [
+    {
+      "seed": 0,
+      "base_h2_digest": "dc163fc3f154dab76ae679af2210d97a972857f0fe7cf832e117efa6904a6979",
+      "matches_historical": true,
+      "baseline_report_sha256": "8a42ae2ae55fe0d068d39058fdd4fd8480cf84ade4a3033fe60cf06bfa040a75"
+    },
+    {
+      "seed": 1,
+      "base_h2_digest": "ae9826b3b5c2286d9468f7b616f56814bc0fd7f8acaebdc3a7cc7eec93de911e",
+      "matches_historical": true,
+      "baseline_report_sha256": "81aba61b05db7df23311b35727719dbe7f31b58cd50f931d0dd34579c93d7f1a"
+    },
+    {
+      "seed": 2,
+      "base_h2_digest": "3cf817879b586d1f1d938c372267224a88cc2d159378a5052eba4a92ba7e0d2c",
+      "matches_historical": true,
+      "baseline_report_sha256": "0f0676de1979b4f0ab8e3a07dd0889e3a879af1414b50eba5a87ff98530fff89"
+    }
+  ],
+  "seconds": 14.250832708999951
+}

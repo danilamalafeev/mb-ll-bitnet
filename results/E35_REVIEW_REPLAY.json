@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "models": {
+    "float": {
+      "exact_rows": true,
+      "forwards": 36,
+      "cases": 9216,
+      "internal_steps": 442368
+    },
+    "w4": {
+      "exact_rows": true,
+      "forwards": 36,
+      "cases": 9216,
+      "internal_steps": 442368
+    }
+  },
+  "seconds": 44.649766292001004,
+  "reviewer_updates": 0,
+  "loader_calls": 2,
+  "checkpoint_deserializations": 4
+}

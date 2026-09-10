@@ -1,0 +1,92 @@
+{
+  "owner": "01a08b1b-e103-77b3-b360-5734cf71e230",
+  "last_updated": "2026-09-10",
+  "last_checkpoint": "C:\\Users\\я\\LoopedBitNet_AI2_inference\\project\\runs\\pc_latent_slots_pair_carry_v1\\science\\report.json",
+  "results_document": "results/PC_LATENT_SLOTS_PAIR_CARRY_RESULTS.md",
+  "science_forwards": 18,
+  "migration_forwards": 0,
+  "new_training_updates": 0,
+  "independent_replay_completed": false,
+  "process_policy": {
+    "source": "AGENTS.md — Codex orchestration.md",
+    "revision": "2026-09-08-staged-experiment-workflow",
+    "stage_order": [
+      "contract_and_independent_oracles",
+      "pure_tests",
+      "tiny_qa",
+      "code_clear",
+      "canonical_preflight",
+      "detached_science",
+      "independent_result_review"
+    ],
+    "current_gate": "latent_slots_padding_diagnostic_accept",
+    "enforcement": "Agent instructions and review gates; not an automated launch guard",
+    "existing_attempt": {
+      "preflight": "runs/e37_e38_preflight_v2/manifest.json",
+      "preflight_sha256": "593cd1fb98ee180b13f968060a329d11936f61f514a45517b97d8227ffddb9b2",
+      "source_sha256": "3cf3912622408b5682f7dd78988359a9f914d867168e973e69cffa5cd84acf5c",
+      "qa_output": "runs/e37_e38_qa_v2",
+      "background_status": "runs/e37_e38_qa_background_v2/status.json",
+      "historical_deviations": [
+        "Full implementation preceded contract-level review",
+        "Canonical preflight ran before completed tiny QA and CODE CLEAR",
+        "Synchronous preflight was polled and then bridged to a detached QA with a file wait"
+      ],
+      "policy_transition": "Preserve current frozen inputs and running QA. No rerun merely to reorder history. On completion independently inspect QA, then issue or reject CODE CLEAR. Reuse v2 freeze only if exact hashes and scope still match; otherwise preserve it and register a new version before science."
+    },
+    "next_action": "Stop registered scope; no further model runs.",
+    "stop": "One2000update feasibilitypilot +initial/final69evaluations, saveddataaudit only; no matchedsuperiority claim",
+    "science_reference": "results/E37_E38_SCIENCE_REFERENCE_V3.json",
+    "final_review": "results/PC_EXPLICIT_REGISTERS_REVIEW.md"
+  },
+  "replay_status": "cancelled_by_user_no_forwards",
+  "qa_forwards": 2,
+  "independent_raw_review": "ACCEPT",
+  "current_protocol": "results/PC_LATENT_SLOTS_PAIR_CARRY_PROTOCOL.md",
+  "planned_science": {
+    "program_forwards": 2138,
+    "cases": 163328,
+    "readout_positions": 1111296,
+    "forward_native_steps": 8890368,
+    "optimizer_updates": 2000
+  },
+  "learned_qa_v1_cost": {
+    "completed_forwards": 1,
+    "cases": 2,
+    "readout_positions": 2,
+    "forward_native_steps": 16,
+    "completed_updates": 0,
+    "deserializations": 2
+  },
+  "science_v1_partial_cost": {
+    "completed_updates": 2554,
+    "completed_forwards_accounting": 2692,
+    "completed_forwards_tmp": 2693,
+    "soft_completed_updates": 554,
+    "final_soft_checkpoint_present": false
+  },
+  "active_task": "Pair-carry intervention accepted",
+  "next_action": "Stop registered scope; discuss learned state-preservation direction before another experiment.",
+  "current_gate": "pair_carry_science_accept",
+  "status": "complete",
+  "pair_carry_scope": {
+    "qa_forwards": 3,
+    "qa_cases": 6,
+    "qa_native_steps": 240,
+    "science_forwards": 36,
+    "science_cases": 9216,
+    "science_native_steps": 2064384,
+    "updates": 0,
+    "stop": "One fixed inference intervention, saved-data audit, report; no automatic retries/training.",
+    "qa_background": "runs/pc_latent_slots_pair_carry_qa_background_v1",
+    "science_background": "runs/pc_latent_slots_pair_carry_science_background_v1",
+    "result": {
+      "status": "ACCEPT",
+      "full_repairs": 36,
+      "full_regressions": 0,
+      "correct": 4608,
+      "cases": 4608,
+      "updates": 0
+    }
+  }
+}

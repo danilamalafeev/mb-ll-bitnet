@@ -1,0 +1,93 @@
+{
+  "status": "complete_independent_accept_valid_negative",
+  "scientific_updates": 48000,
+  "scientific_evaluation_forwards": 213,
+  "root_initial_audit": {
+    "model_forwards": 0,
+    "updates": 0,
+    "note": "Initialmasterpairing andactualfloatRNG clarification beforetraining, originalconstructorref preserved"
+  },
+  "implementation_qa": {
+    "owner": "e25_impl Astra/low",
+    "passed_tests": 7,
+    "test_commands": 2,
+    "successful_updates": 10,
+    "training_examples": 20,
+    "training_substeps": 160,
+    "training_forwards": 10,
+    "evaluation_forwards": 3,
+    "evaluation_cases": 6,
+    "evaluation_readouts": 6,
+    "evaluation_substeps": 48,
+    "all_model_forwards": 13,
+    "injected_evaluation_failures": 1
+  },
+  "independent_code_review_qa": {
+    "passed_tests": 7,
+    "successful_updates": 10,
+    "training_examples": 20,
+    "training_substeps": 160,
+    "training_forwards": 10,
+    "evaluation_forwards": 3,
+    "evaluation_cases": 6,
+    "evaluation_readouts": 6,
+    "evaluation_substeps": 48,
+    "zero_forward_final_guard_checks": true
+  },
+  "scientific_cost": {
+    "completed_reload_identity_updates": 0,
+    "completed_updates": 48000,
+    "evaluation_cost": {
+      "internal_state_substeps": 563712,
+      "program_forwards": 213,
+      "program_state_cases": 26880,
+      "readout_positions": 70464
+    },
+    "evaluation_cost_attempted": {
+      "internal_state_substeps": 563712,
+      "program_forwards": 213,
+      "program_state_cases": 26880,
+      "readout_positions": 70464
+    },
+    "reload_identity_cost": {
+      "internal_state_substeps": 0,
+      "program_forwards": 0,
+      "program_state_cases": 0,
+      "readout_positions": 0
+    },
+    "reload_identity_cost_attempted": {
+      "internal_state_substeps": 0,
+      "program_forwards": 0,
+      "program_state_cases": 0,
+      "readout_positions": 0
+    },
+    "training_cost": {
+      "internal_state_substeps": 49152000,
+      "program_forwards": 48000,
+      "program_state_cases": 3072000,
+      "readout_positions": 6144000
+    },
+    "training_cost_attempted": {
+      "internal_state_substeps": 49152000,
+      "program_forwards": 48000,
+      "program_state_cases": 3072000,
+      "readout_positions": 6144000
+    }
+  },
+  "scientific_failed_attempts": 0,
+  "scientific_retries": 0,
+  "cli_wall_seconds": 1310.89,
+  "last_training_progress_seconds": {
+    "0": 299.9596073749999,
+    "1": 321.76711083400005,
+    "2": 660.6112783749995
+  },
+  "independent_result_review": {
+    "training_updates": 0,
+    "evaluation_forwards": 213,
+    "evaluation_cases": 26880,
+    "evaluation_readouts": 70464,
+    "evaluation_substeps": 563712,
+    "retries": 0
+  }
+}

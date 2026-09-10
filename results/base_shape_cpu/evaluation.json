@@ -1,0 +1,197 @@
+{
+  "format_version": 1,
+  "checkpoint": "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/base_shape_cpu/checkpoint.pt",
+  "updates": 2,
+  "examples_seen": 64,
+  "example_steps": 1024,
+  "train_seconds": 0.2244997920060996,
+  "wall_seconds": 0.461261917000229,
+  "peak_cuda_allocated_mb": null,
+  "peak_cuda_reserved_mb": null,
+  "seed": 42,
+  "train_steps": 16,
+  "device": "cpu",
+  "quantized": true,
+  "num_objects": 16,
+  "parameters": 2379520,
+  "suite_fingerprint": "db79b617535db169b9753d30147bcadd43ca2ccf24537f280ed1174dcf350cc4",
+  "environment": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 08:22:19) [Clang 14.0.6 ]",
+    "executable": "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/.venv/bin/python",
+    "platform": "macOS-26.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "torch": "2.14.0",
+    "cuda_runtime": null,
+    "cuda_available": false,
+    "mps_available": true,
+    "device": "cpu"
+  },
+  "config": {
+    "model": {
+      "d_model": 256,
+      "d_ff": 1024,
+      "num_blocks": 4,
+      "num_heads": 4,
+      "num_objects": 16,
+      "max_tokens": 256,
+      "steps": 16,
+      "quantized": true
+    },
+    "data": {
+      "num_objects": 16,
+      "train_min_hops": 1,
+      "train_max_hops": 4,
+      "test_max_hops": 8,
+      "val_size": 256,
+      "test_size": 512,
+      "split_seed": 1729,
+      "max_tokens": 256
+    },
+    "train": {
+      "seed": 42,
+      "updates": 2,
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "grad_clip": 1.0,
+      "log_every": 25,
+      "eval_every": 200,
+      "eval_batch_size": 64,
+      "cpu_threads": 4,
+      "deterministic": true
+    }
+  },
+  "timing": "forward only, one warmup batch per split/budget, synchronized; ms_per_example is amortized batch latency",
+  "measurements": [
+    {
+      "split": "in_distribution",
+      "steps": 16,
+      "n": 512,
+      "loss": 2.8745438086334616,
+      "accuracy": 0.078125,
+      "inference_seconds": 0.365307040992775,
+      "ms_per_example": 0.7134903144390137,
+      "batch_size": 64,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "by_hops": [
+        {
+          "hops": 1,
+          "n": 128,
+          "accuracy": 0.0625,
+          "loss": 2.9612591369077563
+        },
+        {
+          "hops": 2,
+          "n": 128,
+          "accuracy": 0.0625,
+          "loss": 2.7984541561454535
+        },
+        {
+          "hops": 3,
+          "n": 128,
+          "accuracy": 0.0859375,
+          "loss": 2.9034871282055974
+        },
+        {
+          "hops": 4,
+          "n": 128,
+          "accuracy": 0.1015625,
+          "loss": 2.834974813275039
+        }
+      ],
+      "sample_predictions": [
+        {
+          "hops": 1,
+          "prediction": "OBJ_7",
+          "target": "OBJ_15"
+        },
+        {
+          "hops": 2,
+          "prediction": "OBJ_11",
+          "target": "OBJ_9"
+        },
+        {
+          "hops": 3,
+          "prediction": "OBJ_11",
+          "target": "OBJ_9"
+        },
+        {
+          "hops": 4,
+          "prediction": "OBJ_11",
+          "target": "OBJ_2"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_11",
+          "target": "OBJ_6"
+        }
+      ]
+    },
+    {
+      "split": "longer",
+      "steps": 16,
+      "n": 512,
+      "loss": 2.8942364652175456,
+      "accuracy": 0.083984375,
+      "inference_seconds": 0.37971166700299364,
+      "ms_per_example": 0.741624349615222,
+      "batch_size": 64,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "by_hops": [
+        {
+          "hops": 5,
+          "n": 128,
+          "accuracy": 0.046875,
+          "loss": 2.92016813531518
+        },
+        {
+          "hops": 6,
+          "n": 128,
+          "accuracy": 0.09375,
+          "loss": 2.8050681184977293
+        },
+        {
+          "hops": 7,
+          "n": 128,
+          "accuracy": 0.1015625,
+          "loss": 2.9194748271256685
+        },
+        {
+          "hops": 8,
+          "n": 128,
+          "accuracy": 0.09375,
+          "loss": 2.932234779931605
+        }
+      ],
+      "sample_predictions": [
+        {
+          "hops": 5,
+          "prediction": "OBJ_11",
+          "target": "OBJ_10"
+        },
+        {
+          "hops": 6,
+          "prediction": "OBJ_11",
+          "target": "OBJ_8"
+        },
+        {
+          "hops": 7,
+          "prediction": "OBJ_11",
+          "target": "OBJ_11"
+        },
+        {
+          "hops": 8,
+          "prediction": "OBJ_11",
+          "target": "OBJ_11"
+        },
+        {
+          "hops": 5,
+          "prediction": "OBJ_11",
+          "target": "OBJ_2"
+        }
+      ]
+    }
+  ]
+}

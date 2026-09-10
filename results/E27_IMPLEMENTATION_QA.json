@@ -1,0 +1,78 @@
+{
+  "scope": "E27 implementation QA only. Canonical preflight/scientific training not executed; independent reviewer costs excluded.",
+  "status": "complete",
+  "test_invocations": [
+    {
+      "command": "python -m pytest -q tests/test_w4_e27.py --basetemp runs/e27_w4_qa_tests_v1",
+      "passed": 5,
+      "failed_tests": 4,
+      "errors": 2,
+      "seconds": 5.79,
+      "result": "failed during initial implementation: W4BitLinear inventory inheritance and guard omissions; no recurrent QA forwards completed"
+    },
+    {
+      "command": "python -m pytest -q tests/test_w4_e27.py --basetemp runs/e27_w4_qa_tests_v1",
+      "passed": 10,
+      "failed_tests": 1,
+      "errors": 0,
+      "seconds": 13.87,
+      "result": "failed during constructor correction: W4BitLinear passed dtype to BitLinear"
+    },
+    {
+      "command": "python -m pytest -q tests/test_w4_e27.py --basetemp runs/e27_w4_qa_tests_v2",
+      "passed": 11,
+      "failed_tests": 0,
+      "errors": 0,
+      "seconds": 14.14,
+      "result": "passed"
+    }
+  ],
+  "failed_test_attempts": 5,
+  "error_attempts": 2,
+  "artifact_retention_limitation": "The first and second invocations reused --basetemp runs/e27_w4_qa_tests_v1, so pytest overwrote the first invocation's temporary artifacts. The final passing artifacts are retained under runs/e27_w4_qa_tests_v2; complete temporary artifacts from the first failed invocation are unavailable.",
+  "total_completed_training_updates": 8,
+  "total_reload_identity_updates": 12,
+  "total_model_forwards": 26,
+  "total_model_cases": 52,
+  "total_model_readouts": 52,
+  "total_model_substeps": 416,
+  "model_workload": {
+    "training_cost": {
+      "program_forwards": 8,
+      "program_state_cases": 16,
+      "readout_positions": 16,
+      "internal_state_substeps": 128
+    },
+    "evaluation_cost": {
+      "program_forwards": 6,
+      "program_state_cases": 12,
+      "readout_positions": 12,
+      "internal_state_substeps": 96
+    },
+    "reload_identity_cost": {
+      "program_forwards": 12,
+      "program_state_cases": 24,
+      "readout_positions": 24,
+      "internal_state_substeps": 192
+    }
+  },
+  "projection_only_qa": "Each successful suite invocation executes one 3-to-2 W4BitLinear forward/backward, two direct F.linear references, and independent zero/small/clamp quantizer calculations; excluded from recurrent-model costs.",
+  "intentional_failure_tests": 2,
+  "intentional_failure_detail": "One runtime evaluation exception before forward occurred in each of the second and final suite invocations; each completed one training update and preserved its checkpoint in the temporary failure artifact. No scientific attempt, preflight, retry, or old-artifact overwrite.",
+  "protected_guard": {
+    "path": "results/E27_PROTECTED_HASHES.json",
+    "entries": 281,
+    "extends_e26_entries": 261
+  },
+  "artifacts": [
+    "looped_bitnet/w4_e27.py",
+    "scripts/w4_e27.py",
+    "tests/test_w4_e27.py",
+    "results/E27_PROTECTED_HASHES.json",
+    "runs/e27_w4_qa_tests_v2"
+  ],
+  "handoff_commands_after_root_code_clear": [
+    "python -m scripts.w4_e27 --preflight",
+    "python -m scripts.w4_e27 --train-cleared"
+  ]
+}

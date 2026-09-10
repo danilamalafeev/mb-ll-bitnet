@@ -1,0 +1,49 @@
+{
+  "cells": {
+    "float_A": {
+      "optimizer_state_entries": 32,
+      "optimizer_steps": [
+        40000
+      ],
+      "absolute_updates": 40000
+    },
+    "float_B_match": {
+      "optimizer_state_entries": 32,
+      "optimizer_steps": [
+        36572
+      ],
+      "absolute_updates": 36572
+    },
+    "float_B": {
+      "optimizer_state_entries": 32,
+      "optimizer_steps": [
+        40000
+      ],
+      "absolute_updates": 40000
+    },
+    "w4_A": {
+      "optimizer_state_entries": 32,
+      "optimizer_steps": [
+        40000
+      ],
+      "absolute_updates": 40000
+    },
+    "w4_B_match": {
+      "optimizer_state_entries": 32,
+      "optimizer_steps": [
+        36572
+      ],
+      "absolute_updates": 36572
+    },
+    "w4_B": {
+      "optimizer_state_entries": 32,
+      "optimizer_steps": [
+        40000
+      ],
+      "absolute_updates": 40000
+    }
+  },
+  "extra_checkpoint_deserializations": 6,
+  "forwards": 0,
+  "updates": 0
+}

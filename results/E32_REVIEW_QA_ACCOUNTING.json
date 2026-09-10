@@ -1,0 +1,50 @@
+{
+  "status": "CODE_CLEAR",
+  "hashes": {
+    "looped_bitnet/width_e32.py": "7f754f63613cdf9c90b54f8eb934e114f9f0a72aab0f61639fc02321fc95f5c2",
+    "scripts/width_e32.py": "e28b78e1879d0c863473914f50b679978adca846dc524cd34145abbeb1b6e1ce",
+    "tests/test_width_e32.py": "965f31cbe0fc1db884ecb8c75a4ce41f9f2e27d9a620ac316a9a67465be02146",
+    "results/E32_WIDTH_PROTOCOL.md": "5cb304dec7f845e94b59754a0ad7db4a28054da3afa3c04cbf92b8b94ab33166"
+  },
+  "reviewer_training": {
+    "updates": 26,
+    "examples": 52,
+    "readouts": 52,
+    "internal_state_substeps": 416
+  },
+  "reviewer_evaluation": {
+    "program_forwards": 6,
+    "cases": 12,
+    "readouts": 12,
+    "internal_state_substeps": 96
+  },
+  "intentional_technical_failure_probes": 1,
+  "scientific_forwards": 0,
+  "scientific_updates": 0,
+  "final_tests": {
+    "passed": 14,
+    "deselected": 1,
+    "seconds": 18.33
+  },
+  "prior_tests": {
+    "passed": 13,
+    "seconds": 17.85
+  },
+  "final_review": {
+    "status": "ACCEPT",
+    "replay_attempts": 1,
+    "failed_replay_attempts": 0,
+    "training_updates": 0,
+    "evaluation_cost": {
+      "program_forwards": 498,
+      "program_state_cases": 72192,
+      "readout_positions": 223872,
+      "internal_state_substeps": 1790976
+    },
+    "replay_loop_seconds": 24.1059918750002,
+    "raw_audit_seconds": null,
+    "raw_audit_timing_note": "not instrumented",
+    "comparison_audit_seconds": 2.127788667,
+    "comparison_case_joins": 107520
+  }
+}

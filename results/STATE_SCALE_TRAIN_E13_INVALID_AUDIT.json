@@ -1,0 +1,51 @@
+{
+  "reason": "Original E13 pilot invalid: final logits after reset; normalized validation used baseline dynamics. Frozen before corrected code review.",
+  "files": {
+    "runs/state_scale_train_e13/report.json": {
+      "sha256": "b58696fbbced088301e28aa9f3fb7a46d8637ea3b52c691f23d94e206c7d5e88",
+      "bytes": 572797
+    },
+    "runs/state_scale_train_e13/manifest.json": {
+      "sha256": "05b1481c8fa4285f215a316bc2d1a2f864bdd4fdc5395ed71ee606e6d7dcb533",
+      "bytes": 231009
+    },
+    "runs/state_scale_train_e13/seed0/centered_l2/checkpoint_best.pt": {
+      "sha256": "f3220c978a7955c72db40aeb9136ab7a29a885f1bec87d7568096451d46794c7",
+      "bytes": 625245
+    },
+    "runs/state_scale_train_e13/seed0/centered_l2/checkpoint.pt": {
+      "sha256": "ca5c53301b2789f441f0de9d4851fec93e50cd50cedcabd9d62e16dde35119c4",
+      "bytes": 625060
+    },
+    "runs/state_scale_train_e13/seed0/baseline/checkpoint_best.pt": {
+      "sha256": "096b51e71aedcd60d30cc74dfddd98cf5765e1a8c898cc3cd846126cefcacea4",
+      "bytes": 625245
+    },
+    "runs/state_scale_train_e13/seed0/baseline/checkpoint.pt": {
+      "sha256": "fa41a9fe16daee5f476e1e614519c6151d735387b2c9774dbd063907458ff874",
+      "bytes": 625060
+    }
+  },
+  "checkpoint_progress": {
+    "runs/state_scale_train_e13/seed0/centered_l2/checkpoint.pt": {
+      "updates": 2000,
+      "objective": "final_ce_plus_step4_ce_centered_l2_cycle_boundary",
+      "dynamics": {
+        "arm": "centered_l2",
+        "normalization": "centered_l2_after_readout_every4",
+        "radius": 1.0,
+        "epsilon": 1e-08
+      }
+    },
+    "runs/state_scale_train_e13/seed0/baseline/checkpoint.pt": {
+      "updates": 2000,
+      "objective": "final_ce_plus_step4_ce_centered_l2_cycle_boundary",
+      "dynamics": {
+        "arm": "baseline",
+        "normalization": "centered_l2_after_readout_every4",
+        "radius": 1.0,
+        "epsilon": 1e-08
+      }
+    }
+  }
+}

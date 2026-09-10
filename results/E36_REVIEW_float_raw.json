@@ -1,0 +1,3402 @@
+{
+  "A": {
+    "primary": {
+      "cases": 6144,
+      "errors": 4006,
+      "final_errors": 3848
+    },
+    "by_length": {
+      "1:train_syntax:allowed": {
+        "cases": 768,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          768
+        ],
+        "conditional_denominator": [
+          768
+        ],
+        "conditional_errors": [
+          0
+        ]
+      },
+      "2:train_syntax:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0
+        ]
+      },
+      "2:syntax_heldout_exposed:forbidden": {
+        "cases": 256,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          256
+        ],
+        "conditional_denominator": [
+          256,
+          256
+        ],
+        "conditional_errors": [
+          0,
+          0
+        ]
+      },
+      "3:train_syntax:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0
+        ]
+      },
+      "3:syntax_heldout_exposed:forbidden": {
+        "cases": 1280,
+        "errors": 1,
+        "final_errors": 1,
+        "first_error": [
+          0,
+          0,
+          1,
+          1279
+        ],
+        "conditional_denominator": [
+          1280,
+          1280,
+          1280
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          1
+        ]
+      },
+      "3:semantic_new:forbidden": {
+        "cases": 256,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          256
+        ],
+        "conditional_denominator": [
+          256,
+          256,
+          256
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0
+        ]
+      },
+      "4:train_syntax:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "4:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "4:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 5,
+        "final_errors": 5,
+        "first_error": [
+          0,
+          0,
+          2,
+          3,
+          1531
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1534
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          2,
+          3
+        ]
+      },
+      "4:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 6,
+        "final_errors": 6,
+        "first_error": [
+          0,
+          0,
+          0,
+          6,
+          1530
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          6
+        ]
+      },
+      "5:train_syntax:allowed": {
+        "cases": 1536,
+        "errors": 15,
+        "final_errors": 14,
+        "first_error": [
+          0,
+          0,
+          0,
+          1,
+          14,
+          1521
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1535
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          1,
+          14
+        ]
+      },
+      "5:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 23,
+        "final_errors": 22,
+        "first_error": [
+          0,
+          0,
+          0,
+          3,
+          20,
+          1513
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1533
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          3,
+          20
+        ]
+      },
+      "5:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 78,
+        "final_errors": 76,
+        "first_error": [
+          0,
+          0,
+          1,
+          9,
+          68,
+          1458
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1535,
+          1526
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          1,
+          9,
+          68
+        ]
+      },
+      "5:semantic_new:allowed": {
+        "cases": 1536,
+        "errors": 124,
+        "final_errors": 122,
+        "first_error": [
+          0,
+          0,
+          0,
+          8,
+          116,
+          1412
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1528
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          8,
+          116
+        ]
+      },
+      "5:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 109,
+        "final_errors": 109,
+        "first_error": [
+          0,
+          0,
+          0,
+          7,
+          102,
+          1427
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1529
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          7,
+          102
+        ]
+      },
+      "6:train_syntax:allowed": {
+        "cases": 1536,
+        "errors": 315,
+        "final_errors": 308,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          87,
+          228,
+          1221
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1449
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          87,
+          228
+        ]
+      },
+      "6:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 91,
+        "final_errors": 87,
+        "first_error": [
+          0,
+          0,
+          0,
+          2,
+          21,
+          68,
+          1445
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1534,
+          1513
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          2,
+          21,
+          68
+        ]
+      },
+      "6:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 213,
+        "final_errors": 204,
+        "first_error": [
+          0,
+          0,
+          1,
+          14,
+          61,
+          137,
+          1323
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1535,
+          1521,
+          1460
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          1,
+          14,
+          61,
+          137
+        ]
+      },
+      "6:semantic_new:allowed": {
+        "cases": 1536,
+        "errors": 276,
+        "final_errors": 268,
+        "first_error": [
+          0,
+          0,
+          0,
+          2,
+          61,
+          213,
+          1260
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1534,
+          1473
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          2,
+          61,
+          213
+        ]
+      },
+      "6:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 311,
+        "final_errors": 297,
+        "first_error": [
+          0,
+          0,
+          0,
+          7,
+          101,
+          203,
+          1225
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1529,
+          1428
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          7,
+          101,
+          203
+        ]
+      },
+      "7:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 428,
+        "final_errors": 399,
+        "first_error": [
+          0,
+          0,
+          0,
+          1,
+          13,
+          149,
+          265,
+          1108
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1535,
+          1522,
+          1373
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          1,
+          13,
+          149,
+          265
+        ]
+      },
+      "7:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 423,
+        "final_errors": 379,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          19,
+          155,
+          249,
+          1113
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1517,
+          1362
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          19,
+          155,
+          249
+        ]
+      },
+      "7:semantic_new:allowed": {
+        "cases": 1536,
+        "errors": 435,
+        "final_errors": 420,
+        "first_error": [
+          0,
+          0,
+          0,
+          4,
+          63,
+          108,
+          260,
+          1101
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1532,
+          1469,
+          1361
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          4,
+          63,
+          108,
+          260
+        ]
+      },
+      "7:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 560,
+        "final_errors": 529,
+        "first_error": [
+          0,
+          0,
+          1,
+          5,
+          30,
+          182,
+          342,
+          976
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1535,
+          1530,
+          1500,
+          1318
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          1,
+          5,
+          30,
+          182,
+          342
+        ]
+      },
+      "8:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 645,
+        "final_errors": 562,
+        "first_error": [
+          0,
+          0,
+          0,
+          2,
+          23,
+          92,
+          249,
+          279,
+          891
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1534,
+          1511,
+          1419,
+          1170
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          2,
+          23,
+          92,
+          249,
+          279
+        ]
+      },
+      "8:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 721,
+        "final_errors": 680,
+        "first_error": [
+          0,
+          0,
+          0,
+          7,
+          59,
+          157,
+          214,
+          284,
+          815
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1529,
+          1470,
+          1313,
+          1099
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          7,
+          59,
+          157,
+          214,
+          284
+        ]
+      },
+      "8:semantic_new:allowed": {
+        "cases": 1536,
+        "errors": 1044,
+        "final_errors": 988,
+        "first_error": [
+          0,
+          0,
+          0,
+          6,
+          67,
+          213,
+          411,
+          347,
+          492
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1530,
+          1463,
+          1250,
+          839
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          6,
+          67,
+          213,
+          411,
+          347
+        ]
+      },
+      "8:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 1016,
+        "final_errors": 960,
+        "first_error": [
+          0,
+          0,
+          0,
+          1,
+          53,
+          251,
+          334,
+          377,
+          520
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1535,
+          1482,
+          1231,
+          897
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          1,
+          53,
+          251,
+          334,
+          377
+        ]
+      },
+      "9:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 1078,
+        "final_errors": 1012,
+        "first_error": [
+          0,
+          0,
+          0,
+          3,
+          11,
+          81,
+          226,
+          340,
+          417,
+          458
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1533,
+          1522,
+          1441,
+          1215,
+          875
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          3,
+          11,
+          81,
+          226,
+          340,
+          417
+        ]
+      },
+      "9:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 1095,
+        "final_errors": 997,
+        "first_error": [
+          0,
+          0,
+          0,
+          2,
+          19,
+          111,
+          265,
+          345,
+          353,
+          441
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1534,
+          1515,
+          1404,
+          1139,
+          794
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          2,
+          19,
+          111,
+          265,
+          345,
+          353
+        ]
+      },
+      "9:semantic_new:allowed": {
+        "cases": 1536,
+        "errors": 1099,
+        "final_errors": 1049,
+        "first_error": [
+          0,
+          0,
+          0,
+          1,
+          72,
+          154,
+          267,
+          303,
+          302,
+          437
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1535,
+          1463,
+          1309,
+          1042,
+          739
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          1,
+          72,
+          154,
+          267,
+          303,
+          302
+        ]
+      },
+      "9:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 1179,
+        "final_errors": 1111,
+        "first_error": [
+          0,
+          0,
+          1,
+          0,
+          49,
+          173,
+          337,
+          356,
+          263,
+          357
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1535,
+          1535,
+          1486,
+          1313,
+          976,
+          620
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          1,
+          0,
+          49,
+          173,
+          337,
+          356,
+          263
+        ]
+      },
+      "10:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 1237,
+        "final_errors": 1110,
+        "first_error": [
+          0,
+          0,
+          0,
+          2,
+          21,
+          83,
+          227,
+          295,
+          376,
+          233,
+          299
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1534,
+          1513,
+          1430,
+          1203,
+          908,
+          532
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          2,
+          21,
+          83,
+          227,
+          295,
+          376,
+          233
+        ]
+      },
+      "10:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 1300,
+        "final_errors": 1214,
+        "first_error": [
+          0,
+          0,
+          0,
+          7,
+          43,
+          110,
+          225,
+          356,
+          321,
+          238,
+          236
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1529,
+          1486,
+          1376,
+          1151,
+          795,
+          474
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          7,
+          43,
+          110,
+          225,
+          356,
+          321,
+          238
+        ]
+      },
+      "10:semantic_new:allowed": {
+        "cases": 1536,
+        "errors": 1428,
+        "final_errors": 1391,
+        "first_error": [
+          0,
+          0,
+          0,
+          7,
+          70,
+          312,
+          356,
+          338,
+          212,
+          133,
+          108
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1529,
+          1459,
+          1147,
+          791,
+          453,
+          241
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          7,
+          70,
+          312,
+          356,
+          338,
+          212,
+          133
+        ]
+      },
+      "10:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 1417,
+        "final_errors": 1345,
+        "first_error": [
+          0,
+          0,
+          0,
+          12,
+          110,
+          273,
+          289,
+          357,
+          245,
+          131,
+          119
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1524,
+          1414,
+          1141,
+          852,
+          495,
+          250
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          12,
+          110,
+          273,
+          289,
+          357,
+          245,
+          131
+        ]
+      }
+    },
+    "training_probe": {
+      "1": {
+        "cases": 576,
+        "errors": 0
+      },
+      "2": {
+        "cases": 1152,
+        "errors": 0
+      },
+      "3": {
+        "cases": 1152,
+        "errors": 0
+      }
+    },
+    "evaluation_cost": {
+      "internal_state_substeps": 2702848,
+      "program_forwards": 217,
+      "program_state_cases": 54592,
+      "readout_positions": 337856
+    },
+    "checkpoint_sha256": "1c78ee7e13b8c747171be6db4d56d5d9c1df5eaec26bcacf2aab3f7c24a18774"
+  },
+  "B": {
+    "primary": {
+      "cases": 6144,
+      "errors": 12,
+      "final_errors": 12
+    },
+    "by_length": {
+      "1:train_syntax:allowed": {
+        "cases": 768,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          768
+        ],
+        "conditional_denominator": [
+          768
+        ],
+        "conditional_errors": [
+          0
+        ]
+      },
+      "2:train_syntax:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0
+        ]
+      },
+      "2:syntax_heldout_exposed:forbidden": {
+        "cases": 256,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          256
+        ],
+        "conditional_denominator": [
+          256,
+          256
+        ],
+        "conditional_errors": [
+          0,
+          0
+        ]
+      },
+      "3:train_syntax:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0
+        ]
+      },
+      "3:syntax_heldout_exposed:forbidden": {
+        "cases": 1280,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          1280
+        ],
+        "conditional_denominator": [
+          1280,
+          1280,
+          1280
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0
+        ]
+      },
+      "3:semantic_new:forbidden": {
+        "cases": 256,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          256
+        ],
+        "conditional_denominator": [
+          256,
+          256,
+          256
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0
+        ]
+      },
+      "4:train_syntax:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "4:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "4:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "4:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "5:train_syntax:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "5:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "5:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "5:semantic_new:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "5:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "6:train_syntax:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "6:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "6:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "6:semantic_new:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "6:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "7:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "7:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "7:semantic_new:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "7:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "8:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 4,
+        "final_errors": 4,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          1532
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      },
+      "8:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 5,
+        "final_errors": 5,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          3,
+          1531
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1534
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          3
+        ]
+      },
+      "8:semantic_new:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "8:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "9:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "9:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 1,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1535
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1535
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "9:semantic_new:allowed": {
+        "cases": 1536,
+        "errors": 4,
+        "final_errors": 4,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          1532
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1535,
+          1534
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          2
+        ]
+      },
+      "9:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 6,
+        "final_errors": 6,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1,
+          3,
+          1530
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1534,
+          1534,
+          1533
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1,
+          3
+        ]
+      },
+      "10:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 2,
+        "final_errors": 1,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1534
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1535
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "10:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 19,
+        "final_errors": 19,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          17,
+          1517
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1535,
+          1535,
+          1534
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          17
+        ]
+      },
+      "10:semantic_new:allowed": {
+        "cases": 1536,
+        "errors": 8,
+        "final_errors": 8,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          6,
+          1528
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1534
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          6
+        ]
+      },
+      "10:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 16,
+        "final_errors": 15,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          4,
+          9,
+          1520
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1535,
+          1533,
+          1529
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          4,
+          9
+        ]
+      }
+    },
+    "training_probe": {
+      "1": {
+        "cases": 576,
+        "errors": 0
+      },
+      "2": {
+        "cases": 1152,
+        "errors": 0
+      },
+      "3": {
+        "cases": 1152,
+        "errors": 0
+      },
+      "4": {
+        "cases": 1152,
+        "errors": 0
+      },
+      "5": {
+        "cases": 1152,
+        "errors": 0
+      },
+      "6": {
+        "cases": 1152,
+        "errors": 0
+      }
+    },
+    "evaluation_cost": {
+      "internal_state_substeps": 2841088,
+      "program_forwards": 235,
+      "program_state_cases": 58048,
+      "readout_positions": 355136
+    },
+    "checkpoint_sha256": "59feda5e7d011c6c2a8ddb644a4dd9c74526a7af72cc657f0c927afe373dd3e9"
+  },
+  "B_match": {
+    "primary": {
+      "cases": 6144,
+      "errors": 14,
+      "final_errors": 14
+    },
+    "by_length": {
+      "1:train_syntax:allowed": {
+        "cases": 768,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          768
+        ],
+        "conditional_denominator": [
+          768
+        ],
+        "conditional_errors": [
+          0
+        ]
+      },
+      "2:train_syntax:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0
+        ]
+      },
+      "2:syntax_heldout_exposed:forbidden": {
+        "cases": 256,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          256
+        ],
+        "conditional_denominator": [
+          256,
+          256
+        ],
+        "conditional_errors": [
+          0,
+          0
+        ]
+      },
+      "3:train_syntax:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0
+        ]
+      },
+      "3:syntax_heldout_exposed:forbidden": {
+        "cases": 1280,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          1280
+        ],
+        "conditional_denominator": [
+          1280,
+          1280,
+          1280
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0
+        ]
+      },
+      "3:semantic_new:forbidden": {
+        "cases": 256,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          256
+        ],
+        "conditional_denominator": [
+          256,
+          256,
+          256
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0
+        ]
+      },
+      "4:train_syntax:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "4:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "4:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "4:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "5:train_syntax:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "5:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "5:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "5:semantic_new:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "5:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "6:train_syntax:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "6:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "6:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "6:semantic_new:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "6:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "7:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "7:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "7:semantic_new:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "7:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "8:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 3,
+        "final_errors": 3,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          1533
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1535
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2
+        ]
+      },
+      "8:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 6,
+        "final_errors": 6,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          1530
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1535,
+          1533
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "8:semantic_new:allowed": {
+        "cases": 1536,
+        "errors": 0,
+        "final_errors": 0,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1536
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "8:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 1,
+        "final_errors": 1,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1535
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1535
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "9:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 1,
+        "final_errors": 1,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1535
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "9:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 2,
+        "final_errors": 1,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1534
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1535,
+          1535
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      "9:semantic_new:allowed": {
+        "cases": 1536,
+        "errors": 4,
+        "final_errors": 4,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          1,
+          1532
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1535,
+          1533
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          1
+        ]
+      },
+      "9:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 7,
+        "final_errors": 7,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          2,
+          1,
+          2,
+          1529
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1534,
+          1534,
+          1532,
+          1531
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          2,
+          1,
+          2
+        ]
+      },
+      "10:syntax_heldout_exposed:allowed": {
+        "cases": 1536,
+        "errors": 5,
+        "final_errors": 4,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          1531
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1535
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          4
+        ]
+      },
+      "10:syntax_heldout_exposed:forbidden": {
+        "cases": 1536,
+        "errors": 23,
+        "final_errors": 23,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          3,
+          19,
+          1513
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1535,
+          1535,
+          1532
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          3,
+          19
+        ]
+      },
+      "10:semantic_new:allowed": {
+        "cases": 1536,
+        "errors": 10,
+        "final_errors": 10,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          9,
+          1526
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1535
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          9
+        ]
+      },
+      "10:semantic_new:forbidden": {
+        "cases": 1536,
+        "errors": 22,
+        "final_errors": 21,
+        "first_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          1,
+          5,
+          14,
+          1514
+        ],
+        "conditional_denominator": [
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1536,
+          1534,
+          1533,
+          1528
+        ],
+        "conditional_errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          1,
+          5,
+          14
+        ]
+      }
+    },
+    "training_probe": {
+      "1": {
+        "cases": 576,
+        "errors": 0
+      },
+      "2": {
+        "cases": 1152,
+        "errors": 0
+      },
+      "3": {
+        "cases": 1152,
+        "errors": 0
+      },
+      "4": {
+        "cases": 1152,
+        "errors": 0
+      },
+      "5": {
+        "cases": 1152,
+        "errors": 0
+      },
+      "6": {
+        "cases": 1152,
+        "errors": 0
+      }
+    },
+    "evaluation_cost": {
+      "internal_state_substeps": 2841088,
+      "program_forwards": 235,
+      "program_state_cases": 58048,
+      "readout_positions": 355136
+    },
+    "checkpoint_sha256": "375c722b9189a2b0e6dfb802de95c834d92bbecdd1d4172959f43a087d86c7c9"
+  },
+  "directional_benefit_both_slices": true
+}

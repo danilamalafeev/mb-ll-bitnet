@@ -1,0 +1,35 @@
+{
+  "model": {
+    "d_model": 32,
+    "d_ff": 64,
+    "num_blocks": 4,
+    "num_heads": 4,
+    "num_objects": 8,
+    "max_tokens": 64,
+    "steps": 8,
+    "quantized": false
+  },
+  "data": {
+    "num_objects": 8,
+    "train_min_hops": 1,
+    "train_max_hops": 2,
+    "test_max_hops": 4,
+    "val_size": 16,
+    "test_size": 32,
+    "split_seed": 1729,
+    "max_tokens": 256
+  },
+  "train": {
+    "seed": 42,
+    "updates": 12,
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "log_every": 4,
+    "eval_every": 12,
+    "eval_batch_size": 16,
+    "cpu_threads": 2,
+    "deterministic": true
+  }
+}

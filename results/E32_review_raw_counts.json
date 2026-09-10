@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "cost": [
+    498,
+    72192,
+    223872,
+    1790976
+  ],
+  "models": {
+    "float128_seed0": {
+      "gates": {
+        "seen_prerequisite": true,
+        "e21_primary_conjunction": true,
+        "l4_conjunction": true,
+        "l5_conjunction": false,
+        "combined_conjunction": false,
+        "e21_control_excluded": true
+      },
+      "errors": {
+        "4": 7,
+        "5": 146
+      }
+    },
+    "w4128_seed0": {
+      "gates": {
+        "seen_prerequisite": true,
+        "e21_primary_conjunction": true,
+        "l4_conjunction": true,
+        "l5_conjunction": false,
+        "combined_conjunction": false,
+        "e21_control_excluded": true
+      },
+      "errors": {
+        "4": 11,
+        "5": 159
+      }
+    },
+    "float128_seed1": {
+      "gates": {
+        "seen_prerequisite": true,
+        "e21_primary_conjunction": true,
+        "l4_conjunction": false,
+        "l5_conjunction": false,
+        "combined_conjunction": false,
+        "e21_control_excluded": true
+      },
+      "errors": {
+        "4": 20,
+        "5": 170
+      }
+    },
+    "w4128_seed1": {
+      "gates": {
+        "seen_prerequisite": true,
+        "e21_primary_conjunction": true,
+        "l4_conjunction": true,
+        "l5_conjunction": false,
+        "combined_conjunction": false,
+        "e21_control_excluded": true
+      },
+      "errors": {
+        "4": 15,
+        "5": 153
+      }
+    },
+    "float128_seed2": {
+      "gates": {
+        "seen_prerequisite": true,
+        "e21_primary_conjunction": true,
+        "l4_conjunction": true,
+        "l5_conjunction": false,
+        "combined_conjunction": false,
+        "e21_control_excluded": true
+      },
+      "errors": {
+        "4": 8,
+        "5": 109
+      }
+    },
+    "w4128_seed2": {
+      "gates": {
+        "seen_prerequisite": true,
+        "e21_primary_conjunction": true,
+        "l4_conjunction": true,
+        "l5_conjunction": false,
+        "combined_conjunction": false,
+        "e21_control_excluded": true
+      },
+      "errors": {
+        "4": 6,
+        "5": 165
+      }
+    }
+  }
+}

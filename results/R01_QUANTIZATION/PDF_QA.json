@@ -1,0 +1,7 @@
+{
+  "pages": 5,
+  "visual_check": "All five final rendered pages inspected; readable Cyrillic, no clipping or overlap. Heading parser corrected after first render.",
+  "pdf_sha256": "a6b8d933401b519c259563ea8636b2dca2752b0b24ee6bd1db04b68e4cf566a2",
+  "scientific_training_updates": 0,
+  "model_forwards": 0
+}

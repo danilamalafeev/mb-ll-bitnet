@@ -1,0 +1,26 @@
+{
+  "experiment": "E13 corrected",
+  "created_before_corrected_run": true,
+  "recorded_at_utc": "2026-09-07T05:25:05Z",
+  "recorded_at_local": "2026-09-07T08:25:05+0300",
+  "preflight": {
+    "corrected_run_absent": true,
+    "corrected_report_absent": true,
+    "training_processes_absent": true,
+    "targeted_test_command": "PYTHONPATH=. .venv/bin/pytest -q tests/test_state_scale_train_e13.py",
+    "targeted_test_result": "12 passed in 3.41s"
+  },
+  "execution_command": "PYTHONPATH=. .venv/bin/python scripts/state_scale_train_e13.py --protocol-cleared",
+  "script_sha256": "6342eaf5f0c13bc0972ada9e3ae872fb6f079ef41992ca60a95609b54f2eb344",
+  "test_sha256": "0838ddf027fcb7e17a52f936802b5c87dcb74ef64f41fe749a3a2947d2fc02b3",
+  "frozen_invalid_artifacts": {
+    "results/STATE_SCALE_TRAIN_E13_INVALID_AUDIT.json": "3e6f64b0993e900633e0128b8ef4fad87b8c49e2427d61d59d02073fd2925383",
+    "runs/state_scale_train_e13/manifest.json": "05b1481c8fa4285f215a316bc2d1a2f864bdd4fdc5395ed71ee606e6d7dcb533",
+    "runs/state_scale_train_e13/report.json": "b58696fbbced088301e28aa9f3fb7a46d863ef41992ca60a95609b54f2eb344",
+    "runs/state_scale_train_e13/seed0/centered_l2/checkpoint_best.pt": "f3220c978a7955c72db40aeb9136ab7a29a885f1bec87d7568096451d46794c7",
+    "runs/state_scale_train_e13/seed0/centered_l2/checkpoint.pt": "ca5c53301b2789f441f0de9d4851fec93e50cd50cedcabd9d62e16dde35119c",
+    "runs/state_scale_train_e13/seed0/baseline/checkpoint_best.pt": "096b51e71aedcd60d30cc74dfddd98cf5765e1a8c898cc3cd846126cefcacea4",
+    "runs/state_scale_train_e13/seed0/baseline/checkpoint.pt": "fa41a9fe16daee5f476e1e614519c6151d735387b2c9774dbd063907458ff874"
+  },
+  "notes": "Invalid E13 artifacts are frozen audit evidence and excluded from conclusions. Corrected outputs are separate guarded paths."
+}

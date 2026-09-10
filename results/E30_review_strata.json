@@ -1,0 +1,10 @@
+{
+  "status": "ACCEPT",
+  "source": "runs/register_e15_preflight/v7/manifest.json",
+  "counts": {
+    "test": 32,
+    "train": 192,
+    "validation": 32
+  },
+  "lifted_initial_strata_checked": 9216
+}

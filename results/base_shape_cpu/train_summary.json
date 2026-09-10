@@ -1,0 +1,16 @@
+{
+  "updates": 2,
+  "examples_seen": 64,
+  "example_steps": 1024,
+  "train_seconds": 0.2244997920060996,
+  "wall_seconds": 0.5271346669978811,
+  "peak_cuda_allocated_mb": null,
+  "peak_cuda_reserved_mb": null,
+  "parameters": 2379520,
+  "train_steps": 16,
+  "quantized": true,
+  "seed": 42,
+  "device": "cpu",
+  "suite_fingerprint": "db79b617535db169b9753d30147bcadd43ca2ccf24537f280ed1174dcf350cc4",
+  "train_timing": "synchronized data generation + transfer + forward + backward + optimizer; excludes evaluation/checkpoint writes"
+}

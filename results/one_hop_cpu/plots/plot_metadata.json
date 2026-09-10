@@ -1,0 +1,77 @@
+{
+  "mode": "checkpoint-sweep",
+  "splits": [
+    "in_distribution",
+    "longer"
+  ],
+  "aggregation": "individual checkpoint measurements",
+  "records": [
+    {
+      "format_version": 1,
+      "checkpoint": "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/one_hop_cpu/checkpoint.pt",
+      "updates": 500,
+      "examples_seen": 32000,
+      "example_steps": 128000,
+      "train_seconds": 4.102082495141076,
+      "wall_seconds": 4.152242332995229,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "seed": 42,
+      "train_steps": 4,
+      "device": "cpu",
+      "quantized": true,
+      "num_objects": 8,
+      "parameters": 150464,
+      "suite_fingerprint": "9f5e00b0b48566ec51520cdbebacc59ea70e0749f9cea1c6edbffdc638aa1912",
+      "environment": {
+        "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 08:22:19) [Clang 14.0.6 ]",
+        "executable": "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/.venv/bin/python",
+        "platform": "macOS-26.2-arm64-arm-64bit",
+        "machine": "arm64",
+        "torch": "2.14.0",
+        "cuda_runtime": null,
+        "cuda_available": false,
+        "mps_available": true,
+        "device": "cpu"
+      },
+      "config": {
+        "model": {
+          "d_model": 64,
+          "d_ff": 256,
+          "num_blocks": 4,
+          "num_heads": 4,
+          "num_objects": 8,
+          "max_tokens": 64,
+          "steps": 4,
+          "quantized": true
+        },
+        "data": {
+          "num_objects": 8,
+          "train_min_hops": 1,
+          "train_max_hops": 1,
+          "test_max_hops": 4,
+          "val_size": 128,
+          "test_size": 256,
+          "split_seed": 1729,
+          "max_tokens": 256
+        },
+        "train": {
+          "seed": 42,
+          "updates": 500,
+          "batch_size": 64,
+          "learning_rate": 0.001,
+          "weight_decay": 0.01,
+          "grad_clip": 1.0,
+          "log_every": 100,
+          "eval_every": 250,
+          "eval_batch_size": 64,
+          "cpu_threads": 2,
+          "deterministic": true
+        }
+      },
+      "timing": "forward only, one warmup batch per split/budget, synchronized; ms_per_example is amortized batch latency",
+      "source": "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/one_hop_cpu/evaluation.json"
+    }
+  ],
+  "timing_note": "ms/example is batched throughput, not single-request latency; labels on time plots give compute steps"
+}

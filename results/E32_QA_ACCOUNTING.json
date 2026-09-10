@@ -1,0 +1,75 @@
+{
+  "schema": "e32_qa_accounting_v1",
+  "date": "2026-09-08",
+  "scientific_training_started": false,
+  "scientific_evaluation_started": false,
+  "attempts": [
+    {
+      "id": "retained_runner_qa",
+      "command": "python scripts/width_e32.py --qa --out runs/e32_width_qa",
+      "artifact_path": "runs/e32_width_qa",
+      "retained": true,
+      "wall_seconds": 12.1,
+      "model_cells": 6,
+      "training_updates": 12,
+      "training_cost": {"program_forwards": 12, "program_state_cases": 24, "readout_positions": 24, "internal_state_substeps": 192},
+      "evaluation_cost": {"program_forwards": 6, "program_state_cases": 12, "readout_positions": 12, "internal_state_substeps": 96},
+      "reload_control_actual": {"updates": 12, "examples": 24, "readouts": 24, "internal_state_substeps": 192},
+      "saved_report_reload_control_field": {"updates": 6, "examples": 12, "readouts": 12, "internal_state_substeps": 96},
+      "note": "The retained report predates the accounting correction and is intentionally unchanged; actual execution has two branches per model cell."
+    },
+    {
+      "id": "pytest_runner_qa_12",
+      "command": "pytest -q tests/test_width_e32.py",
+      "artifact_path": null,
+      "retained": false,
+      "wall_seconds": 18.3,
+      "model_cells": 6,
+      "training_updates": 12,
+      "training_cost": {"program_forwards": 12, "program_state_cases": 24, "readout_positions": 24, "internal_state_substeps": 192},
+      "evaluation_cost": {"program_forwards": 6, "program_state_cases": 12, "readout_positions": 12, "internal_state_substeps": 96},
+      "reload_control_actual": {"updates": 12, "examples": 24, "readouts": 24, "internal_state_substeps": 192},
+      "test_count": 12
+    },
+    {
+      "id": "pytest_runner_qa_13",
+      "command": "pytest -q tests/test_width_e32.py",
+      "artifact_path": null,
+      "retained": false,
+      "wall_seconds": 18.5,
+      "model_cells": 6,
+      "training_updates": 12,
+      "training_cost": {"program_forwards": 12, "program_state_cases": 24, "readout_positions": 24, "internal_state_substeps": 192},
+      "evaluation_cost": {"program_forwards": 6, "program_state_cases": 12, "readout_positions": 12, "internal_state_substeps": 96},
+      "reload_control_actual": {"updates": 12, "examples": 24, "readouts": 24, "internal_state_substeps": 192},
+      "test_count": 13
+    },
+    {
+      "id": "pytest_runner_qa_15",
+      "command": "pytest -q tests/test_width_e32.py",
+      "artifact_path": null,
+      "retained": false,
+      "wall_seconds": 29.9,
+      "model_cells": 6,
+      "training_updates": 12,
+      "training_cost": {"program_forwards": 12, "program_state_cases": 24, "readout_positions": 24, "internal_state_substeps": 192},
+      "evaluation_cost": {"program_forwards": 6, "program_state_cases": 12, "readout_positions": 12, "internal_state_substeps": 96},
+      "reload_control_actual": {"updates": 12, "examples": 24, "readouts": 24, "internal_state_substeps": 192},
+      "technical_failure_probe": {"model_cells_started": 1, "training_updates": 2, "evaluation_forwards": 0},
+      "test_count": 15
+    }
+  ],
+  "latest_result": {"command": "pytest -q tests/test_width_e32.py", "tests_passed": 15, "tests_failed": 0, "wall_seconds": 29.9},
+  "qa_total_per_latest_runner_attempt": {
+    "training_updates": 12,
+    "reload_control_updates": 12,
+    "total_update_executions": 24,
+    "total_examples": 48,
+    "total_readouts": 48,
+    "total_internal_state_substeps": 384,
+    "evaluation_forwards": 6,
+    "evaluation_cases": 12,
+    "evaluation_readouts": 12,
+    "evaluation_internal_state_substeps": 96
+  }
+}

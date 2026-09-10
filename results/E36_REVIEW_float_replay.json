@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "cells": {
+    "A": {
+      "exact_evaluation": true,
+      "cost": {
+        "internal_state_substeps": 2702848,
+        "program_forwards": 217,
+        "program_state_cases": 54592,
+        "readout_positions": 337856
+      },
+      "absolute_update": 40000,
+      "threads": 4
+    },
+    "B": {
+      "exact_evaluation": true,
+      "cost": {
+        "internal_state_substeps": 2841088,
+        "program_forwards": 235,
+        "program_state_cases": 58048,
+        "readout_positions": 355136
+      },
+      "absolute_update": 40000,
+      "threads": 4
+    },
+    "B_match": {
+      "exact_evaluation": true,
+      "cost": {
+        "internal_state_substeps": 2841088,
+        "program_forwards": 235,
+        "program_state_cases": 58048,
+        "readout_positions": 355136
+      },
+      "absolute_update": 36572,
+      "threads": 4
+    }
+  },
+  "seconds": 170.89821379099885,
+  "updates": 0,
+  "loader_calls": 3,
+  "checkpoint_deserializations": 6
+}

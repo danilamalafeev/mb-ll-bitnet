@@ -1,0 +1,206 @@
+{
+  "format_version": 1,
+  "mode": "separate-training",
+  "budgets": [
+    1,
+    4,
+    8,
+    16
+  ],
+  "budget_policy": "updates",
+  "reference_steps": null,
+  "config": {
+    "model": {
+      "d_model": 32,
+      "d_ff": 64,
+      "num_blocks": 4,
+      "num_heads": 4,
+      "num_objects": 8,
+      "max_tokens": 64,
+      "steps": 8,
+      "quantized": true
+    },
+    "data": {
+      "num_objects": 8,
+      "train_min_hops": 1,
+      "train_max_hops": 2,
+      "test_max_hops": 4,
+      "val_size": 16,
+      "test_size": 32,
+      "split_seed": 1729
+    },
+    "train": {
+      "seed": 42,
+      "updates": 12,
+      "batch_size": 8,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "grad_clip": 1.0,
+      "log_every": 4,
+      "eval_every": 12,
+      "eval_batch_size": 16,
+      "cpu_threads": 2,
+      "deterministic": true
+    }
+  },
+  "runs": [
+    {
+      "seed": 42,
+      "steps": 1,
+      "updates": 12
+    },
+    {
+      "seed": 42,
+      "steps": 4,
+      "updates": 12
+    },
+    {
+      "seed": 42,
+      "steps": 8,
+      "updates": 12
+    },
+    {
+      "seed": 42,
+      "steps": 16,
+      "updates": 12
+    }
+  ],
+  "evaluations": [
+    "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/sanity_budgets_cpu/seed_42/steps_1/evaluation.json",
+    "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/sanity_budgets_cpu/seed_42/steps_4/evaluation.json",
+    "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/sanity_budgets_cpu/seed_42/steps_8/evaluation.json",
+    "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/sanity_budgets_cpu/seed_42/steps_16/evaluation.json"
+  ],
+  "commands": [
+    [
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/.venv/bin/python",
+      "-m",
+      "looped_bitnet",
+      "train",
+      "--config",
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/configs/sanity.json",
+      "--out",
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/sanity_budgets_cpu/seed_42/steps_1",
+      "--device",
+      "cpu",
+      "--steps",
+      "1",
+      "--updates",
+      "12",
+      "--seed",
+      "42"
+    ],
+    [
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/.venv/bin/python",
+      "-m",
+      "looped_bitnet",
+      "evaluate",
+      "--checkpoint",
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/sanity_budgets_cpu/seed_42/steps_1/checkpoint.pt",
+      "--steps",
+      "1",
+      "--device",
+      "cpu",
+      "--out",
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/sanity_budgets_cpu/seed_42/steps_1/evaluation.json"
+    ],
+    [
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/.venv/bin/python",
+      "-m",
+      "looped_bitnet",
+      "train",
+      "--config",
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/configs/sanity.json",
+      "--out",
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/sanity_budgets_cpu/seed_42/steps_4",
+      "--device",
+      "cpu",
+      "--steps",
+      "4",
+      "--updates",
+      "12",
+      "--seed",
+      "42"
+    ],
+    [
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/.venv/bin/python",
+      "-m",
+      "looped_bitnet",
+      "evaluate",
+      "--checkpoint",
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/sanity_budgets_cpu/seed_42/steps_4/checkpoint.pt",
+      "--steps",
+      "4",
+      "--device",
+      "cpu",
+      "--out",
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/sanity_budgets_cpu/seed_42/steps_4/evaluation.json"
+    ],
+    [
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/.venv/bin/python",
+      "-m",
+      "looped_bitnet",
+      "train",
+      "--config",
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/configs/sanity.json",
+      "--out",
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/sanity_budgets_cpu/seed_42/steps_8",
+      "--device",
+      "cpu",
+      "--steps",
+      "8",
+      "--updates",
+      "12",
+      "--seed",
+      "42"
+    ],
+    [
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/.venv/bin/python",
+      "-m",
+      "looped_bitnet",
+      "evaluate",
+      "--checkpoint",
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/sanity_budgets_cpu/seed_42/steps_8/checkpoint.pt",
+      "--steps",
+      "8",
+      "--device",
+      "cpu",
+      "--out",
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/sanity_budgets_cpu/seed_42/steps_8/evaluation.json"
+    ],
+    [
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/.venv/bin/python",
+      "-m",
+      "looped_bitnet",
+      "train",
+      "--config",
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/configs/sanity.json",
+      "--out",
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/sanity_budgets_cpu/seed_42/steps_16",
+      "--device",
+      "cpu",
+      "--steps",
+      "16",
+      "--updates",
+      "12",
+      "--seed",
+      "42"
+    ],
+    [
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/.venv/bin/python",
+      "-m",
+      "looped_bitnet",
+      "evaluate",
+      "--checkpoint",
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/sanity_budgets_cpu/seed_42/steps_16/checkpoint.pt",
+      "--steps",
+      "16",
+      "--device",
+      "cpu",
+      "--out",
+      "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/sanity_budgets_cpu/seed_42/steps_16/evaluation.json"
+    ]
+  ],
+  "completed_commands": 8,
+  "cost_note": "core-steps is an approximate update-times-depth budget; measured times are authoritative"
+}

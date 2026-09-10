@@ -1,0 +1,11 @@
+{
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 08:22:19) [Clang 14.0.6 ]",
+  "executable": "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/.venv/bin/python",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "torch": "2.14.0",
+  "cuda_runtime": null,
+  "cuda_available": false,
+  "mps_available": true,
+  "device": "mps"
+}

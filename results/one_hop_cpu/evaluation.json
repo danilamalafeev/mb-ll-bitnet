@@ -1,0 +1,679 @@
+{
+  "format_version": 1,
+  "checkpoint": "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/runs/one_hop_cpu/checkpoint.pt",
+  "updates": 500,
+  "examples_seen": 32000,
+  "example_steps": 128000,
+  "train_seconds": 4.102082495141076,
+  "wall_seconds": 4.152242332995229,
+  "peak_cuda_allocated_mb": null,
+  "peak_cuda_reserved_mb": null,
+  "seed": 42,
+  "train_steps": 4,
+  "device": "cpu",
+  "quantized": true,
+  "num_objects": 8,
+  "parameters": 150464,
+  "suite_fingerprint": "9f5e00b0b48566ec51520cdbebacc59ea70e0749f9cea1c6edbffdc638aa1912",
+  "environment": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 08:22:19) [Clang 14.0.6 ]",
+    "executable": "/Users/danilamalafeev/Documents/ChatGPT/looped BITNET/.venv/bin/python",
+    "platform": "macOS-26.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "torch": "2.14.0",
+    "cuda_runtime": null,
+    "cuda_available": false,
+    "mps_available": true,
+    "device": "cpu"
+  },
+  "config": {
+    "model": {
+      "d_model": 64,
+      "d_ff": 256,
+      "num_blocks": 4,
+      "num_heads": 4,
+      "num_objects": 8,
+      "max_tokens": 64,
+      "steps": 4,
+      "quantized": true
+    },
+    "data": {
+      "num_objects": 8,
+      "train_min_hops": 1,
+      "train_max_hops": 1,
+      "test_max_hops": 4,
+      "val_size": 128,
+      "test_size": 256,
+      "split_seed": 1729,
+      "max_tokens": 256
+    },
+    "train": {
+      "seed": 42,
+      "updates": 500,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "grad_clip": 1.0,
+      "log_every": 100,
+      "eval_every": 250,
+      "eval_batch_size": 64,
+      "cpu_threads": 2,
+      "deterministic": true
+    }
+  },
+  "timing": "forward only, one warmup batch per split/budget, synchronized; ms_per_example is amortized batch latency",
+  "measurements": [
+    {
+      "split": "validation",
+      "steps": 1,
+      "n": 128,
+      "loss": 0.3459485198109178,
+      "accuracy": 0.9765625,
+      "inference_seconds": 0.0019467919992166571,
+      "ms_per_example": 0.015209312493880134,
+      "batch_size": 64,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "by_hops": [
+        {
+          "hops": 1,
+          "n": 128,
+          "accuracy": 0.9765625,
+          "loss": 0.3459485198109178
+        }
+      ],
+      "sample_predictions": [
+        {
+          "hops": 1,
+          "prediction": "OBJ_2",
+          "target": "OBJ_2"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_5",
+          "target": "OBJ_5"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_5",
+          "target": "OBJ_5"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_2",
+          "target": "OBJ_2"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_3",
+          "target": "OBJ_3"
+        }
+      ]
+    },
+    {
+      "split": "validation",
+      "steps": 4,
+      "n": 128,
+      "loss": 0.0025825962256931234,
+      "accuracy": 1.0,
+      "inference_seconds": 0.007844498999475036,
+      "ms_per_example": 0.06128514843339872,
+      "batch_size": 64,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "by_hops": [
+        {
+          "hops": 1,
+          "n": 128,
+          "accuracy": 1.0,
+          "loss": 0.0025825962256931234
+        }
+      ],
+      "sample_predictions": [
+        {
+          "hops": 1,
+          "prediction": "OBJ_2",
+          "target": "OBJ_2"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_5",
+          "target": "OBJ_5"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_5",
+          "target": "OBJ_5"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_2",
+          "target": "OBJ_2"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_3",
+          "target": "OBJ_3"
+        }
+      ]
+    },
+    {
+      "split": "validation",
+      "steps": 8,
+      "n": 128,
+      "loss": 0.0030010578557266854,
+      "accuracy": 1.0,
+      "inference_seconds": 0.00850091699976474,
+      "ms_per_example": 0.06641341406066203,
+      "batch_size": 64,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "by_hops": [
+        {
+          "hops": 1,
+          "n": 128,
+          "accuracy": 1.0,
+          "loss": 0.0030010578557266854
+        }
+      ],
+      "sample_predictions": [
+        {
+          "hops": 1,
+          "prediction": "OBJ_2",
+          "target": "OBJ_2"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_5",
+          "target": "OBJ_5"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_5",
+          "target": "OBJ_5"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_2",
+          "target": "OBJ_2"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_3",
+          "target": "OBJ_3"
+        }
+      ]
+    },
+    {
+      "split": "validation",
+      "steps": 16,
+      "n": 128,
+      "loss": 0.004629857732652454,
+      "accuracy": 1.0,
+      "inference_seconds": 0.016392082994570956,
+      "ms_per_example": 0.1280631483950856,
+      "batch_size": 64,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "by_hops": [
+        {
+          "hops": 1,
+          "n": 128,
+          "accuracy": 1.0,
+          "loss": 0.004629857732652454
+        }
+      ],
+      "sample_predictions": [
+        {
+          "hops": 1,
+          "prediction": "OBJ_2",
+          "target": "OBJ_2"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_5",
+          "target": "OBJ_5"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_5",
+          "target": "OBJ_5"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_2",
+          "target": "OBJ_2"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_3",
+          "target": "OBJ_3"
+        }
+      ]
+    },
+    {
+      "split": "in_distribution",
+      "steps": 1,
+      "n": 256,
+      "loss": 0.37587599526159465,
+      "accuracy": 0.97265625,
+      "inference_seconds": 0.0036389149972819723,
+      "ms_per_example": 0.014214511708132704,
+      "batch_size": 64,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "by_hops": [
+        {
+          "hops": 1,
+          "n": 256,
+          "accuracy": 0.97265625,
+          "loss": 0.37587599526159465
+        }
+      ],
+      "sample_predictions": [
+        {
+          "hops": 1,
+          "prediction": "OBJ_4",
+          "target": "OBJ_4"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_0",
+          "target": "OBJ_0"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_3",
+          "target": "OBJ_3"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_6",
+          "target": "OBJ_6"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_4",
+          "target": "OBJ_4"
+        }
+      ]
+    },
+    {
+      "split": "in_distribution",
+      "steps": 4,
+      "n": 256,
+      "loss": 0.0026064952280648868,
+      "accuracy": 1.0,
+      "inference_seconds": 0.010262624993629288,
+      "ms_per_example": 0.040088378881364406,
+      "batch_size": 64,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "by_hops": [
+        {
+          "hops": 1,
+          "n": 256,
+          "accuracy": 1.0,
+          "loss": 0.0026064952280648868
+        }
+      ],
+      "sample_predictions": [
+        {
+          "hops": 1,
+          "prediction": "OBJ_4",
+          "target": "OBJ_4"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_0",
+          "target": "OBJ_0"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_3",
+          "target": "OBJ_3"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_6",
+          "target": "OBJ_6"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_4",
+          "target": "OBJ_4"
+        }
+      ]
+    },
+    {
+      "split": "in_distribution",
+      "steps": 8,
+      "n": 256,
+      "loss": 0.003016649681740091,
+      "accuracy": 1.0,
+      "inference_seconds": 0.01762958299514139,
+      "ms_per_example": 0.06886555857477106,
+      "batch_size": 64,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "by_hops": [
+        {
+          "hops": 1,
+          "n": 256,
+          "accuracy": 1.0,
+          "loss": 0.003016649681740091
+        }
+      ],
+      "sample_predictions": [
+        {
+          "hops": 1,
+          "prediction": "OBJ_4",
+          "target": "OBJ_4"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_0",
+          "target": "OBJ_0"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_3",
+          "target": "OBJ_3"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_6",
+          "target": "OBJ_6"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_4",
+          "target": "OBJ_4"
+        }
+      ]
+    },
+    {
+      "split": "in_distribution",
+      "steps": 16,
+      "n": 256,
+      "loss": 0.004505457318373374,
+      "accuracy": 1.0,
+      "inference_seconds": 0.035439835002762266,
+      "ms_per_example": 0.1384368554795401,
+      "batch_size": 64,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "by_hops": [
+        {
+          "hops": 1,
+          "n": 256,
+          "accuracy": 1.0,
+          "loss": 0.004505457318373374
+        }
+      ],
+      "sample_predictions": [
+        {
+          "hops": 1,
+          "prediction": "OBJ_4",
+          "target": "OBJ_4"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_0",
+          "target": "OBJ_0"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_3",
+          "target": "OBJ_3"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_6",
+          "target": "OBJ_6"
+        },
+        {
+          "hops": 1,
+          "prediction": "OBJ_4",
+          "target": "OBJ_4"
+        }
+      ]
+    },
+    {
+      "split": "longer",
+      "steps": 1,
+      "n": 256,
+      "loss": 2.8888273081101943,
+      "accuracy": 0.31640625,
+      "inference_seconds": 0.0034330829948885366,
+      "ms_per_example": 0.013410480448783346,
+      "batch_size": 64,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "by_hops": [
+        {
+          "hops": 2,
+          "n": 86,
+          "accuracy": 0.2441860465116279,
+          "loss": 3.103998949101498
+        },
+        {
+          "hops": 3,
+          "n": 85,
+          "accuracy": 0.3411764705882353,
+          "loss": 2.8880130241022393
+        },
+        {
+          "hops": 4,
+          "n": 85,
+          "accuracy": 0.36470588235294116,
+          "loss": 2.67193852005636
+        }
+      ],
+      "sample_predictions": [
+        {
+          "hops": 2,
+          "prediction": "OBJ_0",
+          "target": "OBJ_0"
+        },
+        {
+          "hops": 3,
+          "prediction": "OBJ_7",
+          "target": "OBJ_7"
+        },
+        {
+          "hops": 4,
+          "prediction": "OBJ_0",
+          "target": "OBJ_0"
+        },
+        {
+          "hops": 2,
+          "prediction": "OBJ_7",
+          "target": "OBJ_4"
+        },
+        {
+          "hops": 3,
+          "prediction": "OBJ_7",
+          "target": "OBJ_5"
+        }
+      ]
+    },
+    {
+      "split": "longer",
+      "steps": 4,
+      "n": 256,
+      "loss": 5.371273215350811,
+      "accuracy": 0.31640625,
+      "inference_seconds": 0.010720792000938673,
+      "ms_per_example": 0.04187809375366669,
+      "batch_size": 64,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "by_hops": [
+        {
+          "hops": 2,
+          "n": 86,
+          "accuracy": 0.2441860465116279,
+          "loss": 5.93013630888349
+        },
+        {
+          "hops": 3,
+          "n": 85,
+          "accuracy": 0.3411764705882353,
+          "loss": 5.220256279389758
+        },
+        {
+          "hops": 4,
+          "n": 85,
+          "accuracy": 0.36470588235294116,
+          "loss": 4.956852197855273
+        }
+      ],
+      "sample_predictions": [
+        {
+          "hops": 2,
+          "prediction": "OBJ_0",
+          "target": "OBJ_0"
+        },
+        {
+          "hops": 3,
+          "prediction": "OBJ_7",
+          "target": "OBJ_7"
+        },
+        {
+          "hops": 4,
+          "prediction": "OBJ_0",
+          "target": "OBJ_0"
+        },
+        {
+          "hops": 2,
+          "prediction": "OBJ_7",
+          "target": "OBJ_4"
+        },
+        {
+          "hops": 3,
+          "prediction": "OBJ_7",
+          "target": "OBJ_5"
+        }
+      ]
+    },
+    {
+      "split": "longer",
+      "steps": 8,
+      "n": 256,
+      "loss": 5.172971136218621,
+      "accuracy": 0.31640625,
+      "inference_seconds": 0.01741050000418909,
+      "ms_per_example": 0.06800976564136363,
+      "batch_size": 64,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "by_hops": [
+        {
+          "hops": 2,
+          "n": 86,
+          "accuracy": 0.2441860465116279,
+          "loss": 5.653425014261048
+        },
+        {
+          "hops": 3,
+          "n": 85,
+          "accuracy": 0.3411764705882353,
+          "loss": 5.06181902311304
+        },
+        {
+          "hops": 4,
+          "n": 85,
+          "accuracy": 0.36470588235294116,
+          "loss": 4.798016972716569
+        }
+      ],
+      "sample_predictions": [
+        {
+          "hops": 2,
+          "prediction": "OBJ_0",
+          "target": "OBJ_0"
+        },
+        {
+          "hops": 3,
+          "prediction": "OBJ_7",
+          "target": "OBJ_7"
+        },
+        {
+          "hops": 4,
+          "prediction": "OBJ_0",
+          "target": "OBJ_0"
+        },
+        {
+          "hops": 2,
+          "prediction": "OBJ_7",
+          "target": "OBJ_4"
+        },
+        {
+          "hops": 3,
+          "prediction": "OBJ_7",
+          "target": "OBJ_5"
+        }
+      ]
+    },
+    {
+      "split": "longer",
+      "steps": 16,
+      "n": 256,
+      "loss": 4.8931901251826275,
+      "accuracy": 0.31640625,
+      "inference_seconds": 0.03155316699849209,
+      "ms_per_example": 0.12325455858785972,
+      "batch_size": 64,
+      "peak_cuda_allocated_mb": null,
+      "peak_cuda_reserved_mb": null,
+      "by_hops": [
+        {
+          "hops": 2,
+          "n": 86,
+          "accuracy": 0.2441860465116279,
+          "loss": 5.274942986014689
+        },
+        {
+          "hops": 3,
+          "n": 85,
+          "accuracy": 0.3411764705882353,
+          "loss": 4.819244150962571
+        },
+        {
+          "hops": 4,
+          "n": 85,
+          "accuracy": 0.36470588235294116,
+          "loss": 4.580892028443187
+        }
+      ],
+      "sample_predictions": [
+        {
+          "hops": 2,
+          "prediction": "OBJ_0",
+          "target": "OBJ_0"
+        },
+        {
+          "hops": 3,
+          "prediction": "OBJ_7",
+          "target": "OBJ_7"
+        },
+        {
+          "hops": 4,
+          "prediction": "OBJ_0",
+          "target": "OBJ_0"
+        },
+        {
+          "hops": 2,
+          "prediction": "OBJ_7",
+          "target": "OBJ_4"
+        },
+        {
+          "hops": 3,
+          "prediction": "OBJ_7",
+          "target": "OBJ_5"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "command": "python -m pytest tests/test_length_transfer_e28.py -q --basetemp=runs/e28_qa_tests_attempt1",
+      "passed": 11
+    },
+    {
+      "command": "python -m pytest tests/test_length_transfer_e28.py -q --basetemp=runs/e28_qa_tests_attempt2",
+      "passed": 14
+    }
+  ],
+  "tiny_seen_qa": "runs/e28_qa_seen_attempt1/report.json",
+  "actual_model_cost": {
+    "attempted": {
+      "program_forwards": 6,
+      "program_state_cases": 12,
+      "readout_positions": 12,
+      "internal_state_substeps": 96
+    },
+    "completed": {
+      "program_forwards": 6,
+      "program_state_cases": 12,
+      "readout_positions": 12,
+      "internal_state_substeps": 96
+    }
+  },
+  "training_updates": 0,
+  "source_hashes": {
+    "scripts/length_transfer_e28.py": "bb31e595c5790cf11e6e5b1dc239dea21ae7c10fc42c01736ea3411f62ff500a",
+    "tests/test_length_transfer_e28.py": "c6347811900dd335bebc9d50583116c228ad61ed2e5cd1310c4683e834486f33"
+  },
+  "limitations": [
+    "Actual forwards precede final strict flag/guard validation edits; evaluate/load mechanics unchanged.",
+    "Scientific preflight and evaluation deliberately not run pending independent CODE CLEAR."
+  ]
+}

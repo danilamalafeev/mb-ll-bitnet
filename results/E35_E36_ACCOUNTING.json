@@ -1,0 +1,205 @@
+{
+  "experiment": "E35_E36_length_wave",
+  "status": {
+    "E35": "ACCEPT",
+    "E36": "ACCEPT"
+  },
+  "frozen_inputs": {
+    "protocol": "results/E35_E36_PROTOCOL.md",
+    "protocol_sha256": "6468f0c02db3e003efe60f28f22670869b7435bf08d9be8dd84aa80ff5193d8a",
+    "manifest": "runs/e35_e36_preflight_v2/manifest.json",
+    "manifest_sha256": "4adf2dd1bb1036b94bcbf7a0246d9410596a737c9d20e5ff8865632fab5988aa",
+    "runner": "scripts/length_wave_e35_e36.py",
+    "runner_sha256": "383658faa81b82a068f17a223450453eb8c1d2e591a3add2c3d7139d9af35c0f"
+  },
+  "E35": {
+    "run": "runs/e35_e36_length_wave/e35",
+    "programs_per_precision": 36,
+    "cases_per_precision": 9216,
+    "forwards_total": 72,
+    "readouts_per_precision": 55296,
+    "native_steps_per_precision": 442368,
+    "science_wall_seconds": 235.5,
+    "final_correct_by_length": {
+      "float": {
+        "3": 2304,
+        "5": 2270,
+        "7": 1588,
+        "9": 660
+      },
+      "W4": {
+        "3": 2302,
+        "5": 2249,
+        "7": 1012,
+        "9": 258
+      }
+    },
+    "independent_replay": {
+      "cases": 18432,
+      "native_steps": 884736,
+      "updates": 0,
+      "exact_saved_outputs": true
+    }
+  },
+  "E36": {
+    "science_root": "runs/e35_e36_length_wave/science",
+    "schedule": {
+      "A_updates": 8000,
+      "B_updates": 8000,
+      "B_match_updates": 4572
+    },
+    "primary": {
+      "program_strings": 24,
+      "semantic_functions": 23,
+      "cases_per_checkpoint": 6144,
+      "cases_per_length": 1536,
+      "full_trace_errors": {
+        "float": {
+          "A": {
+            "L7": 435,
+            "L8": 1044,
+            "L9": 1099,
+            "L10": 1428,
+            "total": 4006
+          },
+          "B_match": {
+            "L7": 0,
+            "L8": 0,
+            "L9": 4,
+            "L10": 10,
+            "total": 14
+          },
+          "B": {
+            "L7": 0,
+            "L8": 0,
+            "L9": 4,
+            "L10": 8,
+            "total": 12
+          }
+        },
+        "W4": {
+          "A": {
+            "L7": 698,
+            "L8": 1226,
+            "L9": 1354,
+            "L10": 1507,
+            "total": 4785
+          },
+          "B_match": {
+            "L7": 0,
+            "L8": 0,
+            "L9": 5,
+            "L10": 25,
+            "total": 30
+          },
+          "B": {
+            "L7": 0,
+            "L8": 0,
+            "L9": 1,
+            "L10": 13,
+            "total": 14
+          }
+        }
+      }
+    },
+    "training_cost_per_precision": {
+      "A": {
+        "program_forwards": 8000,
+        "program_state_cases": 512000,
+        "readout_positions": 1024128,
+        "internal_state_substeps": 8193024
+      },
+      "B": {
+        "program_forwards": 8000,
+        "program_state_cases": 512000,
+        "readout_positions": 1791872,
+        "internal_state_substeps": 14334976
+      }
+    },
+    "evaluation_cost_per_precision": {
+      "A": {
+        "program_forwards": 217,
+        "program_state_cases": 54592,
+        "readout_positions": 337856,
+        "internal_state_substeps": 2702848
+      },
+      "B_match": {
+        "program_forwards": 235,
+        "program_state_cases": 58048,
+        "readout_positions": 355136,
+        "internal_state_substeps": 2841088
+      },
+      "B": {
+        "program_forwards": 235,
+        "program_state_cases": 58048,
+        "readout_positions": 355136,
+        "internal_state_substeps": 2841088
+      }
+    },
+    "timing_seconds": {
+      "float_real": 747.48,
+      "float_user": 594.52,
+      "float_sys": 103.14,
+      "W4_real": 900.88,
+      "W4_user": 703.27,
+      "W4_sys": 158.06
+    },
+    "checkpoint_sha256": {
+      "float_A": "1c78ee7e13b8c747171be6db4d56d5d9c1df5eaec26bcacf2aab3f7c24a18774",
+      "float_B_match": "375c722b9189a2b0e6dfb802de95c834d92bbecdd1d4172959f43a087d86c7c9",
+      "float_B": "59feda5e7d011c6c2a8ddb644a4dd9c74526a7af72cc657f0c927afe373dd3e9",
+      "W4_A": "3fcb61d6cf33fe7f8bb164f8660729a86cc39db960c42e8115d3bbfd0a730440",
+      "W4_B_match": "2e93df47ce047af28c000a239d6c765de96d3ec551d9f2161facc4aee204e64f",
+      "W4_B": "3ae5f6d4a60cb86bc88386c96c7a6683e306d0f6744e5072ff860dd5e63d2b45"
+    }
+  },
+  "qa": {
+    "updates": 14,
+    "updates_per_arm": 7,
+    "examples": 896,
+    "readout_positions": 1280,
+    "internal_state_substeps": 10240,
+    "eval_forwards": 2,
+    "loader_calls": 10,
+    "deserializations": 20,
+    "exact_continuation_identity": true
+  },
+  "execution": {
+    "intended_torch_threads_per_process": 2,
+    "actual_torch_threads_per_process": 4,
+    "actual_total_threads": 8,
+    "scientific_retries": 0,
+    "preparation_load_count": "unknown; no scientific forwards or updates attributed"
+  },
+  "limitations": [
+    "one h128 seed-0 continuation",
+    "length and composition change together",
+    "not a causal capacity or mechanism test",
+    "historical six-program L5 regression omitted"
+  ],
+  "independent_final_review": {
+    "status": "ACCEPT",
+    "path": "results/E35_E36_REVIEW.md",
+    "e36_replay": {
+      "checkpoints": 6,
+      "forwards": 1374,
+      "cases": 341376,
+      "readout_positions": 2096256,
+      "internal_steps": 16770048,
+      "training_updates": 0,
+      "seconds_by_precision": {
+        "float": 170.9,
+        "w4": 172.8
+      },
+      "cpu_threads_per_process": 4,
+      "loader_calls": 6,
+      "checkpoint_deserializations": 12,
+      "exact_prediction_agreement": true
+    },
+    "additional_optimizer_audit": {
+      "checkpoint_deserializations": 6,
+      "forwards": 0
+    },
+    "no_additional_work_required": true
+  }
+}

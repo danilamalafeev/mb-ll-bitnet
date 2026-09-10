@@ -1,0 +1,92 @@
+{
+  "scope": "root independent fresh QAT construction; zero forward/update; pairing against accepted float and frozen initials",
+  "seeds": [
+    {
+      "seed": 0,
+      "initial_digest": "17c8e1f019ee604731927860dd5e61a6c8a2493fc7f6ac9a28824fe091245431",
+      "float_initial_digest": "17c8e1f019ee604731927860dd5e61a6c8a2493fc7f6ac9a28824fe091245431",
+      "float_rng_digest": "1aedbffcb2eb06c8c134344ba11546a6ea98faf29d16caf58b881ed15eb43671",
+      "float_rng_sha256": "195ad7a2198d308ddaff206a438c511745f7ef886e979b80ad08d3d11e215f6f",
+      "bitlinear_locations": [
+        "reader.q_proj",
+        "reader.k_proj",
+        "reader.v_proj",
+        "reader.out_proj",
+        "blocks.0.up",
+        "blocks.0.down",
+        "blocks.1.up",
+        "blocks.1.down",
+        "blocks.2.up",
+        "blocks.2.down",
+        "blocks.3.up",
+        "blocks.3.down",
+        "x_head",
+        "y_head"
+      ],
+      "parameter_count": 151232,
+      "state_tensor_count": 32,
+      "saved_initial_path": "runs/e18_step_budget_repaired_preflight/steps8_initial_state.pt",
+      "saved_initial_sha256": "648d4f404a2e8105acbc430e2679287a1de46143f49f77057b888f51191484f6",
+      "tensor_equality": true,
+      "independent_storage": true
+    },
+    {
+      "seed": 1,
+      "initial_digest": "ee233ede47ac96d781f332450c86cb8fe19d2040c099807ac76b4a5b01bc066b",
+      "float_initial_digest": "ee233ede47ac96d781f332450c86cb8fe19d2040c099807ac76b4a5b01bc066b",
+      "float_rng_digest": "3632cf3965b7acb23e09877ac726497337320398e4d9dba7d10791554a2dca39",
+      "float_rng_sha256": "d9f589411a08b36af4c071693dbb00d72a581350c4460cf37167bb2e259ae84a",
+      "bitlinear_locations": [
+        "reader.q_proj",
+        "reader.k_proj",
+        "reader.v_proj",
+        "reader.out_proj",
+        "blocks.0.up",
+        "blocks.0.down",
+        "blocks.1.up",
+        "blocks.1.down",
+        "blocks.2.up",
+        "blocks.2.down",
+        "blocks.3.up",
+        "blocks.3.down",
+        "x_head",
+        "y_head"
+      ],
+      "parameter_count": 151232,
+      "state_tensor_count": 32,
+      "saved_initial_path": "runs/e22_replication_preflight/initial_seed1.pt",
+      "saved_initial_sha256": "5d0f2a80f46cb1192c3bd4b2343d6d6473223d0394061eab5580809a9939a921",
+      "tensor_equality": true,
+      "independent_storage": true
+    },
+    {
+      "seed": 2,
+      "initial_digest": "5e51c77b97bac16d5bdc857dbf970352c3d1882af736ba55ff158673c3a7cc3d",
+      "float_initial_digest": "5e51c77b97bac16d5bdc857dbf970352c3d1882af736ba55ff158673c3a7cc3d",
+      "float_rng_digest": "4e8977f7c09b2dd586f900aeac6d7b1aeb6b5e245d74f10e0066afcc29a242e0",
+      "float_rng_sha256": "3af4a21629bd9eb48ad2f95c99c5d494d760b0f6ba605372c6c70a187090e8ba",
+      "bitlinear_locations": [
+        "reader.q_proj",
+        "reader.k_proj",
+        "reader.v_proj",
+        "reader.out_proj",
+        "blocks.0.up",
+        "blocks.0.down",
+        "blocks.1.up",
+        "blocks.1.down",
+        "blocks.2.up",
+        "blocks.2.down",
+        "blocks.3.up",
+        "blocks.3.down",
+        "x_head",
+        "y_head"
+      ],
+      "parameter_count": 151232,
+      "state_tensor_count": 32,
+      "saved_initial_path": "runs/e22_replication_preflight/initial_seed2.pt",
+      "saved_initial_sha256": "b979e784af0bfc01eb3f02766de484bffdb6a95b0c75325911a04624054749b1",
+      "tensor_equality": true,
+      "independent_storage": true
+    }
+  ]
+}

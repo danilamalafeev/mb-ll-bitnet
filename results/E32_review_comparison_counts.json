@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "models": {
+    "float128_seed0": {
+      "E24_float64": "PASS",
+      "E27_W4_64": "PASS"
+    },
+    "float128_seed1": {
+      "E24_float64": "PASS",
+      "E27_W4_64": "PASS"
+    },
+    "float128_seed2": {
+      "E24_float64": "PASS",
+      "E27_W4_64": "PASS"
+    },
+    "w4128_seed0": {
+      "E24_float64": "PASS",
+      "E27_W4_64": "PASS"
+    },
+    "w4128_seed1": {
+      "E24_float64": "PASS",
+      "E27_W4_64": "PASS"
+    },
+    "w4128_seed2": {
+      "E24_float64": "PASS",
+      "E27_W4_64": "PASS"
+    }
+  },
+  "seen_E21_case_joins": 107520,
+  "seconds": 2.1277886670000044,
+  "forwards": 0,
+  "updates": 0
+}

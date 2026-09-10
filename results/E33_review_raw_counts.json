@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "models": {
+    "float128_seed0": {
+      "errors": {
+        "4": 5,
+        "5": 166
+      },
+      "gates": {
+        "seen_prerequisite": true,
+        "e21_primary_conjunction": true,
+        "l4_conjunction": true,
+        "l5_conjunction": false,
+        "combined_conjunction": false,
+        "l4_full_trace": true,
+        "l5_full_trace": false
+      },
+      "training_benefit": false
+    },
+    "w4128_seed0": {
+      "errors": {
+        "4": 7,
+        "5": 133
+      },
+      "gates": {
+        "seen_prerequisite": true,
+        "e21_primary_conjunction": true,
+        "l4_conjunction": true,
+        "l5_conjunction": false,
+        "combined_conjunction": false,
+        "l4_full_trace": true,
+        "l5_full_trace": false
+      },
+      "training_benefit": true
+    }
+  },
+  "evaluation_scope": [
+    166,
+    24064,
+    74624,
+    596992
+  ],
+  "seconds": 1.333381250000457,
+  "forwards": 0,
+  "updates": 0
+}

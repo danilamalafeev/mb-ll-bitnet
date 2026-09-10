@@ -1,0 +1,58 @@
+{
+  "models": {
+    "float": {
+      "cases": 9216,
+      "curves": {
+        "0": {
+          "cases": 2304,
+          "final_correct": 2304,
+          "trace_correct": 2304
+        },
+        "1": {
+          "cases": 2304,
+          "final_correct": 2270,
+          "trace_correct": 2270
+        },
+        "2": {
+          "cases": 2304,
+          "final_correct": 1588,
+          "trace_correct": 1484
+        },
+        "3": {
+          "cases": 2304,
+          "final_correct": 660,
+          "trace_correct": 368
+        }
+      },
+      "raw_targets_pairs": "PASS"
+    },
+    "w4": {
+      "cases": 9216,
+      "curves": {
+        "0": {
+          "cases": 2304,
+          "final_correct": 2302,
+          "trace_correct": 2302
+        },
+        "1": {
+          "cases": 2304,
+          "final_correct": 2249,
+          "trace_correct": 2247
+        },
+        "2": {
+          "cases": 2304,
+          "final_correct": 1012,
+          "trace_correct": 930
+        },
+        "3": {
+          "cases": 2304,
+          "final_correct": 258,
+          "trace_correct": 77
+        }
+      },
+      "raw_targets_pairs": "PASS"
+    }
+  },
+  "reviewer_model_forwards": 0,
+  "reviewer_updates": 0
+}

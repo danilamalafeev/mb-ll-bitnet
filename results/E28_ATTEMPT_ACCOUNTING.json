@@ -1,0 +1,202 @@
+{
+  "status": "complete_independent_accept_L4_pass_L5_fail",
+  "scientific_attempts": 1,
+  "scientific_technical_failures": 0,
+  "scientific_retries": 0,
+  "training_updates": 0,
+  "scientific_cost": {
+    "attempted": {
+      "program_forwards": 72,
+      "program_state_cases": 18432,
+      "readout_positions": 82944,
+      "internal_state_substeps": 663552
+    },
+    "completed": {
+      "program_forwards": 72,
+      "program_state_cases": 18432,
+      "readout_positions": 82944,
+      "internal_state_substeps": 663552
+    }
+  },
+  "scientific_cli_seconds": {
+    "real": 9.07,
+    "user": 6.72,
+    "sys": 1.22
+  },
+  "implementation_qa": {
+    "status": "PASS",
+    "tests": [
+      {
+        "command": "python -m pytest tests/test_length_transfer_e28.py -q --basetemp=runs/e28_qa_tests_attempt1",
+        "passed": 11
+      },
+      {
+        "command": "python -m pytest tests/test_length_transfer_e28.py -q --basetemp=runs/e28_qa_tests_attempt2",
+        "passed": 14
+      }
+    ],
+    "tiny_seen_qa": "runs/e28_qa_seen_attempt1/report.json",
+    "actual_model_cost": {
+      "attempted": {
+        "program_forwards": 6,
+        "program_state_cases": 12,
+        "readout_positions": 12,
+        "internal_state_substeps": 96
+      },
+      "completed": {
+        "program_forwards": 6,
+        "program_state_cases": 12,
+        "readout_positions": 12,
+        "internal_state_substeps": 96
+      }
+    },
+    "training_updates": 0,
+    "source_hashes": {
+      "scripts/length_transfer_e28.py": "bb31e595c5790cf11e6e5b1dc239dea21ae7c10fc42c01736ea3411f62ff500a",
+      "tests/test_length_transfer_e28.py": "c6347811900dd335bebc9d50583116c228ad61ed2e5cd1310c4683e834486f33"
+    },
+    "limitations": [
+      "Actual forwards precede final strict flag/guard validation edits; evaluate/load mechanics unchanged.",
+      "Scientific preflight and evaluation deliberately not run pending independent CODE CLEAR."
+    ]
+  },
+  "root_symbolic_selection_reporting": {
+    "model_forwards": 0,
+    "training_updates": 0
+  },
+  "review_qa_reference": "results/E28_LENGTH_CODE_REVIEW.md",
+  "independent_code_review_qa": {
+    "status": "CLEAR",
+    "hashes": {
+      "scripts/length_transfer_e28.py": "bb31e595c5790cf11e6e5b1dc239dea21ae7c10fc42c01736ea3411f62ff500a",
+      "tests/test_length_transfer_e28.py": "c6347811900dd335bebc9d50583116c228ad61ed2e5cd1310c4683e834486f33",
+      "results/E28_PROTECTED_HASHES.json": "8866a26e62a42da1aa08399335012b7e295d3ba0853b29bd1174f3790f1ac1dc",
+      "results/E28_LENGTH_PROTOCOL.md": "40e473db0ee0e87221f21430507986911f62d8d73fa6acb94d60cffcc3603c19",
+      "results/E28_SELECTION.json": "d4b94458e2dc7522265f601f99d68cd3fcdaa6b0cdef504207cc534bf385dcb0",
+      "results/E28_REFERENCE.json": "44a4365475764e93c5657d1ec8a498bdd35d0e1d9db76dc4a460d8918f329681"
+    },
+    "pytest": {
+      "passed": 14,
+      "seconds": 3.34,
+      "basetemp": "runs/e28_review_pytest_attempt1"
+    },
+    "real_seen_qa": {
+      "attempted": {
+        "program_forwards": 6,
+        "program_state_cases": 12,
+        "readout_positions": 12,
+        "internal_state_substeps": 96
+      },
+      "completed": {
+        "program_forwards": 6,
+        "program_state_cases": 12,
+        "readout_positions": 12,
+        "internal_state_substeps": 96
+      }
+    },
+    "real_seen_qa_path": "runs/e28_review_seen_attempt1",
+    "training_updates": 0,
+    "scientific_forwards": 0
+  },
+  "independent_final_review": {
+    "status": "ACCEPT",
+    "exact_complete_report_replay": true,
+    "protected_count": 295,
+    "source_count": 2,
+    "summary": {
+      "E27_W4": {
+        "0": {
+          "4": {
+            "final_errors": 9,
+            "trace_errors": 9,
+            "passed": true
+          },
+          "5": {
+            "final_errors": 68,
+            "trace_errors": 68,
+            "passed": false
+          }
+        },
+        "1": {
+          "4": {
+            "final_errors": 0,
+            "trace_errors": 0,
+            "passed": true
+          },
+          "5": {
+            "final_errors": 21,
+            "trace_errors": 22,
+            "passed": true
+          }
+        },
+        "2": {
+          "4": {
+            "final_errors": 7,
+            "trace_errors": 7,
+            "passed": true
+          },
+          "5": {
+            "final_errors": 62,
+            "trace_errors": 64,
+            "passed": false
+          }
+        }
+      },
+      "E24_float": {
+        "0": {
+          "4": {
+            "final_errors": 14,
+            "trace_errors": 15,
+            "passed": true
+          },
+          "5": {
+            "final_errors": 138,
+            "trace_errors": 141,
+            "passed": false
+          }
+        },
+        "1": {
+          "4": {
+            "final_errors": 0,
+            "trace_errors": 0,
+            "passed": true
+          },
+          "5": {
+            "final_errors": 6,
+            "trace_errors": 7,
+            "passed": true
+          }
+        },
+        "2": {
+          "4": {
+            "final_errors": 1,
+            "trace_errors": 1,
+            "passed": true
+          },
+          "5": {
+            "final_errors": 64,
+            "trace_errors": 64,
+            "passed": false
+          }
+        }
+      }
+    },
+    "independent_replay_cost": {
+      "attempted": {
+        "program_forwards": 72,
+        "program_state_cases": 18432,
+        "readout_positions": 82944,
+        "internal_state_substeps": 663552
+      },
+      "completed": {
+        "program_forwards": 72,
+        "program_state_cases": 18432,
+        "readout_positions": 82944,
+        "internal_state_substeps": 663552
+      }
+    },
+    "independent_replay_wall_seconds": 9.314711833,
+    "training_updates": 0
+  },
+  "scientific_exit_code": 0
+}
