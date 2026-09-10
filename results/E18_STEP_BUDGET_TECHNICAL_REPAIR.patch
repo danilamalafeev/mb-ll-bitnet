@@ -1,0 +1,10 @@
+--- a/scripts/step_budget_e18.py
++++ b/scripts/step_budget_e18.py
+@@ -33,6 +33,7 @@
+     NATIVE_STEPS,
+     OPTIMIZER_CONFIG,
+     PROJECT_ROOT,
++    PROGRESS_INTERVAL,
+     RUN_CONFIG,
+     UPDATES,
+     aggregate_metrics,

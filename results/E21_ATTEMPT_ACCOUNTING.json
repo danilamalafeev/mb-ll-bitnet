@@ -1,0 +1,22 @@
+{
+  "scientific": {
+    "training_updates": 0,
+    "forward_passes": 7,
+    "program_state_cases": 1792,
+    "instruction_readouts": 5120,
+    "internal_state_substeps": 40960,
+    "cli_wall_seconds": 17.28,
+    "failed_attempts": 0
+  },
+  "independent_result_review": {
+    "training_updates": 0,
+    "forward_passes": 7,
+    "program_state_cases": 1792,
+    "instruction_readouts": 5120,
+    "internal_state_substeps": 40960,
+    "wall_seconds_including_audit": 14.997
+  },
+  "qa_note": "Synthetic toy forward budgets are nominal, not learned-model recurrent work. Reviewer documents supplemental synthetic predicate checks and an untrained ADD control. Executor invocation accounting recorded separately if confirmed.",
+  "protected_files": 195,
+  "report_sha256": "121fa9094bfb616d8d267bf27b624de25fd63dd94800aaf7b6b3c57e32287cc7"
+}

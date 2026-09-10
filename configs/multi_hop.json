@@ -1,0 +1,5 @@
+{
+  "model": {"d_model": 256, "d_ff": 1024, "num_blocks": 4, "num_heads": 4, "num_objects": 16, "max_tokens": 256, "steps": 8, "quantized": true},
+  "data": {"num_objects": 16, "train_min_hops": 1, "train_max_hops": 4, "test_max_hops": 8, "val_size": 256, "test_size": 512, "split_seed": 1729, "table_mode": "cycle"},
+  "train": {"seed": 42, "updates": 2000, "batch_size": 32, "learning_rate": 0.001, "weight_decay": 0.01, "grad_clip": 1.0, "log_every": 25, "eval_every": 200, "eval_batch_size": 64, "cpu_threads": 4, "deterministic": true}
+}

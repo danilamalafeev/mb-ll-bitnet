@@ -1,0 +1,22 @@
+# E29 — descriptive analysis of saved E28 L5 traces
+
+2026-09-08. User approves saved-error analysis, not a new model experiment. Root owns design/interpretation/shared docs. One bounded Astra/low executor under existing escalation after repeated E27 Luna corrections, separate Astra/low reviewer. Zero training, model forward or checkpoint loading. Use standard library only. This analysis is exploratory after E28 outcomes are open; no p-values, causal claims or retrospective success thresholds.
+
+## Inputs and fixed scope
+
+Canonical runs/e28_length/report.json + manifest, root E28_SELECTION.json and E28_REFERENCE.json, accepted E28 review. Analyze ONLY six L5 programs, all256states, both model families and all3seeds =9216 saved case traces /46080 instruction observations. L4 read only if validating inherited schema, not a new analytic arm. Freeze input hashes before analysis and verify unchanged after. Preserve all old files. Write new scripts/trace_analysis_e29.py, tests/test_trace_analysis_e29.py if meaningful, results/E29_* and unique QA dirs. No reuse of failed QA directories.
+
+## Required outputs
+
+1. Independently recompute exact ADDmod16/XOR/SWAP targets, prefix/final/fulltrace correctness and first divergence/recovery, validate frozen state/program/target/stratum identity and saved counters. Fail closed on duplicates/missing/malformed fields or scope mismatch. Key case by exact program tuple and initial x,y; never compare by array position alone.
+2. Error overlap separately for final errors and any-trace errors: all15 pairwise comparisons of six model/seed cells, within-family three-seed intersection and union, allsix intersection/union, counts + Jaccard (null when emptyunion). Explicit paired same-seed W4/float counts. Seed1 contrast perfamily: errors common to seeds0/2 corrected byseed1, seed1unique errors, denominator of eachset; no cherry-picked seedclaim.
+3. First-divergence exposure table by instruction index and opcode. At-risk denominator = cases whose previous instruction readouts were ALL correct; numerator = first observed wrong readout at this index. Include zero-error rows and ordinary counts, not just errors. Raw opcode totals without exposure normalization are insufficient, especially most selectedL5 programs endSWAP.
+4. Predefined conditional descriptors at first-error risk: true state BEFORE operation, x==y (allops); either-register-zero (allops); ADDoverflow x+y>=16 and carry-present (x & y)!=0 for ADD only; XOR popcount(x^y)0..4 for XOR only. Report exposed/first-error counts and rates, stratified opcode+position; no broad feature sweep/ranking or significance claims. Repeated state exposures across programs/steps are not independent trials. Carry descriptors are arithmetic labels, not inferred model mechanisms.
+5. First-error components x-only/y-only/both by opcode/position. SWAP-specific: within at-risk SWAP cases, counts of erroneous output exactly equal to pre-operation pair (identity/no-op pattern), exact correctswap, otherwrong. Report same-input x==y cases separately since identity equals swap there; never label them wrong no-op. This diagnoses observed outputs, not a latent causal mechanism.
+6. Deterministic short example list: top10 cases by number of cells with FINAL error descending, ties lexicalprogram theninitialx,y. Save membership and first-error/trueprestate/expected/predicted information; include less than10 only if fewer errors. Examples illustrate distribution; do not use to invent a new threshold.
+
+All raw percase diagnostic records may be saved for reproducibility. Preserve E28 primary/secondary decisions unchanged. No hidden-state inference from correct decoded readouts. Length and composition content remain confounded, finite selectedfunctions/data assumptions unchanged.
+
+## Verification and stop
+
+Meaningful synthetic boundary tests for percasealignment, trace/recovery, at-risk numerator/denominator, semantic features and empty overlaps; no duplicated model-training tests. Independent reviewer recomputes saved predictions and key totals without trusting only production aggregation; exact rerun artifact match + input/protectedhashes. Root synthesizes strongest supported patterns, what remains unidentified and ONE conditional next experimental recommendation, not a new launch/protocol. Stop once required analysis and targeted independent ACCEPT/BLOCKED review complete and HANDOFF/RESEARCH_LOG/ROADMAP updated. No cloud, E19, automation or training extension.

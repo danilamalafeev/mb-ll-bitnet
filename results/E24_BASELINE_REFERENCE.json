@@ -1,0 +1,143 @@
+{
+  "scope": "root saved-report baseline counts only; no model calls",
+  "seeds": {
+    "0": {
+      "primary_programs": [
+        [
+          "ADD",
+          "XOR"
+        ],
+        [
+          "ADD",
+          "ADD",
+          "XOR"
+        ],
+        [
+          "ADD",
+          "XOR",
+          "ADD"
+        ],
+        [
+          "ADD",
+          "XOR",
+          "SWAP"
+        ],
+        [
+          "XOR",
+          "ADD",
+          "XOR"
+        ],
+        [
+          "SWAP",
+          "ADD",
+          "XOR"
+        ]
+      ],
+      "primary_counts": [
+        256,
+        253,
+        254,
+        255,
+        253,
+        251
+      ],
+      "primary_total": 1522,
+      "primary_errors": 14,
+      "primary_conjunction": true,
+      "seen_prerequisite": true,
+      "control_count": 252
+    },
+    "1": {
+      "primary_programs": [
+        [
+          "ADD",
+          "XOR"
+        ],
+        [
+          "ADD",
+          "ADD",
+          "XOR"
+        ],
+        [
+          "ADD",
+          "XOR",
+          "ADD"
+        ],
+        [
+          "ADD",
+          "XOR",
+          "SWAP"
+        ],
+        [
+          "XOR",
+          "ADD",
+          "XOR"
+        ],
+        [
+          "SWAP",
+          "ADD",
+          "XOR"
+        ]
+      ],
+      "primary_counts": [
+        255,
+        233,
+        243,
+        248,
+        244,
+        240
+      ],
+      "primary_total": 1463,
+      "primary_errors": 73,
+      "primary_conjunction": false,
+      "seen_prerequisite": false,
+      "control_count": 246
+    },
+    "2": {
+      "primary_programs": [
+        [
+          "ADD",
+          "XOR"
+        ],
+        [
+          "ADD",
+          "ADD",
+          "XOR"
+        ],
+        [
+          "ADD",
+          "XOR",
+          "ADD"
+        ],
+        [
+          "ADD",
+          "XOR",
+          "SWAP"
+        ],
+        [
+          "XOR",
+          "ADD",
+          "XOR"
+        ],
+        [
+          "SWAP",
+          "ADD",
+          "XOR"
+        ]
+      ],
+      "primary_counts": [
+        253,
+        248,
+        241,
+        250,
+        248,
+        246
+      ],
+      "primary_total": 1486,
+      "primary_errors": 50,
+      "primary_conjunction": false,
+      "seen_prerequisite": true,
+      "control_count": 248
+    }
+  }
+}

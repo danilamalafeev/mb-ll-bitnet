@@ -1,0 +1,52 @@
+{
+  "status": "complete_review_accept_numerical_fail",
+  "scientific_training": {
+    "examples": 1024000,
+    "internal_state_substeps": 16384000,
+    "updates": 16000
+  },
+  "scientific_evaluation": {
+    "internal_state_substeps": 375808,
+    "program_state_cases": 17920,
+    "readout_positions": 46976
+  },
+  "cli_wall_seconds": 204.52,
+  "per_seed_timing": {
+    "1": {
+      "training_seconds": 91.39066762499715,
+      "evaluation_seconds": 1.9405880420017638
+    },
+    "2": {
+      "training_seconds": 97.37511729200196,
+      "evaluation_seconds": 2.2384677500012913
+    }
+  },
+  "scientific_failed_attempts": 0,
+  "numerical_primary_replication": false,
+  "qa": {
+    "implementation": {
+      "updates": 63,
+      "examples": 63,
+      "train_substeps": 504,
+      "forward_passes": 42,
+      "evaluation_cases": 10752,
+      "evaluation_substeps": 135168
+    },
+    "independent_code_review": {
+      "updates": 21,
+      "examples": 21,
+      "train_substeps": 168,
+      "forward_passes": 14,
+      "evaluation_cases": 3584,
+      "readouts": 5632,
+      "evaluation_substeps": 45056
+    },
+    "independent_result_review": {
+      "updates": 0,
+      "forward_passes": 142,
+      "evaluation_cases": 17920,
+      "readouts": 46976,
+      "evaluation_substeps": 375808
+    }
+  }
+}

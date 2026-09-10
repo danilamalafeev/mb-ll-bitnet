@@ -1,0 +1,61 @@
+{
+  "owner": "root",
+  "scope": "Independent frozen comparator bytes before E26 implementation; no forwards or training",
+  "sha256": {
+    "results/E25_INITIAL_REFERENCE.json": "0a1f3538841c631a4e2f6fe17fcc9334dda4af40f6974b7eb773c5f4d3a18a2d",
+    "results/E25_PROTECTED_HASHES.json": "b3893df450c9e4b379b3322e718c0b64328828aa26f062443d0e336dc77f474c",
+    "results/E25_QAT_MATCH_REVIEW.md": "841de4b58085ac85712311baff3eb02343fa5cc75a21cfd74912182b3f82621d",
+    "results/E24_CONTINUATION_REVIEW.md": "8d403739ed6bd754ad89f045e0307a2af316f67241522fbedcddffebbe51ccfc",
+    "runs/e25_qat_match/report.json": "fee8f6f89c02ca0a71cd1ab8af9069420c901b3bb5320f10119c505bdc45da8f",
+    "runs/e25_qat_match/manifest.json": "139c949dfb2c0ff2459c048a3a8a45f632f2262d2dc597ca65dd672bfd5970b5",
+    "runs/e25_qat_match/seed0/u16000.pt": "9cb638bca4427dc0b1b14f4a8fc8fc00087d2e97ed215c87c8904e1e9606c7c0",
+    "runs/e25_qat_match/seed1/u16000.pt": "ffd823706709715d5f13e8057766ac599b42a674c615f5580f239a5bf0133572",
+    "runs/e25_qat_match/seed2/u16000.pt": "22283c930a30fdc8513edc5c70b526405ba7e155fed0b82f27cc8b08f54d1859",
+    "runs/e24_continuation/report.json": "c260959ebb7ff5eb2055c66fa5e1e9353d9f88f8534593f24a30e26e3b99d202",
+    "runs/e24_continuation/manifest.json": "d1f9c34d1678ad099a36e757f5c73c10750d9dd807b1a3601f693da826e7095d",
+    "runs/e24_continuation/seed0/u16000.pt": "bafe42f563737283053b32d6b3950f655fb2f05d91793a6539f7b737c81a4cc3",
+    "runs/e24_continuation/seed1/u16000.pt": "6191151d76302b490e9471fa11acc919141011b429898c3fe3e0dba509f8b867",
+    "runs/e24_continuation/seed2/u16000.pt": "621b51012b01f1a0b0166e8c74d957e3ed783c8d9112d793f145c909e1333f59"
+  },
+  "report_schema_inventory": {
+    "e25_qat_match": {
+      "top_level_fields": [
+        "combined_success_all_seeds",
+        "cost",
+        "cost_note",
+        "primary_success_all_seeds",
+        "qa",
+        "schema",
+        "seeds",
+        "status"
+      ],
+      "seeds": [
+        "0",
+        "1",
+        "2"
+      ]
+    },
+    "e24_continuation": {
+      "top_level_fields": [
+        "added_updates_per_seed",
+        "combined_success_all_seeds",
+        "cost",
+        "cumulative_final_update",
+        "paired_comparisons",
+        "parent_update",
+        "predicates",
+        "primary_success_all_seeds",
+        "qa",
+        "schema",
+        "secondary_training_benefit",
+        "seeds",
+        "status"
+      ],
+      "seeds": [
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  }
+}

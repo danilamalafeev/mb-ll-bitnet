@@ -1,0 +1,24 @@
+# E26 - remove activation quantization from matched ternary QAT
+
+Registered 2026-09-08 before implementation/scientific training. User approved R01 next test. Root owns design/shared documents, one executor and separate Astra/low reviewer. Existing E25/E24 remain immutable comparators. Implementation follows documented narrow Astra/low escalation after repeated serious E24 Luna runner corrections, rather than restarting the same runner risk cycle.
+
+## Hypothesis and sole intervention
+Does disabling INT8 activation fake quantization in the existing ternary recipe restore the registered task level? Build the exact E25 initialization then use the same ternary weight quantizer/STE/bias in all14 registered BitLinear locations, with the activation tensor passed through unquantized. FP32 persistent state/accumulation already exists and remains unchanged. No learned scale, new bitwidth, architecture, optimizer or schedule change. Parameter count151232. Weight-only is fake quantization, not packed inference.
+
+New from-scratch seeds0/1/2, 16000 updates each, native8, signed-bit input; all named FP32 masters/state and actual historical training-start RNG identical to E25. Seed0 actual E20 manual_seed0, seeds1/2 accepted E22 saved RNG per E25 reference. Same CPU4 deterministic FP32, batch64, AdamW/LR/clipping1 and E20 _update instruction-level loss. Same base2000 ordered batches repeated8, fixed data seed0. No intermediate scientific evaluation, model selection or extra updates. Compare frozen E25 Wternary/A8 AND E24 float finals. Freeze comparator reports/checkpoints, old protected sources, and protocol before any scientific update. Initial/stream mismatch stops before training.
+
+Budget exactly48000updates,3072000examples,49152000training substeps; final evaluation213forwards,26880cases,70464instruction readouts,563712substeps. Independent replay/QA counted separately. Save all3 finals, full optimizer/RNG, source/config/stream/initial/comparator hashes, exact predictions. Numerical failure must not skip later seeds. Exception/nonfinite stops with completed/attempted costs and preserves artifacts; no automatic retry.
+
+## Evaluation and prospective decision
+Same E25 evaluation: seen32 programs on train192/validation32; six E21 primary compositions plus separate equivalent control over all256states and existing strata, exact instruction traces. No longer programs, no new test data.
+
+Keep seen prerequisite: each primitive32/32 validation, each seen composition>=31/32. Primary each of6>=244/256. Combined is conjunction; restoration success requires ALL3 seeds combined true. Record all predicates even if seen fails; no gating away composition diagnostics. Report counts/rates/deltas and paired wins/losses/bothcorrect/bothwrong against EACH comparator on identical cases/targets/strata; control excluded. Also report instruction-trace metrics already present in accepted evaluator. No extra internal-step probes in this minimal experiment; those remain optional later diagnostics and are not success criteria.
+
+Restoration supports contribution of A8 under this ternary training recipe; failure shows removing A8 alone did not restore task level. Neither establishes full weights-by-activations interaction (floatweights/A8 arm absent), isolates forward error from optimization effects, or proves ternary impossibility. Opened E21/data seed0/threeinitializations/adaptive prior budget limit conclusions. No post-hoc noninferiority margin, no significance claim, no seed selection.
+
+## Write scope and verification
+Only new looped_bitnet/weight_only_e26.py, scripts/weight_only_e26.py, tests/test_weight_only_e26.py, results/E26_*, runs/e26_weight_only_preflight/, runs/e26_weight_only/ and separately named E26 QA artifacts. Preserve old source and runs byte-for-byte. Root shared-doc writer only.
+
+Use existing pure helpers safely; do not monkeypatch old module constants/scientific evaluator or overwrite old guards. Independent code CLEAR before canonical preflight/scientific run. Targeted checks:14weight-only layers; exact unchanged weight quantizer and identity activation path; FP32 masters/initial RNG/stream pairing; finite gradients; checkpoint strict reload and same next update incl optimizer/RNG; malformed mode/seed/update/provenance rejection; genuine tiny three-seed legal-seen QA runner, false numeric predicates continue all seeds; paired counts bothcomparators and threshold/control checks; overwrite refusal and protected hashes. Count actual failed QA and attempts honestly.
+
+Final independent replay all213forwards plus prediction-derived DSL/counts/strata/paired/predicates/provenance and protected integrity. Stop after allthree fixedfinals and review irrespective outcome. No variants, extra budget, cloud, E19, length tests or automation activation. Update HANDOFF/RESEARCH_LOG/ROADMAP with actual outcome and limitations.

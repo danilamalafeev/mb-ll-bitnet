@@ -1,0 +1,45 @@
+{
+  "scope": "Independent E26 code review only; no canonical preflight/scientific run",
+  "command": "python -m pytest -q tests/test_weight_only_e26.py --basetemp runs/e26_weight_only_review_qa_tests_v1",
+  "passed": 11,
+  "seconds": 14.59,
+  "failed_tests": 0,
+  "reports": [
+    "runs/e26_weight_only_review_qa_tests_v1/e260/qa/report.json",
+    "runs/e26_weight_only_review_qa_tests_v1/test_runtime_failure_suspends0/failure/report.json"
+  ],
+  "cost": {
+    "training_cost": {
+      "internal_state_substeps": 64,
+      "program_forwards": 4,
+      "program_state_cases": 8,
+      "readout_positions": 8
+    },
+    "evaluation_cost": {
+      "internal_state_substeps": 48,
+      "program_forwards": 3,
+      "program_state_cases": 6,
+      "readout_positions": 6
+    },
+    "reload_identity_cost": {
+      "internal_state_substeps": 96,
+      "program_forwards": 6,
+      "program_state_cases": 12,
+      "readout_positions": 12
+    }
+  },
+  "completed_training_updates": 4,
+  "completed_reload_identity_updates": 6,
+  "intentional_failure": "One evaluation exception before forward, one completed training update; preserved failure report. No unintended model failures/retries.",
+  "nonmodel_tool_failure": "Initial skeleton invocation omitted --path; corrected after help. No model work.",
+  "projection_qa": "One 3-to-2 layer forward/backward plus two F.linear references and quantizer calculations, excluded from recurrent-model counts.",
+  "reviewed_sha256": {
+    "looped_bitnet/weight_only_e26.py": "c9581bab5b647997fea1daeca86c0b5f21c580477dc21b8eab05621ce2bf7d51",
+    "scripts/weight_only_e26.py": "1f04cfcbd73d1dfbce8357c4cc5bdbb9f5564dd777efb067c5064e7695e0ee91",
+    "tests/test_weight_only_e26.py": "88e7017dff1f35368c1b5bcebc9ac99ce7154e4015be81f7970e4472b7213bbd",
+    "results/E26_WEIGHT_ONLY_PROTOCOL.md": "385518100c780c5301e8801531710473efbacf89c6c9f628257fc9bc54570fcc",
+    "results/E26_PROTECTED_HASHES.json": "ae1a4d30d5b402297942b57f334976cd61e33ea90db8f1043f48a79a700060d9",
+    "results/E26_COMPARATOR_REFERENCE.json": "11bf3a2c448b0611d0247b4439b1101176ba1f3aaf33657eeac52af9c7d1815b"
+  },
+  "accounting_note": "Deduplicated pytest current-directory symlink aliases by resolved path; no extra execution."
+}

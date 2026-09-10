@@ -1,0 +1,34 @@
+{
+  "scientific_training": {
+    "updates": 8000,
+    "examples": 512000,
+    "internal_state_updates": 8192000,
+    "failed_attempts": 0
+  },
+  "scientific_evaluation": {
+    "program_state_cases": 21504,
+    "readout_positions": 55104,
+    "internal_state_updates": 440832
+  },
+  "qa_before_training": {
+    "executor": {
+      "updates": 24,
+      "examples": 48,
+      "internal_state_updates": 768
+    },
+    "independent_code_review": {
+      "updates": 14,
+      "examples": 26,
+      "internal_state_updates": 416
+    }
+  },
+  "cli_wall_seconds": 115.82,
+  "notes": "Includes prefixreproduction. Independent resultreview replay additional, reported byreviewer.",
+  "independent_result_review": {
+    "milestone_replays": 3,
+    "program_state_cases": 21504,
+    "readout_positions": 55104,
+    "internal_state_updates": 440832,
+    "training_updates": 0
+  }
+}

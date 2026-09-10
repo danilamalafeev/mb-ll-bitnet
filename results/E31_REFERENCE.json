@@ -1,0 +1,23 @@
+{
+  "owner": "root",
+  "scope": "Own decoded fourth readout fresh fifth operation, frozen before forwards",
+  "sha256": {
+    "results/E31_DECODED_RESET_PROTOCOL.md": "017ce4a7f67e0bf3ba9680aa190263a2ef74dc49e4a48a0fb189056d1850d348",
+    "results/E30_REFERENCE.json": "4c5c8a2155048de3411ed44bcdc285f0f66bd4834e8e9fc1f622b074ee46a6eb",
+    "results/E30_PROTECTED_HASHES.json": "cad069a858320f5a99d8537268d617c6be9ed33e32182f5dc37ca620b14aaf26",
+    "results/E30_ORACLE_RESET.md": "7d0a2fb9e9dc5a1854e70c400134fbd4066ece9110e95f59d48ce219bc5b53b7",
+    "results/E30_ORACLE_RESET_REVIEW.md": "cfdf4b8f38b9591bd4694890ec45cc69cbd8dbc37d20604f8e2dbb4648af7ee7",
+    "results/E30_ORACLE_RESET_CODE_REVIEW.md": "3a8dd0f1000b9d6b82efd7038abcda80ffe984de73ff2b89e8efeb31f225bc4d",
+    "results/E30_ATTEMPT_ACCOUNTING.json": "fccaa6e00ac689ce96470797feb30f65bad625853f446bf6c9bb97e6a9ad80e0",
+    "scripts/oracle_reset_e30.py": "ac446828d21575370c32ca0d381ee09ceca72d8cfd572dab74cc2f47c48e1c70",
+    "tests/test_oracle_reset_e30.py": "f6212ca2c8fcc77ce961f1728156e8368dd6ada22b20bbc3967aceea288b9c9d",
+    "runs/e30_oracle/E24_float_seed0.json": "d4b7d7f1a98d7437d60307c3849f53467c5b1183d5db018fa9c8e1af020898c6",
+    "runs/e30_oracle/report.json": "6faf925fd532fc2bfa716728df798083a57a7beeac2cf06ca7c24278bad735af",
+    "runs/e30_oracle/E24_float_seed1.json": "776dcb42cb2402996b3b21b96630b56c6d12411ecafedd875e3089728999add8",
+    "runs/e30_oracle/E27_W4_seed0.json": "6eb2624d13c3c879409f2ff69b886e9185093c6b9b8c16e76efb4355138b6d76",
+    "runs/e30_oracle/E27_W4_seed1.json": "5187c81730e0440163ff18973e5438eebd7a5742c14b342c4ba6c40f1066eda4",
+    "runs/e30_oracle/E27_W4_seed2.json": "db60885823caa41a6217884d9fefdedb4a44541c0e96b3340f26cbde998ecdc6",
+    "runs/e30_oracle/manifest.json": "36dda9d542dbfc2ac11eb675e7dbfc4b667940d35a1a5dfb022943396a6a4cf3",
+    "runs/e30_oracle/E24_float_seed2.json": "e7d4b9320a5c7937d712a1ba3c539754f7cc8d1690307614939eaef120ecc28a"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "scope": "root independent read-only parent inventory; zero model forwards/updates",
+  "parents": {
+    "0": {
+      "path": "runs/e20_longer_native8/u8000.pt",
+      "sha256": "4507dd19d95b8a90f6ee1b487abc6493a26ba19700b784eaa2949dbfaa75c85d",
+      "schema": "e20_longer_native8_v1",
+      "seed": 0,
+      "update": 8000,
+      "model_digest": "4dbb7581624e3ae2587ee746656f8216be00cb44eb38eacf99f2ea71c58d15a8",
+      "optimizer_digest": "5ea63b1e6ce39ce0ad8848dff053f7d5acc328c591ae5e6a7a30df09ff78156c",
+      "rng_digest": "b9f8bb82489b716d51108e0c4ed2f05604865a4a83b652f5639f3d836427dcb3",
+      "tensor_count": 32,
+      "parameter_count": 151232,
+      "optimizer_states": 32,
+      "optimizer_step_values": [
+        8000
+      ],
+      "rng_sha256": "1ccf17250133dec5e96478acd63e13d728d0dbbabb30389415a302c6f872f81f",
+      "training_mode": true
+    },
+    "1": {
+      "path": "runs/e22_replication/seed1/u8000.pt",
+      "sha256": "c6746e633dc27d04bd41c8b7af2039002e4da2bf349e1fe6ae33e492716f06ac",
+      "schema": "e22_replication_v1",
+      "seed": 1,
+      "update": 8000,
+      "model_digest": "0a60aae1c6dbfc53d9bfe5584d208701427f27ac0e170b45c2b88eca56862640",
+      "optimizer_digest": "1d8e389318853ef72bf9c93094c87efcb766d04fcd80d5cdf9f3210363f7a7a1",
+      "rng_digest": "3632cf3965b7acb23e09877ac726497337320398e4d9dba7d10791554a2dca39",
+      "tensor_count": 32,
+      "parameter_count": 151232,
+      "optimizer_states": 32,
+      "optimizer_step_values": [
+        8000
+      ],
+      "rng_sha256": "d9f589411a08b36af4c071693dbb00d72a581350c4460cf37167bb2e259ae84a",
+      "training_mode": true
+    },
+    "2": {
+      "path": "runs/e22_replication/seed2/u8000.pt",
+      "sha256": "f8cfe5d89939b0a6722a47460496fd8b49d00178db500aa5a9133e79192b6d29",
+      "schema": "e22_replication_v1",
+      "seed": 2,
+      "update": 8000,
+      "model_digest": "a3c1abfa0560b7a73ac6aaa8b5a52b77e0b3b84d109925f08a1208986fee9b55",
+      "optimizer_digest": "656472c5526ab288f78dc81af4371b36157d269c662e9deec8dd2ec3c64e19dc",
+      "rng_digest": "4e8977f7c09b2dd586f900aeac6d7b1aeb6b5e245d74f10e0066afcc29a242e0",
+      "tensor_count": 32,
+      "parameter_count": 151232,
+      "optimizer_states": 32,
+      "optimizer_step_values": [
+        8000
+      ],
+      "rng_sha256": "3af4a21629bd9eb48ad2f95c99c5d494d760b0f6ba605372c6c70a187090e8ba",
+      "training_mode": true
+    }
+  }
+}

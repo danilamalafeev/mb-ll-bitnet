@@ -1,0 +1,24 @@
+{
+  "owner": "root",
+  "scope": "Frozen oracle diagnostic reference before new forwards",
+  "sha256": {
+    "results/E30_ORACLE_RESET_PROTOCOL.md": "fcbaf58b26777923454a7e2e30d39823afca6b627a83ddb865fa6d4f95768be1",
+    "runs/e28_length/report.json": "1cafe94585e6f311f491796d89dc73e2cb8991fa527a49a5b1eee4b12dae7ce4",
+    "runs/e28_length/manifest.json": "348b18b637f35ee677fe6fdeea8bc7ec37f560c0224145b46432d6d7cd250cc2",
+    "results/E28_SELECTION.json": "d4b94458e2dc7522265f601f99d68cd3fcdaa6b0cdef504207cc534bf385dcb0",
+    "results/E28_LENGTH_REVIEW.md": "5b1c7ed9c2eacabb88b99a84f4a600754ef3c672482472d8d409674b7e7464c4",
+    "results/E28_PROTECTED_HASHES.json": "8866a26e62a42da1aa08399335012b7e295d3ba0853b29bd1174f3790f1ac1dc",
+    "results/E29_TRACE_ANALYSIS.json": "c7922284494b658d03c9aa317b685f4c52ad8600a3b921bebb59560faa0156d3",
+    "results/E29_TRACE_ANALYSIS_REVIEW.md": "b09975aac9e34d419c9b7d54bccfd2e76568a8fb442315f0a3d759cb554c9714",
+    "runs/e27_w4/manifest.json": "de481458592a0b0f5cba08f50263153c2189bdaca4c7832d53739b2e2675570d",
+    "runs/e27_w4/report.json": "85807e2400389cec2df24d189915a40a96354db811fd62717ebdfdde436c723b",
+    "runs/e27_w4/seed0/u16000.pt": "cd90d6ffa614f2dd98c21e6d61ec1498cd514f9e084fb5a3f93aba60c9cd3815",
+    "runs/e27_w4/seed1/u16000.pt": "dddfa992c97019902083bb54ef48e86c43154d5b33417eed964e5fdd0a35e681",
+    "runs/e27_w4/seed2/u16000.pt": "2d772c0e9f8b78de02776a64422edf236f679c04d4c34b0f7ed99189ec9c49fe",
+    "runs/e24_continuation/manifest.json": "d1f9c34d1678ad099a36e757f5c73c10750d9dd807b1a3601f693da826e7095d",
+    "runs/e24_continuation/report.json": "c260959ebb7ff5eb2055c66fa5e1e9353d9f88f8534593f24a30e26e3b99d202",
+    "runs/e24_continuation/seed0/u16000.pt": "bafe42f563737283053b32d6b3950f655fb2f05d91793a6539f7b737c81a4cc3",
+    "runs/e24_continuation/seed1/u16000.pt": "6191151d76302b490e9471fa11acc919141011b429898c3fe3e0dba509f8b867",
+    "runs/e24_continuation/seed2/u16000.pt": "621b51012b01f1a0b0166e8c74d957e3ed783c8d9112d793f145c909e1333f59"
+  }
+}

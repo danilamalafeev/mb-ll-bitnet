@@ -1,0 +1,107 @@
+{
+  "status": "complete_independent_accept",
+  "scientific_updates": 24000,
+  "scientific_forwards": 213,
+  "pre_escalation": {
+    "reported_command": ".venv/bin/pytest -q tests/test_continuation_e24.py tests/test_longer_native8_e20.py tests/test_replication_e22.py",
+    "passed_tests": 11,
+    "e24_known": {
+      "successful_updates": 22,
+      "examples": 22,
+      "training_substeps": 176,
+      "injected_failed_update_attempts": 2,
+      "actual_evaluation_forwards": 0,
+      "note": "Fake evaluator originally claimed35 forwards; those claims are excluded."
+    },
+    "inherited_reconstructed": {
+      "basis": "One passed invocation and unchanged E20/E22 tests, independently counted statically without rerun",
+      "successful_updates": 33,
+      "examples": 45,
+      "training_substeps": 552,
+      "evaluation_forwards": 16,
+      "evaluation_cases": 3588,
+      "evaluation_readouts": 5640,
+      "evaluation_substeps": 45120
+    },
+    "total_reconstructed": {
+      "successful_updates": 55,
+      "examples": 67,
+      "training_substeps": 728,
+      "evaluation_forwards": 16,
+      "evaluation_cases": 3588,
+      "evaluation_substeps": 45120
+    }
+  },
+  "repair_qa": [
+    {
+      "owner": "e24_finish Astra/low",
+      "successful_updates": 109,
+      "examples": 109,
+      "training_substeps": 872,
+      "evaluation_forwards": 25,
+      "evaluation_cases": 25,
+      "evaluation_readouts": 25,
+      "evaluation_substeps": 200,
+      "intentional_technical_failures": 5,
+      "scope": "3 initial focused passes, final5tests and only2 affectedreviewtests; no scientific execution",
+      "audit_paths": [
+        "/private/tmp/e24-astra-final-qa",
+        "/private/tmp/e24-astra-review-qa"
+      ]
+    }
+  ],
+  "independent_code_review_qa": {
+    "successful_updates": 31,
+    "examples": 31,
+    "training_substeps": 248,
+    "evaluation_forwards": 7,
+    "evaluation_cases": 7,
+    "evaluation_readouts": 7,
+    "evaluation_substeps": 56,
+    "injected_failed_update_attempts": 1,
+    "post_evaluation_injected_failures": 1
+  },
+  "scientific_cost": {
+    "actual_added": {
+      "examples": 1536000,
+      "internal_state_substeps": 24576000,
+      "updates": 24000
+    },
+    "actual_evaluation": {
+      "internal_state_substeps": 563712,
+      "program_forwards": 213,
+      "program_state_cases": 26880,
+      "readout_positions": 70464
+    },
+    "evaluation_budget": {
+      "internal_state_substeps": 563712,
+      "program_forwards": 213,
+      "program_state_cases": 26880,
+      "readout_positions": 70464
+    }
+  },
+  "scientific_failed_attempts": 0,
+  "scientific_retries": 0,
+  "cli_wall_seconds": 294.1,
+  "per_seed_times": {
+    "0": {
+      "training_seconds": 89.85477583399916,
+      "evaluation_seconds": 2.0100089170009596
+    },
+    "1": {
+      "training_seconds": 91.10877020799671,
+      "evaluation_seconds": 2.0512542500000563
+    },
+    "2": {
+      "training_seconds": 97.21912466600043,
+      "evaluation_seconds": 1.9682590829979745
+    }
+  },
+  "independent_result_review": {
+    "successful_updates": 0,
+    "evaluation_forwards": 213,
+    "evaluation_cases": 26880,
+    "evaluation_readouts": 70464,
+    "evaluation_substeps": 563712
+  }
+}

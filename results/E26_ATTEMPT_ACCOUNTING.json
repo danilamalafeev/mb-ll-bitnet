@@ -1,0 +1,229 @@
+{
+  "status": "complete_independent_accept_valid_restoration_failure",
+  "scientific_attempts": 1,
+  "scientific_technical_failures": 0,
+  "scientific_retries": 0,
+  "scientific_exit_code": 0,
+  "scientific_cli_seconds": {
+    "real": 751.74,
+    "user": 662.65,
+    "sys": 137.18
+  },
+  "scientific_cost": {
+    "attempted_updates": 48000,
+    "completed_reload_identity_updates": 0,
+    "completed_updates": 48000,
+    "evaluation_cost": {
+      "internal_state_substeps": 563712,
+      "program_forwards": 213,
+      "program_state_cases": 26880,
+      "readout_positions": 70464
+    },
+    "evaluation_cost_attempted": {
+      "internal_state_substeps": 563712,
+      "program_forwards": 213,
+      "program_state_cases": 26880,
+      "readout_positions": 70464
+    },
+    "reload_identity_cost": {
+      "internal_state_substeps": 0,
+      "program_forwards": 0,
+      "program_state_cases": 0,
+      "readout_positions": 0
+    },
+    "reload_identity_cost_attempted": {
+      "internal_state_substeps": 0,
+      "program_forwards": 0,
+      "program_state_cases": 0,
+      "readout_positions": 0
+    },
+    "training_cost": {
+      "internal_state_substeps": 49152000,
+      "program_forwards": 48000,
+      "program_state_cases": 3072000,
+      "readout_positions": 6144000
+    },
+    "training_cost_attempted": {
+      "internal_state_substeps": 49152000,
+      "program_forwards": 48000,
+      "program_state_cases": 3072000,
+      "readout_positions": 6144000
+    }
+  },
+  "implementation_qa": {
+    "scope": "Implementation QA only. Canonical preflight/scientific training not executed. Independent reviewer costs excluded.",
+    "test_invocations": [
+      {
+        "command": "python -m pytest -q tests/test_weight_only_e26.py",
+        "passed": 9,
+        "seconds": 6.85,
+        "failed_tests": 0,
+        "artifact_retention": "pytest temporary directory; first test suite version",
+        "model_workload": {
+          "training_cost": {
+            "internal_state_substeps": 64,
+            "program_forwards": 4,
+            "program_state_cases": 8,
+            "readout_positions": 8
+          },
+          "evaluation_cost": {
+            "internal_state_substeps": 48,
+            "program_forwards": 3,
+            "program_state_cases": 6,
+            "readout_positions": 6
+          },
+          "reload_identity_cost": {
+            "internal_state_substeps": 96,
+            "program_forwards": 6,
+            "program_state_cases": 12,
+            "readout_positions": 12
+          }
+        }
+      },
+      {
+        "command": "python -m pytest -q tests/test_weight_only_e26.py --basetemp runs/e26_weight_only_qa_tests_v1",
+        "passed": 11,
+        "seconds": 13.88,
+        "failed_tests": 0,
+        "report_paths": [
+          "runs/e26_weight_only_qa_tests_v1/e260/qa/report.json",
+          "runs/e26_weight_only_qa_tests_v1/test_runtime_failure_suspends0/failure/report.json"
+        ],
+        "model_workload": {
+          "training_cost": {
+            "internal_state_substeps": 64,
+            "program_forwards": 4,
+            "program_state_cases": 8,
+            "readout_positions": 8
+          },
+          "evaluation_cost": {
+            "internal_state_substeps": 48,
+            "program_forwards": 3,
+            "program_state_cases": 6,
+            "readout_positions": 6
+          },
+          "reload_identity_cost": {
+            "internal_state_substeps": 96,
+            "program_forwards": 6,
+            "program_state_cases": 12,
+            "readout_positions": 12
+          }
+        }
+      }
+    ],
+    "total_completed_training_updates": 8,
+    "total_reload_identity_updates": 12,
+    "total_model_forwards": 26,
+    "total_model_cases": 52,
+    "total_model_readouts": 52,
+    "total_model_substeps": 416,
+    "projection_only_qa": "Each invocation additionally executes one 3-to-2 WeightOnlyBitLinear forward/backward, two direct F.linear reference calculations, and quantizer calculations; excluded from recurrent-model costs.",
+    "intentional_failure_tests": 2,
+    "intentional_failure_detail": "One evaluation exception before forward per invocation; one seed trained and saved, later seeds not started. No unintended failures, retries, or scientific attempts."
+  },
+  "independent_code_review_qa": {
+    "scope": "Independent E26 code review only; no canonical preflight/scientific run",
+    "command": "python -m pytest -q tests/test_weight_only_e26.py --basetemp runs/e26_weight_only_review_qa_tests_v1",
+    "passed": 11,
+    "seconds": 14.59,
+    "failed_tests": 0,
+    "reports": [
+      "runs/e26_weight_only_review_qa_tests_v1/e260/qa/report.json",
+      "runs/e26_weight_only_review_qa_tests_v1/test_runtime_failure_suspends0/failure/report.json"
+    ],
+    "cost": {
+      "training_cost": {
+        "internal_state_substeps": 64,
+        "program_forwards": 4,
+        "program_state_cases": 8,
+        "readout_positions": 8
+      },
+      "evaluation_cost": {
+        "internal_state_substeps": 48,
+        "program_forwards": 3,
+        "program_state_cases": 6,
+        "readout_positions": 6
+      },
+      "reload_identity_cost": {
+        "internal_state_substeps": 96,
+        "program_forwards": 6,
+        "program_state_cases": 12,
+        "readout_positions": 12
+      }
+    },
+    "completed_training_updates": 4,
+    "completed_reload_identity_updates": 6,
+    "intentional_failure": "One evaluation exception before forward, one completed training update; preserved failure report. No unintended model failures/retries.",
+    "nonmodel_tool_failure": "Initial skeleton invocation omitted --path; corrected after help. No model work.",
+    "projection_qa": "One 3-to-2 layer forward/backward plus two F.linear references and quantizer calculations, excluded from recurrent-model counts.",
+    "reviewed_sha256": {
+      "looped_bitnet/weight_only_e26.py": "c9581bab5b647997fea1daeca86c0b5f21c580477dc21b8eab05621ce2bf7d51",
+      "scripts/weight_only_e26.py": "1f04cfcbd73d1dfbce8357c4cc5bdbb9f5564dd777efb067c5064e7695e0ee91",
+      "tests/test_weight_only_e26.py": "88e7017dff1f35368c1b5bcebc9ac99ce7154e4015be81f7970e4472b7213bbd",
+      "results/E26_WEIGHT_ONLY_PROTOCOL.md": "385518100c780c5301e8801531710473efbacf89c6c9f628257fc9bc54570fcc",
+      "results/E26_PROTECTED_HASHES.json": "ae1a4d30d5b402297942b57f334976cd61e33ea90db8f1043f48a79a700060d9",
+      "results/E26_COMPARATOR_REFERENCE.json": "11bf3a2c448b0611d0247b4439b1101176ba1f3aaf33657eeac52af9c7d1815b"
+    },
+    "accounting_note": "Deduplicated pytest current-directory symlink aliases by resolved path; no extra execution."
+  },
+  "root_reference_and_reporting": {
+    "training_updates": 0,
+    "model_forwards": 0,
+    "scope": "Frozen comparator hashes and saved-report reads only; no independent model evaluations by root outside sole scientific CLI."
+  },
+  "limitations": "Mixed seed effects; restoration all3 failed. No technical retry. Fake-QAT, fixed data seed/opened E21; no packed-kernel speed claim.",
+  "independent_final_review": {
+    "status": "ACCEPT",
+    "training_updates": 0,
+    "seeds": {
+      "0": {
+        "complete_evaluation_equal": true,
+        "strict_reload": true,
+        "state_optimizer_rng_preserved": true,
+        "cost": {
+          "program_forwards": 71,
+          "program_state_cases": 8960,
+          "readout_positions": 23488,
+          "internal_state_substeps": 187904
+        },
+        "checkpoint_sha256": "3922bf5482908cda5590e4ff995f240bf2f2aa0d40531a6dc7aecece1d71c505"
+      },
+      "1": {
+        "complete_evaluation_equal": true,
+        "strict_reload": true,
+        "state_optimizer_rng_preserved": true,
+        "cost": {
+          "program_forwards": 71,
+          "program_state_cases": 8960,
+          "readout_positions": 23488,
+          "internal_state_substeps": 187904
+        },
+        "checkpoint_sha256": "69da97c01fee9ce5b8e367b1b82b45875b7ada312c4bcac4592f694d49e6aa6d"
+      },
+      "2": {
+        "complete_evaluation_equal": true,
+        "strict_reload": true,
+        "state_optimizer_rng_preserved": true,
+        "cost": {
+          "program_forwards": 71,
+          "program_state_cases": 8960,
+          "readout_positions": 23488,
+          "internal_state_substeps": 187904
+        },
+        "checkpoint_sha256": "fc24e80ba04b1d3621f88afa557f099669815758d8fecf37a751f187edf7dc95"
+      }
+    },
+    "cost": {
+      "program_forwards": 213,
+      "program_state_cases": 26880,
+      "readout_positions": 70464,
+      "internal_state_substeps": 563712
+    },
+    "protected_count": 261,
+    "canonical_report_sha256": "28448f44d69ba46fa7045a8ba97022f33e991c824e1b6bffbcb299dceee414eb",
+    "manifest_sha256": "1178370699c769ee1cce01ad5bcb2b5bd5fad4aa42c85641234ca499e716e940",
+    "seconds": 8.170169375000114
+  },
+  "protected_files_verified": 261,
+  "independent_comparator_hashes_verified": 14
+}

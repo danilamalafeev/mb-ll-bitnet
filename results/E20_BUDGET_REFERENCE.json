@@ -1,0 +1,24 @@
+{
+  "training": {
+    "updates": 8000,
+    "examples": 512000,
+    "instruction_cases": 1024000,
+    "native8_substeps": 8192000
+  },
+  "evaluation": {
+    "milestones": [
+      2000,
+      4000,
+      8000
+    ],
+    "program_state_cases": 21504,
+    "readout_positions": 55104,
+    "native8_substeps": 440832
+  },
+  "sha256": {
+    "runs/e18_step_budget_repaired/steps8_seed0/final_u2000.pt": "18d4bb093566fb7395c8e6d5cd988dbb60bacf436c04a63ea4d6af81d5b9c8ef",
+    "runs/e18_step_budget_repaired/steps4_seed0/final_u2000.pt": "df366875274047a24eb384e22852df6c7f06ec85f3a45315930314b710b6d057",
+    "runs/e18_step_budget_repaired/report.json": "cdb95bc637fa316b96b5cf0893413c9b1d617e1fed3733c16179b5d0f11519e0",
+    "results/E20_LONGER_NATIVE8_PROTOCOL.md": "a54cbae5b106c3c1b1449426e892a994bd35e6fe2775d4941f7918ccad32bea9"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "purpose": "Independent fixed E17 encoder reference; no model training/inference",
+  "signed_lsb_codes": [
+    [
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      1,
+      -1,
+      -1
+    ],
+    [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      1,
+      -1
+    ],
+    [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    [
+      -1,
+      1,
+      1,
+      -1
+    ],
+    [
+      1,
+      1,
+      1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      1
+    ],
+    [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    [
+      -1,
+      1,
+      -1,
+      1
+    ],
+    [
+      1,
+      1,
+      -1,
+      1
+    ],
+    [
+      -1,
+      -1,
+      1,
+      1
+    ],
+    [
+      1,
+      -1,
+      1,
+      1
+    ],
+    [
+      -1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "projection_initial_float32_raw_bytes_sha256": {
+    "x": "ef34bde94b39eb81e08456b03f27f839a76a16b3de32a028b2d4db4d95f659f1",
+    "y": "785cbc8641cc6ec906dab6ceb7a511b7b0592b7df85cdb94c80d8d5a78d41180"
+  },
+  "signed_code_squared_norm": 4,
+  "expected_learned_parameters": 152768,
+  "expected_bits_parameters": 151232
+}

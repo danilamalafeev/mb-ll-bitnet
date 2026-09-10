@@ -1,0 +1,109 @@
+{
+  "status": "complete_independent_ACCEPT",
+  "training_updates": 0,
+  "science": {
+    "attempts": 1,
+    "technical_failures": 0,
+    "retries": 0,
+    "exit_code": 0,
+    "out": "runs/e31_decoded",
+    "elapsed_seconds": 8.05,
+    "user_seconds": 5.42,
+    "system_seconds": 1.19,
+    "attempted": {
+      "program_forwards": 36,
+      "program_state_cases": 9216,
+      "readout_positions": 9216,
+      "internal_state_substeps": 73728
+    },
+    "completed": {
+      "program_forwards": 36,
+      "program_state_cases": 9216,
+      "readout_positions": 9216,
+      "internal_state_substeps": 73728
+    }
+  },
+  "preflight": {
+    "out": "runs/e31_decoded_preflight",
+    "exit_code": 0,
+    "elapsed_seconds": 2.65,
+    "user_seconds": 1.61,
+    "system_seconds": 0.42
+  },
+  "executor": {
+    "final_test_count": 17,
+    "final_pytest_seconds": 8.61,
+    "qa_path": "runs/e31_qa_seen_attempt1",
+    "qa_elapsed_seconds": 4.59,
+    "qa_source_diff": "before per-cell predicate and mismatch-retention reporting fixes; final tests and reviewer QA use final source",
+    "qa_cost": {
+      "attempted": {
+        "program_forwards": 6,
+        "program_state_cases": 12,
+        "readout_positions": 12,
+        "internal_state_substeps": 96
+      },
+      "completed": {
+        "program_forwards": 6,
+        "program_state_cases": 12,
+        "readout_positions": 12,
+        "internal_state_substeps": 96
+      }
+    },
+    "qa_training_updates": 0
+  },
+  "reviewer": {
+    "test_count": 35,
+    "pytest_seconds": 14.63,
+    "test_shell_seconds": 15.307,
+    "qa_path": "runs/e31_review_qa_seen_1",
+    "qa_elapsed_seconds": 6.846,
+    "qa_cost": {
+      "attempted": {
+        "program_forwards": 6,
+        "program_state_cases": 12,
+        "readout_positions": 12,
+        "internal_state_substeps": 96
+      },
+      "completed": {
+        "program_forwards": 6,
+        "program_state_cases": 12,
+        "readout_positions": 12,
+        "internal_state_substeps": 96
+      }
+    },
+    "qa_training_updates": 0
+  },
+  "note": "QA timing partly concurrent. Science suffix work only; saved prefixes reused. No scientific retries. Pure test failures use synthetic models, not scientific checkpoint forwards.",
+  "independent_replay": {
+    "out": "runs/e31_review_final",
+    "exit_code": 0,
+    "elapsed_seconds": 7.871,
+    "user_seconds": 5.52,
+    "system_seconds": 1.29,
+    "training_updates": 0,
+    "technical_failures": 0,
+    "retries": 0,
+    "attempted": {
+      "program_forwards": 36,
+      "program_state_cases": 9216,
+      "readout_positions": 9216,
+      "internal_state_substeps": 73728
+    },
+    "completed": {
+      "program_forwards": 36,
+      "program_state_cases": 9216,
+      "readout_positions": 9216,
+      "internal_state_substeps": 73728
+    }
+  },
+  "raw_recount": {
+    "source": "results/E31_review_raw.py",
+    "output": "results/E31_review_raw_counts.json",
+    "elapsed_seconds": 1.413849,
+    "forwards": 0,
+    "checkpoint_deserializations": 0,
+    "cases": 9216,
+    "status": "ACCEPT"
+  }
+}

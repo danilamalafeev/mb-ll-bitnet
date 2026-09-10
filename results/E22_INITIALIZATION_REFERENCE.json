@@ -1,0 +1,153 @@
+{
+  "purpose": "Independent seed routing/initialization audit only; zero optimizer updates or predictions",
+  "seed0_exact_E20_E18_initial": true,
+  "seeds": [
+    {
+      "seed": 0,
+      "initial_digest": "17c8e1f019ee604731927860dd5e61a6c8a2493fc7f6ac9a28824fe091245431",
+      "projection_sha256": [
+        "ef34bde94b39eb81e08456b03f27f839a76a16b3de32a028b2d4db4d95f659f1",
+        "785cbc8641cc6ec906dab6ceb7a511b7b0592b7df85cdb94c80d8d5a78d41180"
+      ],
+      "params": 151232,
+      "state_keys": [
+        "role_keys",
+        "x_embedding.projection.weight",
+        "y_embedding.projection.weight",
+        "opcode_embedding.weight",
+        "memory_norm.weight",
+        "memory_norm.bias",
+        "reader.q_norm.weight",
+        "reader.q_norm.bias",
+        "reader.q_proj.weight",
+        "reader.k_proj.weight",
+        "reader.v_proj.weight",
+        "reader.out_proj.weight",
+        "blocks.0.norm.weight",
+        "blocks.0.norm.bias",
+        "blocks.0.up.weight",
+        "blocks.0.down.weight",
+        "blocks.1.norm.weight",
+        "blocks.1.norm.bias",
+        "blocks.1.up.weight",
+        "blocks.1.down.weight",
+        "blocks.2.norm.weight",
+        "blocks.2.norm.bias",
+        "blocks.2.up.weight",
+        "blocks.2.down.weight",
+        "blocks.3.norm.weight",
+        "blocks.3.norm.bias",
+        "blocks.3.up.weight",
+        "blocks.3.down.weight",
+        "output_norm.weight",
+        "output_norm.bias",
+        "x_head.weight",
+        "y_head.weight"
+      ],
+      "post_constructor_rng_sha256": "195ad7a2198d308ddaff206a438c511745f7ef886e979b80ad08d3d11e215f6f"
+    },
+    {
+      "seed": 1,
+      "initial_digest": "ee233ede47ac96d781f332450c86cb8fe19d2040c099807ac76b4a5b01bc066b",
+      "projection_sha256": [
+        "be2cab0727c68e819fddd5714096dac65ebe5fdf7e9600bb804e70824d675016",
+        "7491256da8aa2db7c6966e09a4b0312f739aec676739a2f541b8c6844662ed8f"
+      ],
+      "params": 151232,
+      "state_keys": [
+        "role_keys",
+        "x_embedding.projection.weight",
+        "y_embedding.projection.weight",
+        "opcode_embedding.weight",
+        "memory_norm.weight",
+        "memory_norm.bias",
+        "reader.q_norm.weight",
+        "reader.q_norm.bias",
+        "reader.q_proj.weight",
+        "reader.k_proj.weight",
+        "reader.v_proj.weight",
+        "reader.out_proj.weight",
+        "blocks.0.norm.weight",
+        "blocks.0.norm.bias",
+        "blocks.0.up.weight",
+        "blocks.0.down.weight",
+        "blocks.1.norm.weight",
+        "blocks.1.norm.bias",
+        "blocks.1.up.weight",
+        "blocks.1.down.weight",
+        "blocks.2.norm.weight",
+        "blocks.2.norm.bias",
+        "blocks.2.up.weight",
+        "blocks.2.down.weight",
+        "blocks.3.norm.weight",
+        "blocks.3.norm.bias",
+        "blocks.3.up.weight",
+        "blocks.3.down.weight",
+        "output_norm.weight",
+        "output_norm.bias",
+        "x_head.weight",
+        "y_head.weight"
+      ],
+      "post_constructor_rng_sha256": "d9f589411a08b36af4c071693dbb00d72a581350c4460cf37167bb2e259ae84a"
+    },
+    {
+      "seed": 2,
+      "initial_digest": "5e51c77b97bac16d5bdc857dbf970352c3d1882af736ba55ff158673c3a7cc3d",
+      "projection_sha256": [
+        "8b818563a6eca748ca82a73a4dcc1352c855bc87fbf989f9250f06444b3deb57",
+        "97840b197fbe07d0a8ad736cd53d9d0cdf737a7f8e1faead28aaed44fade9f1b"
+      ],
+      "params": 151232,
+      "state_keys": [
+        "role_keys",
+        "x_embedding.projection.weight",
+        "y_embedding.projection.weight",
+        "opcode_embedding.weight",
+        "memory_norm.weight",
+        "memory_norm.bias",
+        "reader.q_norm.weight",
+        "reader.q_norm.bias",
+        "reader.q_proj.weight",
+        "reader.k_proj.weight",
+        "reader.v_proj.weight",
+        "reader.out_proj.weight",
+        "blocks.0.norm.weight",
+        "blocks.0.norm.bias",
+        "blocks.0.up.weight",
+        "blocks.0.down.weight",
+        "blocks.1.norm.weight",
+        "blocks.1.norm.bias",
+        "blocks.1.up.weight",
+        "blocks.1.down.weight",
+        "blocks.2.norm.weight",
+        "blocks.2.norm.bias",
+        "blocks.2.up.weight",
+        "blocks.2.down.weight",
+        "blocks.3.norm.weight",
+        "blocks.3.norm.bias",
+        "blocks.3.up.weight",
+        "blocks.3.down.weight",
+        "output_norm.weight",
+        "output_norm.bias",
+        "x_head.weight",
+        "y_head.weight"
+      ],
+      "post_constructor_rng_sha256": "3af4a21629bd9eb48ad2f95c99c5d494d760b0f6ba605372c6c70a187090e8ba"
+    }
+  ],
+  "pairwise_different_tensor_counts": {
+    "0_1": 18,
+    "0_2": 18,
+    "1_2": 18
+  },
+  "training_cost": {
+    "updates": 16000,
+    "examples": 1024000,
+    "internal_state_substeps": 16384000
+  },
+  "evaluation_cost": {
+    "program_state_cases": 17920,
+    "instruction_readouts": 46976,
+    "internal_state_substeps": 375808
+  }
+}

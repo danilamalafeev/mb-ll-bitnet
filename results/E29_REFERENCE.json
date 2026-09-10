@@ -1,0 +1,13 @@
+{
+  "owner": "root",
+  "scope": "Frozen saved-trace analysis inputs; no modelwork",
+  "sha256": {
+    "runs/e28_length/report.json": "1cafe94585e6f311f491796d89dc73e2cb8991fa527a49a5b1eee4b12dae7ce4",
+    "runs/e28_length/manifest.json": "348b18b637f35ee677fe6fdeea8bc7ec37f560c0224145b46432d6d7cd250cc2",
+    "results/E28_SELECTION.json": "d4b94458e2dc7522265f601f99d68cd3fcdaa6b0cdef504207cc534bf385dcb0",
+    "results/E28_REFERENCE.json": "44a4365475764e93c5657d1ec8a498bdd35d0e1d9db76dc4a460d8918f329681",
+    "results/E28_LENGTH_REVIEW.md": "5b1c7ed9c2eacabb88b99a84f4a600754ef3c672482472d8d409674b7e7464c4",
+    "results/E28_PROTECTED_HASHES.json": "8866a26e62a42da1aa08399335012b7e295d3ba0853b29bd1174f3790f1ac1dc",
+    "results/E29_TRACE_ANALYSIS_PROTOCOL.md": "1522f34df942436f7af675f154798ccf5760d01c0265d01f5b8a7ee9d79dceb7"
+  }
+}

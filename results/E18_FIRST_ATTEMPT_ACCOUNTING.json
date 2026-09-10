@@ -1,0 +1,19 @@
+{
+  "reason": "First E18 attempt failed after one optimizer update; preserve sources and artifacts before any mechanical repair",
+  "completed_updates": 1,
+  "training_examples": 64,
+  "training_internal_state_updates": 256,
+  "sha256": {
+    "looped_bitnet/step_budget_e18.py": "15555c14e88af5a13d731eeb497473abded4b74eab276262621a07cc92f947dc",
+    "scripts/step_budget_e18.py": "31d1143c5194bae6a79f982610bf2baba3fa088a56dcd781aea0f550e6304065",
+    "tests/test_step_budget_e18.py": "3eb57919f10938214cbf0fda3b2cdb5456ec3fdd834f8c5dc6e3e7208a80632c",
+    "results/E18_STEP_BUDGET_PROTOCOL.md": "2b7244e2d7534bb3262b651256fb2deb93c54cfd7d6113f6cad2dbbf541801b5",
+    "runs/e18_step_budget/manifest.json": "ef95e8b6a7260c19fbf995248836bf5404566119355d9b704b42fc603a533861",
+    "runs/e18_step_budget/steps4_seed0/arm_progress.json": "81ccb50d7b9d162b4e80be89013ab299a38042a2d65825ad3568f150381a374b",
+    "runs/e18_step_budget_preflight/steps8_initial_state.pt": "648d4f404a2e8105acbc430e2679287a1de46143f49f77057b888f51191484f6",
+    "runs/e18_step_budget_preflight/manifest.json": "8105cd594cbb0d7867f0dc95caf5a444d5d907c72bde06b2c1364b64eda2290c",
+    "runs/e18_step_budget_preflight/initial_digests.json": "0392cc0dc70692ecd797722fb81eb6927b00e4c6b39cb3e1c67c47de8aa63342",
+    "runs/e18_step_budget_preflight/steps4_initial_state.pt": "bcf3bf458fe95a17063532fc80fa33774aaacc8d55a2423d8f3b07a4b0e9b6f1"
+  },
+  "source_snapshot": "results/E18_FIRST_ATTEMPT_SOURCE"
+}

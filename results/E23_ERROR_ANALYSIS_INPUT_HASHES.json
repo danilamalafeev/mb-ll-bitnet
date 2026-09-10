@@ -1,0 +1,8 @@
+{
+  "scope": "E23 prospective input preservation; zero model calls",
+  "sha256": {
+    "runs/e21_composition/report.json": "121fa9094bfb616d8d267bf27b624de25fd63dd94800aaf7b6b3c57e32287cc7",
+    "runs/e22_replication/seed1/report.json": "fdd33e27e7320b7692d3c4fdcd8018be68889079cb38a48b7fbc6ec6c7dcf6ba",
+    "runs/e22_replication/seed2/report.json": "a18e28713f87e365aae35331a502a062db6671fc0f89ba91f16bc4cbeda5bb69"
+  }
+}

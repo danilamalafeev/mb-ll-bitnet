@@ -1,0 +1,30 @@
+{
+  "status": "complete_independent_accept_descriptive_analysis",
+  "workload": {
+    "checkpoint_loads": 0,
+    "instruction_observations": 46080,
+    "model_forwards": 0,
+    "saved_case_traces": 9216,
+    "training_updates": 0
+  },
+  "analysis_runs": "Initial executor generation, executor strengthened exact rerun, independent reviewer recomputation and exact rerun; all offline saved JSON. No scientific model runs.",
+  "tests": {
+    "executor_passed": 6,
+    "independent_reviewer_passed": 6
+  },
+  "artifacts_sha256": {
+    "scripts/trace_analysis_e29.py": "74bb85769636ed76de8e7ec87c4f043a92017cd7f02c8114850278c4b13236bb",
+    "tests/test_trace_analysis_e29.py": "59d8d19896051eaf980e3fcb6ae00d6ff88f70862b61e451dbe4496ab56bf989",
+    "results/E29_TRACE_ANALYSIS.json": "c7922284494b658d03c9aa317b685f4c52ad8600a3b921bebb59560faa0156d3",
+    "results/E29_QA_RERUN_1.json": "c7922284494b658d03c9aa317b685f4c52ad8600a3b921bebb59560faa0156d3",
+    "results/E29_review_exact_rerun.json": "c7922284494b658d03c9aa317b685f4c52ad8600a3b921bebb59560faa0156d3",
+    "results/E29_review_independent.py": "56a5dc91777d7eff5244cbd453a0a6d248777035ee254da3569c967c5ceddf49",
+    "results/E29_review_raw_counts.json": "6948a869a636ecabac8e364bf4ab31e2930f0a46ae9618a100af16b2738b3c58"
+  },
+  "frozen_root_references_verified": 7,
+  "protected_and_source_hashes_validated": 303,
+  "training_updates": 0,
+  "model_forwards": 0,
+  "checkpoint_deserializations": 0,
+  "limitations": "Checkpoint bytes only read for existing integrity hashes; no model loading. Exploratory descriptive analysis after outcomes known; tests/reruns do not create new scientific observations."
+}

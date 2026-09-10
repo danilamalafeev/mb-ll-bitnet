@@ -1,0 +1,71 @@
+{
+  "scope": "Implementation QA only. Canonical preflight/scientific training not executed. Independent reviewer costs excluded.",
+  "test_invocations": [
+    {
+      "command": "python -m pytest -q tests/test_weight_only_e26.py",
+      "passed": 9,
+      "seconds": 6.85,
+      "failed_tests": 0,
+      "artifact_retention": "pytest temporary directory; first test suite version",
+      "model_workload": {
+        "training_cost": {
+          "internal_state_substeps": 64,
+          "program_forwards": 4,
+          "program_state_cases": 8,
+          "readout_positions": 8
+        },
+        "evaluation_cost": {
+          "internal_state_substeps": 48,
+          "program_forwards": 3,
+          "program_state_cases": 6,
+          "readout_positions": 6
+        },
+        "reload_identity_cost": {
+          "internal_state_substeps": 96,
+          "program_forwards": 6,
+          "program_state_cases": 12,
+          "readout_positions": 12
+        }
+      }
+    },
+    {
+      "command": "python -m pytest -q tests/test_weight_only_e26.py --basetemp runs/e26_weight_only_qa_tests_v1",
+      "passed": 11,
+      "seconds": 13.88,
+      "failed_tests": 0,
+      "report_paths": [
+        "runs/e26_weight_only_qa_tests_v1/e260/qa/report.json",
+        "runs/e26_weight_only_qa_tests_v1/test_runtime_failure_suspends0/failure/report.json"
+      ],
+      "model_workload": {
+        "training_cost": {
+          "internal_state_substeps": 64,
+          "program_forwards": 4,
+          "program_state_cases": 8,
+          "readout_positions": 8
+        },
+        "evaluation_cost": {
+          "internal_state_substeps": 48,
+          "program_forwards": 3,
+          "program_state_cases": 6,
+          "readout_positions": 6
+        },
+        "reload_identity_cost": {
+          "internal_state_substeps": 96,
+          "program_forwards": 6,
+          "program_state_cases": 12,
+          "readout_positions": 12
+        }
+      }
+    }
+  ],
+  "total_completed_training_updates": 8,
+  "total_reload_identity_updates": 12,
+  "total_model_forwards": 26,
+  "total_model_cases": 52,
+  "total_model_readouts": 52,
+  "total_model_substeps": 416,
+  "projection_only_qa": "Each invocation additionally executes one 3-to-2 WeightOnlyBitLinear forward/backward, two direct F.linear reference calculations, and quantizer calculations; excluded from recurrent-model costs.",
+  "intentional_failure_tests": 2,
+  "intentional_failure_detail": "One evaluation exception before forward per invocation; one seed trained and saved, later seeds not started. No unintended failures, retries, or scientific attempts."
+}

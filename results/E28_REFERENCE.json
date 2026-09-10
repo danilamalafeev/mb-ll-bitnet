@@ -1,0 +1,21 @@
+{
+  "owner": "root",
+  "scope": "Prospective selected programs and frozen saved model references; no forwards/training",
+  "sha256": {
+    "results/E28_SELECTION.json": "d4b94458e2dc7522265f601f99d68cd3fcdaa6b0cdef504207cc534bf385dcb0",
+    "results/E28_LENGTH_PROTOCOL.md": "40e473db0ee0e87221f21430507986911f62d8d73fa6acb94d60cffcc3603c19",
+    "results/E27_PROTECTED_HASHES.json": "effaf64c9f6aa567a3327c0c8524b0bc40b44a19f2fcd0522fc0cc311e83fbce",
+    "results/E27_W4_REVIEW.md": "b9f2a34942c8fd7266decea42836e99cc57cf26c31f9063cf6d0975f03004d9f",
+    "results/E24_CONTINUATION_REVIEW.md": "8d403739ed6bd754ad89f045e0307a2af316f67241522fbedcddffebbe51ccfc",
+    "runs/e27_w4/report.json": "85807e2400389cec2df24d189915a40a96354db811fd62717ebdfdde436c723b",
+    "runs/e27_w4/manifest.json": "de481458592a0b0f5cba08f50263153c2189bdaca4c7832d53739b2e2675570d",
+    "runs/e27_w4/seed0/u16000.pt": "cd90d6ffa614f2dd98c21e6d61ec1498cd514f9e084fb5a3f93aba60c9cd3815",
+    "runs/e27_w4/seed1/u16000.pt": "dddfa992c97019902083bb54ef48e86c43154d5b33417eed964e5fdd0a35e681",
+    "runs/e27_w4/seed2/u16000.pt": "2d772c0e9f8b78de02776a64422edf236f679c04d4c34b0f7ed99189ec9c49fe",
+    "runs/e24_continuation/report.json": "c260959ebb7ff5eb2055c66fa5e1e9353d9f88f8534593f24a30e26e3b99d202",
+    "runs/e24_continuation/manifest.json": "d1f9c34d1678ad099a36e757f5c73c10750d9dd807b1a3601f693da826e7095d",
+    "runs/e24_continuation/seed0/u16000.pt": "bafe42f563737283053b32d6b3950f655fb2f05d91793a6539f7b737c81a4cc3",
+    "runs/e24_continuation/seed1/u16000.pt": "6191151d76302b490e9471fa11acc919141011b429898c3fe3e0dba509f8b867",
+    "runs/e24_continuation/seed2/u16000.pt": "621b51012b01f1a0b0166e8c74d957e3ed783c8d9112d793f145c909e1333f59"
+  }
+}

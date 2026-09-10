@@ -1,0 +1,16 @@
+{
+  "purpose": "Independent E18 budget arithmetic before implementation/training",
+  "train_instruction_cases_per_arm": 256000,
+  "train_recurrent_substeps": {
+    "steps4": 1024000,
+    "steps8": 2048000
+  },
+  "total_train_recurrent_substeps": 3072000,
+  "eval_instruction_readouts_per_arm": 18368,
+  "eval_recurrent_substeps": {
+    "steps4": 73472,
+    "steps8": 146944
+  },
+  "total_eval_recurrent_substeps": 220416,
+  "full_program_state_evaluations": 14336
+}

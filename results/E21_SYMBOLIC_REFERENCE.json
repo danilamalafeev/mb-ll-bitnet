@@ -1,0 +1,90 @@
+{
+  "purpose": "Independent symbolic pre-inference E21 audit; no model predictions",
+  "primary": [
+    {
+      "program": [
+        "ADD",
+        "XOR"
+      ],
+      "semantically_novel_vs_seen": true,
+      "instruction_positions": 512,
+      "native8_steps": 4096
+    },
+    {
+      "program": [
+        "ADD",
+        "ADD",
+        "XOR"
+      ],
+      "semantically_novel_vs_seen": true,
+      "instruction_positions": 768,
+      "native8_steps": 6144
+    },
+    {
+      "program": [
+        "ADD",
+        "XOR",
+        "ADD"
+      ],
+      "semantically_novel_vs_seen": true,
+      "instruction_positions": 768,
+      "native8_steps": 6144
+    },
+    {
+      "program": [
+        "ADD",
+        "XOR",
+        "SWAP"
+      ],
+      "semantically_novel_vs_seen": true,
+      "instruction_positions": 768,
+      "native8_steps": 6144
+    },
+    {
+      "program": [
+        "XOR",
+        "ADD",
+        "XOR"
+      ],
+      "semantically_novel_vs_seen": true,
+      "instruction_positions": 768,
+      "native8_steps": 6144
+    },
+    {
+      "program": [
+        "SWAP",
+        "ADD",
+        "XOR"
+      ],
+      "semantically_novel_vs_seen": true,
+      "instruction_positions": 768,
+      "native8_steps": 6144
+    }
+  ],
+  "primary_programs": 6,
+  "primary_unique_semantic_maps": 6,
+  "seen_programs": 32,
+  "seen_unique_semantic_maps": 21,
+  "primary_cases": 1536,
+  "control": {
+    "program": [
+      "ADD",
+      "XOR",
+      "XOR"
+    ],
+    "equivalent_to": [
+      "ADD"
+    ],
+    "cases": 256
+  },
+  "strata": {
+    "test": 32,
+    "train": 192,
+    "validation": 32
+  },
+  "evaluation_cost": {
+    "program_state_cases": 1792,
+    "instruction_readouts": 5120,
+    "native8_substeps": 40960
+  }
+}

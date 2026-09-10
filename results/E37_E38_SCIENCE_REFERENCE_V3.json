@@ -1,0 +1,26 @@
+{
+  "schema": "e37_e38_science_reference_v3",
+  "status": "frozen",
+  "supersedes": {
+    "base_manifest_sha256": "593cd1fb98ee180b13f968060a329d11936f61f514a45517b97d8227ffddb9b2",
+    "previous_runner_sha256": "3cf3912622408b5682f7dd78988359a9f914d867168e973e69cffa5cd84acf5c",
+    "previous_tests_sha256": "242dda93a38cdd3d5fd411a454c1917e0af282fa99f1cb8efc5d988a3f9cc3a6"
+  },
+  "base_manifest_path": "runs/e37_e38_preflight_v2/manifest.json",
+  "base_manifest_sha256": "593cd1fb98ee180b13f968060a329d11936f61f514a45517b97d8227ffddb9b2",
+  "base_manifest_digest": "42bd72d9a4f2e7119282278c9e96eb40b888117eb1f4b59de63076b4dff5a956",
+  "checkpoint_schema": "e37_e38_followup_v2",
+  "lineage_schema": "e37_e38_runtime_lineage_v2",
+  "source_hashes": {
+    "results/E37_E38_PROTOCOL.md": "1725543ba5d9bf787bb8190d47fc2b8c6b4e9fdcadeafc292c20585f7975bbbb",
+    "scripts/followup_e37_e38.py": "fede3bb21c1a806c9e10068b1b82afdffb57cec00874f30dfa0bd666a4dfe0b5",
+    "tests/test_followup_e37_e38.py": "3e9cee635f8d63f1c77aaa9b58f857e99dd412de5a49b40f23a5c5f167faaf4b"
+  },
+  "accepted_qa": {
+    "manifest_sha256": "68f579eb556ab01e3df0635b9aabfb66ec4621f1b8d70d9c630dbb2addd90c1e",
+    "report_sha256": "f5173db05a7839fd82a5c47a9de89de67049e9a0bebe15a9860fd1b18943d3fe",
+    "attempted_updates": 28,
+    "completed_updates": 28,
+    "scientific_updates": 0
+  }
+}

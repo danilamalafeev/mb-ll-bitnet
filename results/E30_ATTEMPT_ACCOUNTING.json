@@ -1,0 +1,281 @@
+{
+  "status": "complete_independent_accept_oracle_diagnostic_pass",
+  "scientific_attempts": 1,
+  "scientific_exit_code": 0,
+  "scientific_technical_failures": 0,
+  "scientific_retries": 0,
+  "training_updates": 0,
+  "scientific_cost": {
+    "attempted": {
+      "program_forwards": 12,
+      "program_state_cases": 3072,
+      "readout_positions": 3072,
+      "internal_state_substeps": 24576
+    },
+    "completed": {
+      "program_forwards": 12,
+      "program_state_cases": 3072,
+      "readout_positions": 3072,
+      "internal_state_substeps": 24576
+    }
+  },
+  "lifted_comparisons": 9216,
+  "scientific_cli_seconds": {
+    "real": 5.57,
+    "user": 3.81,
+    "sys": 0.78
+  },
+  "implementation_tests": [
+    {
+      "passed": 13,
+      "seconds": 5.31
+    },
+    {
+      "passed": 18,
+      "seconds": 5.77
+    }
+  ],
+  "review_tests": [
+    {
+      "passed": 13,
+      "seconds": 3.81
+    },
+    {
+      "passed": 18,
+      "seconds": 5.46
+    }
+  ],
+  "implementation_qa": {
+    "attempted": {
+      "program_forwards": 6,
+      "program_state_cases": 12,
+      "readout_positions": 12,
+      "internal_state_substeps": 96
+    },
+    "completed": {
+      "program_forwards": 6,
+      "program_state_cases": 12,
+      "readout_positions": 12,
+      "internal_state_substeps": 96
+    }
+  },
+  "review_qa": {
+    "attempted": {
+      "program_forwards": 6,
+      "program_state_cases": 12,
+      "readout_positions": 12,
+      "internal_state_substeps": 96
+    },
+    "completed": {
+      "program_forwards": 6,
+      "program_state_cases": 12,
+      "readout_positions": 12,
+      "internal_state_substeps": 96
+    }
+  },
+  "root_reference_reporting": {
+    "model_forwards": 0,
+    "training_updates": 0
+  },
+  "limitation": "Oracle full-context reset diagnostic, not learned L5 correction; lifted comparison count is not unique model forward workload.",
+  "independent_final_review": {
+    "status": "ACCEPT",
+    "exact_replay": true,
+    "protected_count": 321,
+    "source_hashes": {
+      "scripts/oracle_reset_e30.py": "ac446828d21575370c32ca0d381ee09ceca72d8cfd572dab74cc2f47c48e1c70",
+      "tests/test_oracle_reset_e30.py": "f6212ca2c8fcc77ce961f1728156e8368dd6ada22b20bbc3967aceea288b9c9d"
+    },
+    "fresh_counts": {
+      "E27_W4": {
+        "0": {
+          "XOR": 256,
+          "SWAP": 256
+        },
+        "1": {
+          "XOR": 256,
+          "SWAP": 256
+        },
+        "2": {
+          "XOR": 256,
+          "SWAP": 256
+        }
+      },
+      "E24_float": {
+        "0": {
+          "XOR": 256,
+          "SWAP": 256
+        },
+        "1": {
+          "XOR": 256,
+          "SWAP": 256
+        },
+        "2": {
+          "XOR": 256,
+          "SWAP": 256
+        }
+      }
+    },
+    "paired": {
+      "all": {
+        "all": {
+          "denominator": 9216,
+          "recovered": 359,
+          "introduced": 0,
+          "both_correct": 8857,
+          "both_wrong": 0,
+          "long_correct": 8857,
+          "fresh_correct": 9216,
+          "saved_errors": 359,
+          "rescued_fraction": 1.0
+        },
+        "train": {
+          "denominator": 6912,
+          "recovered": 239,
+          "introduced": 0,
+          "both_correct": 6673,
+          "both_wrong": 0,
+          "long_correct": 6673,
+          "fresh_correct": 6912,
+          "saved_errors": 239,
+          "rescued_fraction": 1.0
+        },
+        "validation": {
+          "denominator": 1152,
+          "recovered": 50,
+          "introduced": 0,
+          "both_correct": 1102,
+          "both_wrong": 0,
+          "long_correct": 1102,
+          "fresh_correct": 1152,
+          "saved_errors": 50,
+          "rescued_fraction": 1.0
+        },
+        "test": {
+          "denominator": 1152,
+          "recovered": 70,
+          "introduced": 0,
+          "both_correct": 1082,
+          "both_wrong": 0,
+          "long_correct": 1082,
+          "fresh_correct": 1152,
+          "saved_errors": 70,
+          "rescued_fraction": 1.0
+        }
+      },
+      "prefix4_correct": {
+        "all": {
+          "denominator": 9133,
+          "recovered": 283,
+          "introduced": 0,
+          "both_correct": 8850,
+          "both_wrong": 0,
+          "long_correct": 8850,
+          "fresh_correct": 9133,
+          "saved_errors": 283,
+          "rescued_fraction": 1.0
+        },
+        "train": {
+          "denominator": 6859,
+          "recovered": 191,
+          "introduced": 0,
+          "both_correct": 6668,
+          "both_wrong": 0,
+          "long_correct": 6668,
+          "fresh_correct": 6859,
+          "saved_errors": 191,
+          "rescued_fraction": 1.0
+        },
+        "validation": {
+          "denominator": 1141,
+          "recovered": 39,
+          "introduced": 0,
+          "both_correct": 1102,
+          "both_wrong": 0,
+          "long_correct": 1102,
+          "fresh_correct": 1141,
+          "saved_errors": 39,
+          "rescued_fraction": 1.0
+        },
+        "test": {
+          "denominator": 1133,
+          "recovered": 53,
+          "introduced": 0,
+          "both_correct": 1080,
+          "both_wrong": 0,
+          "long_correct": 1080,
+          "fresh_correct": 1133,
+          "saved_errors": 53,
+          "rescued_fraction": 1.0
+        }
+      },
+      "prefix4_wrong": {
+        "all": {
+          "denominator": 83,
+          "recovered": 76,
+          "introduced": 0,
+          "both_correct": 7,
+          "both_wrong": 0,
+          "long_correct": 7,
+          "fresh_correct": 83,
+          "saved_errors": 76,
+          "rescued_fraction": 1.0
+        },
+        "train": {
+          "denominator": 53,
+          "recovered": 48,
+          "introduced": 0,
+          "both_correct": 5,
+          "both_wrong": 0,
+          "long_correct": 5,
+          "fresh_correct": 53,
+          "saved_errors": 48,
+          "rescued_fraction": 1.0
+        },
+        "validation": {
+          "denominator": 11,
+          "recovered": 11,
+          "introduced": 0,
+          "both_correct": 0,
+          "both_wrong": 0,
+          "long_correct": 0,
+          "fresh_correct": 11,
+          "saved_errors": 11,
+          "rescued_fraction": 1.0
+        },
+        "test": {
+          "denominator": 19,
+          "recovered": 17,
+          "introduced": 0,
+          "both_correct": 2,
+          "both_wrong": 0,
+          "long_correct": 2,
+          "fresh_correct": 19,
+          "saved_errors": 17,
+          "rescued_fraction": 1.0
+        }
+      }
+    },
+    "cost": {
+      "attempted": {
+        "program_forwards": 12,
+        "program_state_cases": 3072,
+        "readout_positions": 3072,
+        "internal_state_substeps": 24576
+      },
+      "completed": {
+        "program_forwards": 12,
+        "program_state_cases": 3072,
+        "readout_positions": 3072,
+        "internal_state_substeps": 24576
+      }
+    }
+  },
+  "independent_replay_seconds": {
+    "real": 5.374,
+    "user": 3.74,
+    "sys": 0.74
+  },
+  "protected_files_verified": 321,
+  "root_reference_hashes_verified": 18
+}

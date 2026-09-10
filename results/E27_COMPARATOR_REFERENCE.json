@@ -1,0 +1,20 @@
+{
+  "owner": "root",
+  "scope": "Frozen comparator bytes before E27; no model forwards or training",
+  "sha256": {
+    "results/E25_INITIAL_REFERENCE.json": "0a1f3538841c631a4e2f6fe17fcc9334dda4af40f6974b7eb773c5f4d3a18a2d",
+    "results/E26_PROTECTED_HASHES.json": "ae1a4d30d5b402297942b57f334976cd61e33ea90db8f1043f48a79a700060d9",
+    "results/E26_WEIGHT_ONLY_REVIEW.md": "f2044ff8570a01222b866d525f20fbb12f063eadf538089294a2804cc19e63f9",
+    "results/E24_CONTINUATION_REVIEW.md": "8d403739ed6bd754ad89f045e0307a2af316f67241522fbedcddffebbe51ccfc",
+    "runs/e26_weight_only/report.json": "28448f44d69ba46fa7045a8ba97022f33e991c824e1b6bffbcb299dceee414eb",
+    "runs/e26_weight_only/manifest.json": "1178370699c769ee1cce01ad5bcb2b5bd5fad4aa42c85641234ca499e716e940",
+    "runs/e26_weight_only/seed0/u16000.pt": "3922bf5482908cda5590e4ff995f240bf2f2aa0d40531a6dc7aecece1d71c505",
+    "runs/e26_weight_only/seed1/u16000.pt": "69da97c01fee9ce5b8e367b1b82b45875b7ada312c4bcac4592f694d49e6aa6d",
+    "runs/e26_weight_only/seed2/u16000.pt": "fc24e80ba04b1d3621f88afa557f099669815758d8fecf37a751f187edf7dc95",
+    "runs/e24_continuation/report.json": "c260959ebb7ff5eb2055c66fa5e1e9353d9f88f8534593f24a30e26e3b99d202",
+    "runs/e24_continuation/manifest.json": "d1f9c34d1678ad099a36e757f5c73c10750d9dd807b1a3601f693da826e7095d",
+    "runs/e24_continuation/seed0/u16000.pt": "bafe42f563737283053b32d6b3950f655fb2f05d91793a6539f7b737c81a4cc3",
+    "runs/e24_continuation/seed1/u16000.pt": "6191151d76302b490e9471fa11acc919141011b429898c3fe3e0dba509f8b867",
+    "runs/e24_continuation/seed2/u16000.pt": "621b51012b01f1a0b0166e8c74d957e3ed783c8d9112d793f145c909e1333f59"
+  }
+}
