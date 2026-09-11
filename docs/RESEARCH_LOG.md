@@ -1,5 +1,215 @@
 # Журнал исследований и координации
 
+## Projected-value cycle screening complete — 2026-09-11
+
+The single detached two-arm screening completed with exit code 0. A
+read-only saved-artifact audit passed at
+runs/pc_projected_value_cycle_screening_v1/screening/saved_audit.json
+(audit SHA256: a085255d4185ebd1d43621a12545737a9be22d6c46c4f9be4b214b1c8ae9d822), with zero model forwards, backwards or optimizer updates.
+The exact execution report is
+runs/pc_projected_value_cycle_screening_v1/screening/report.json.
+
+Ordinary ended at weighted raw projected-V cycle loss 0.0962584225; the
+cycle-loss arm ended at 0.1105782790, a 14.876% worsening and a failed
+five-percent primary threshold. Full-trace correctness was 0/512 in both
+arms, so the guardrail delta was 0.0 percentage points. Under the frozen
+protocol, satisfying only the guardrail is INCONCLUSIVE_ONE_CONDITION; the
+primary efficacy signal is negative. Secondary final-step correctness was
+1/512 for ordinary and 0/512 for cycle_loss.
+
+The registered counters, source binding, immutable input freeze, stream
+prefix, arm initialization identities and both final checkpoint hashes
+passed independent read-only checks. This bounded result does not authorize
+a full pilot, tuning, retry, extra probes or a science run. Preserve the
+raw artifacts and require a new mechanism plus a fresh source gate before
+any continuation.
+
+
+## Projected-value cycle screening registered — 2026-09-11
+
+After the projected-value QA acceptance, one short two-arm screening is
+registered: ordinary supervised latent-slot training versus the same training
+with the detached projected-V identity-cycle loss at weight `0.1`. Both arms
+start from the same accepted E36 endpoint and deterministic adapter
+initialization, using the first 64 batches of the immutable B stream.
+
+The frozen protocol is `results/PC_PROJECTED_VALUE_CYCLE_SCREENING_PROTOCOL.md`
+and the source gate is
+`runs/pc_projected_value_cycle_screening_v1/screening_launch_gate_v1.json`.
+The evaluation contains eight predeclared programs over the validation and
+test strata (64 states). The exact registered budget is 160 forwards, 128
+updates/backwards/optimizer steps, 62,976 positions, 503,808 native steps,
+four underlying deserializations and two final checkpoints. The primary
+screening threshold is a five-percent reduction in held-out projected-V cycle
+loss with no more than a five-percentage-point full-trace regression.
+
+This entry authorizes one detached run only. It makes no superiority or causal
+claim and does not authorize a full pilot, retry, tuning or science run.
+
+## Writer-to-cache transition diagnostic complete; v1/v2 setup failures preserved — 2026-09-11
+
+Registered one bounded inference-only diagnostic for the new mechanism: compare
+the frozen local-2000 `padding_ADDADD_ADD_k4` good path with `k10` bad path at
+states `(6,4)` and `(8,14)`, capture `phi -> z -> v -> normalized_v -> projected
+V`, all eight native attention weights and returned hidden states, then run one
+batched four-way `h`/KV substitution at the common final `ADD`.
+
+The v1 runner completed the accepted endpoint load and failed before its first
+forward because it called the missing `_preserve_evaluation_state` symbol on the
+padding runtime. V2 fixed the report duplication but made the same lookup
+mistake against `pc_latent_slots_runtime`; it also completed endpoint loading
+and stopped before any forward. Both failure artifact trees are preserved.
+
+V3 bound the helper in `pc_latent_slots_science` and added a focused integration
+test. Its source gate was
+`runs/pc_latent_slots_v1/state_transition_diagnostic_v3_review/runtime_launch_gate_v3.json`.
+
+The registered cost remains two path forwards plus one substitution forward, 12
+cases, 80 positions, 640 native steps, zero backwards/optimizer updates and one
+accepted endpoint load. Focused pure/runtime tests pass (13) and `py_compile`
+passes; the detached run completed with no failures. The saved audit is
+`runs/pc_latent_slots_v1/state_transition_diagnostic_v3/saved_audit.json`, and
+the result is `results/PC_STATE_TRANSITION_DIAGNOSTIC_RESULTS.md`.
+
+Both states show the same substitution pattern: KV source selects the answer,
+while h replacement does not. Attention remains decisive rather than
+near-uniform. This localizes the pair difference to path-dependent cache
+KV/state preparation, without proving writer-only or LayerNorm-only causality.
+The saved final arrays then factor this into K and V without another model
+forward: projected K is exactly equal across good and bad at both states, while
+projected V differs. The combined KV substitution is therefore effectively
+V-only for this pair. Audit:
+`runs/pc_latent_slots_v1/state_transition_diagnostic_v3/kv_factor_readonly_audit.json`.
+Stop here pending a new bounded mechanism.
+
+## Post-screening artifact review: interpretation corrected — 2026-09-11
+
+Read-only review of the saved latent-slot, screening and checkpoint artifacts
+completed with zero model forwards, backwards, optimizer updates or replay.
+The 36 old failure IDs/states match exactly, and ordinary arm A's 250-update
+continuation from the accepted local-2000 endpoint resolves all of them on the
+old69 set (17,664/17,664). This removes the old finite-set result as evidence
+of an architectural impossibility for ordinary A; it is not a universal
+correctness claim. The exact source-stream prefix and checkpoint/input hashes
+are recorded in `runs/pc_state_aware_carry_v1/posthoc_artifact_review.json`.
+
+C remains negative for its tested state-aware parameterization and training
+trajectory: the local-0 extension is statically equivalent to A with a zero
+correction, but C trains the original parameters plus a direct state path and
+second hidden-to-slot projection. Separate slot-specific KV values remain, so
+the initial hidden sum supports only a bottleneck hypothesis; global
+non-Markov behavior and a writer-only cause are not established. Latent L2 is
+diagnostic rather than a correctness proof. Detailed report:
+`results/PC_STATE_AWARE_CARRY_ARTIFACT_REVIEW.md`.
+
+Frozen protocol and original screening artifacts are unchanged. No full C
+pilot, tuning, cycle loss, retry or new science run follows from this review;
+a new mechanism and bounded gate are required.
+
+## State-aware carry screening NEGATIVE; stopped — 2026-09-11
+
+The single detached bounded screening completed exit0. Independent read-only
+verification passed for the report, exact accounting, 300 decoded rows, six
+checkpoint digests, frozen source/input bindings and both four-pair state
+audits; no model forwards or optimizer updates were used in that verification.
+The registered cost was 816 forwards, 500 updates/backwards/optimizer steps,
+112,896 cases, 1,692,032 positions, 13,536,256 native steps, six checkpoints,
+six underlying deserializations and zero runtime failures. A remained perfect
+(38,400/38,400 full traces). C fell to 21,085/38,400 full traces and
+21,620/38,400 final-step correct; paired old69 had 0 repairs/8,549 regressions
+and new81 had 0 repairs/8,766 regressions. Mean identity-path relative L2 rose
+from 0.0613 (A) to 0.1708 (C), with C probe agreement only 0.828–0.949 versus
+1.0 for A. The state-aware correction therefore fails both registered
+conditions and this is a negative structural screening. Preserve all bytes;
+do not run a full pilot, correction tuning, cycle loss, QA rerun or retry
+without a new explicit hypothesis. Results:
+`results/PC_STATE_AWARE_CARRY_SCREENING_RESULTS.md`; saved audit:
+`runs/pc_state_aware_carry_v1/screening/saved_audit.json`.
+
+## State-aware carry screening source gate READY — 2026-09-11
+
+Prepared `scripts/pc_state_aware_carry_screening.py` and its focused tests for
+the already-authorized bounded screening. The runner preserves the accepted
+manifest, endpoint, stream and QA acceptance, then trains ordinary A and
+state-aware C for exactly 250 frozen batches each, evaluates old69 plus new81
+once, and performs the existing 16-forward identity-path audit. The registered
+budget is 816 forwards, 500 updates/backwards/optimizer steps, 112,896 cases,
+1,692,032 positions, 13,536,256 native steps, six checkpoints and six
+underlying deserializations. Source gate:
+`runs/pc_state_aware_carry_v1/screening_launch_gate_v1.json`; focused suite is
+36 passed with `py_compile` pass. The next action is one detached launch via
+`scripts/run_and_wake.py`, followed by saved-artifact verification and a stop;
+no QA rerun, retry, interpretation or full pilot is authorized here.
+
+## State-aware carry QA ACCEPT; CODE CLEAR — 2026-09-11
+
+Saved QA v2 completed exit0 and passed independent artifact checks. Arms A and
+C each loaded the accepted local-2000 endpoint, ran three updates, saved and
+restored L1, and matched the uninterrupted L2 state exactly for model,
+adapter, optimizer, CPU/CUDA RNG, modes, parameter names and optimizer group
+names. Exact totals: 6 forwards/backwards/optimizer updates, 12 cases, 20
+positions, 160 native steps, 2 endpoint loads, 2 snapshot loads, 8 underlying
+deserializations, 0 failures. Acceptance is in
+`runs/pc_state_aware_carry_v1/qa_accept.json`; report/accounting hashes are
+`22e2bf8a...2c78f` and `7bae041f...3ef1d`. CODE CLEAR binds the current helper,
+runtime and tests; no science ran.
+
+The next authorized bounded action is one fresh A/C screening at 250 updates
+per arm over old69+new81 plus the existing 16-forward state-transfer audit.
+It must stop at the saved screening report and independent verification; a
+full 2,000-update pilot requires a new decision.
+
+## State-aware carry QA v1 failed on bookkeeping; v2 repaired — 2026-09-11
+
+The one detached QA attempt (`runs/pc_state_aware_carry_qa_background_v1`)
+loaded only arm A, completed two updates and a snapshot save, then exited1 on
+`KeyError: 'attempted_snapshot_loads'` before snapshot load. Durable cost is
+one endpoint load, three underlying deserializations, two forwards/backwards/
+optimizer updates, four cases, six positions and 48 native steps; arm C and
+the rest of the contract did not execute. No science/model failure is implied.
+The runtime now initializes snapshot counters; one focused regression was
+added. `py_compile` and 31 focused/regression tests pass. Launch gate v2 is
+`runs/pc_state_aware_carry_v1/qa_launch_gate_v2.json`; it supersedes only the
+failed v1 preparation and uses fresh output `qa_v2` plus supervisor
+`runs/pc_state_aware_carry_qa_background_v2`. This is the sole concrete retry;
+no science before v2 QA acceptance and CODE CLEAR.
+The replacement supervisor is running with no launch error; completion wake is
+the only next status event.
+
+## State-aware carry QA launched — 2026-09-11
+
+After pure/runtime source inspection and 31 focused tests, root launched one
+detached QA through `scripts/run_and_wake.py`:
+`runs/pc_state_aware_carry_qa_background_v1`, command
+`C:/ProgramData/anaconda3/python.exe scripts/pc_state_aware_carry_runtime.py --qa --out runs/pc_state_aware_carry_v1/qa`.
+The child was observed in `running` state with no launch error. The registered
+budget is six forwards/backwards/optimizer updates, 12 cases, 20 positions,
+160 native steps and eight underlying deserializations over ordinary A and
+state-aware C. Completion wake is the only next status event; no science or
+retry is authorized before saved QA acceptance and CODE CLEAR.
+
+## State-aware carry structural fix staged — pure ACCEPT, QA pending — 2026-09-11
+
+The state-transfer audit showed the disease is a lossy transition interface,
+not a missing gate coefficient: two reader slot vectors are summed into one
+`h` before the ordinary writer, while the earlier no-write path transfers no
+state. User authorized the smallest structural repair. Added
+`scripts/pc_state_aware_carry.py`, its pure tests, and
+`results/PC_STATE_AWARE_CARRY_PROTOCOL.md`; accepted latent/gated files and
+checkpoints remain untouched. The wrapper retains the old writer object as
+`base_writer` and adds a zero-initialized `Linear(160,32)` correction from
+`[z_t,h_t]`, preserving old optimizer moments and adding 5,152 parameters.
+Scoped hooks reuse `latent_slots_forward` and clean up on errors; no targets,
+opcodes, KV bypass or cycle-specific loss are used. `py_compile` and 25
+focused/regression tests pass. Helper SHA256 is
+`79e38ffba3fbc472706da15887d1ce66968aa15db4a8a9fe3e41266b9d45fd04`; test
+SHA256 is `4e099b4ac02be9da24f5863ed0ac7f7a8bc3c9a344074c8f80cdcc2e71e3e40e`.
+Next is one detached two-arm QA only; no science before QA/CODE CLEAR. The
+authorized follow-up after QA is a 250-update-per-arm screening plus the
+existing 16-forward state-transfer audit, with a fresh stop at its report.
+QA runtime SHA256 is `07ab6e8d3dc3c43a13c76cdf8d507b305bb43b01cc5f3155b3296092b430c124`;
+runtime-test SHA256 is `401fc903cfbbef9bf4ec7fc8db478784225a4f67a15e533ab1f960f61fef6a60`.
+
 ## Latent slots pilot and padding drift diagnosis accepted — 2026-09-10
 
 The single latent-slots pilot completed under the frozen protocol: 2,000 updates, 2,138 forwards, 163,328 cases, 1,111,296 readout positions, 8,890,368 native steps, and nine atomic checkpoints. Independent saved-data audit accepted all traces and metrics. Initial latent full-trace accuracy was `0/17,664`; final was `17,628/17,664 = 99.796%`, with `6,144/6,144` compositions correct. The remaining 36 cases are padding failures beginning at steps 21/22 and never recovering. The saved initial-soft reference remains perfect (100%); therefore no matched-training or superiority claim is made.
@@ -1135,3 +1345,117 @@ Root checked source hashes/QA bindings and bounded science code;18reported focus
 ## Pair-carry scientific ACCEPT and STOP — 2026-09-10
 
 Root independent stdlib trace audit ACCEPT: sham exact saved baseline; full/final4572/4608 to4608/4608,36repairs0regressions, all4572originally correct preserved. L24/L32 each18repairs; padding228+suffix36wrong positions to0. All96source/evidence bindings and36row hashes verified; science36forwards9216cases258048positions2064384steps3deserializations0updates, exit0/wall68s/onewake. QA separately3forwards240steps3deserializations0updates. Audit0model calls. Result results/PC_LATENT_SLOTS_PAIR_CARRY_RESULTS.md; acceptance code runs/pc_latent_slots_pair_carry_v1/science_accept.json. External pair-aware copy supports a carried-state causal contribution, not unique writer blame/learned solution/arbitrary generalization.36failures repeat2semantic prefix-end states. Registered scope complete, no new runs/retry/training; proposed next question only: learned identity-composition preservation without external copy.
+
+
+## Gated carry paired pilot registered — 2026-09-10
+
+User approves general learned carry path. Root fixes protocol results/PC_GATED_CARRY_PROTOCOL.md: existing writer A vs per-slot sigmoid interpolation B(+322params,initialg0.9), same accepted latent local2000 endpoint,1000updates/arm, identical saved stream. Old69 plus new81identity-cell programs SWAP/XOR/mixed atL11/19/35, initial/final to separate initialization from learning. Science2531forwards263936cases3239936positions25919488steps2000updates; pure fixtures then6update160step disposable QA. New source only; no model work yet. One bounded Luna implementation worker justified by training/snapshot/runtime scope; main owns design/interpretation, no standing reviewer. Fixed pilot then saved-data verification/STOP.
+
+
+## Gated carry PURE ACCEPT — 2026-09-10
+
+Root verified helper4a35cb641d087e98531f3df50a76b478395b06ebe75102592a2d7f0eaa9b677d/tests7de5c0027721a5c78e7ae88aa7c4b90e605ef24404503b100413e8485d389962; inspected gate inputs/blending/autograd/optimizer/cleanup/finite checks. Worker reports11gated and18combined tests PASS. Pure gate runs/pc_gated_carry_v1/pure_accept.json. Next QA-only runtime6updates12cases20positions160steps8deserializations expected. L1 has no gate-dependent readout so absent gate gradient/moments is expected; require nonzero finite gate gradient on L2. No model/checkpoint work yet; accepted sources unchanged.
+
+
+## Gated carry QA CODE CLEAR and launch registration — 2026-09-10
+
+Root inspected QA runtime, corrected absolute snapshot update2001->42001 (metadata only, no model run yet), added discriminating wronglocalcount rejection fixture;7runtime tests PASS after correction, earlier24combined PASS reported. Exact source hashes gate runs/pc_gated_carry_v1/qa_launch_gate_v1.json. One background runs/pc_gated_carry_qa_background_v1 to owner01a08b1b-e103-77b3-b360-5734cf71e230. Fixed6updates/forwards12cases20positions160steps8deserializations, A/B snapshot reload equality including gate; no science/retry before saved QA acceptance.
+
+
+## Gated carry QA ACCEPT — 2026-09-10
+
+Root saved-artifact checks pass: allsource/evidence/snapshot hashes, botharms exact snapshot-nextupdate model/adapter/gate/optimizer/gradient/CPU+CUDA RNG/mode/names and repeatedL2loss. Gategrad absentL1 as expected, finite nonzeroL2 bothpaths. Exactly6updates/forwards12cases20positions160steps8deserializations, nofailure, exit0/onewake. Audit0model calls/deserializations. Gate runs/pc_gated_carry_v1/qa_accept.json. Next science-only runtime with acceptedQA/training unchanged, correct absolute42000+localupdate, fixed1000updates/arm andold69/new81scope, no QA replay.
+
+
+## Gated carry science source gate: bounded repair — 2026-09-10
+
+Root source inspection blocks launch pending mechanical science-only repairs: nonexistent optimizer metadata helper; incorrect final evaluation/row totals; duplicated training function with overstrict program homogeneity; checkpoint counter initialization; delayed persistence of rows/checkpoint ledger; missing per-slot gate summary. Reuse accepted QA update, add orchestration/partial-failure fixtures, preserve pure/QA bytes. QA remains ACCEPT (6 updates, 160 native steps, 8 deserializations); no QA rerun or science executed. Registered scope remains 1000 updates per arm, 531 computed evaluation rows plus69 reused baseline rows, 2531 forwards total. Same bounded Luna implementation worker repairs only science runtime/tests; root checks source/input contracts. No automatic experiment retry. Source-gate defects found before model execution add zero scientific compute cost.
+
+
+
+## Gated carry science CODE CLEAR; one launch registered — 2026-09-10
+
+Owner root01a08b1b-e103-77b3-b360-5734cf71e230. Science-only integration defects repaired and source inspected;20focused tests PASS (4.65s), including real tiny checkpoint payloads for both arms, failure preservation and per-program durable evidence. Exact cleared hashes in runs/pc_gated_carry_v1/science_launch_gate_v1.json. Accepted pure/QA source unchanged;12QA evidence/source bindings checked. Runtime reuses accepted training step with scoped/restored batch/op adaptation, strict endpoint loader and evaluation state preservation. No additional QA or real model probes.
+
+One detached run: scripts/pc_gated_carry_science.py --science --out runs/pc_gated_carry_v1/science; supervisor runs/pc_gated_carry_science_background_v1. Runner freezes checked inputs/source before endpoint construction. Fixed2x1000updates,2531forwards,263936cases,3239936positions,25919488native steps,6deserializations,10checkpoints. Persist531computed+69reused evaluation rows. On completion audit saved traces, DSL/strata/joins, initial/final and per-cell comparisons, gate summaries, source/QA/input hashes and actual counters independently before scientific interpretation; no model replay. Report and STOP; no retry/probes/new experiments. No efficacy claim at launch.
+
+## Gated carry science ACCEPT; negative fixed pilot — 2026-09-10
+
+The single registered detached run exited 0 and queued exactly one wake. The
+independent stdlib audit `scripts/audit_pc_gated_carry.py` performed no model or
+checkpoint loads and accepted 600 rows, all 256 states per program, the E15 DSL
+targets/strata, row joins and exact runner paired metrics. Accounting was
+complete: 2,531 forwards, 2,000 updates, 263,936 cases, 3,239,936 positions,
+25,919,488 native steps, 6 endpoint deserializations, 10 checkpoints, zero
+failures. Final A was 38,400/38,400 full traces; final B 38,310/38,400, with
+11,466/11,520 padding, 6,144/6,144 compositions and 20,700/20,736 identity
+controls. B therefore had 54 padding and 36 control regressions versus A and no
+repairs; the registered positive criterion was false. B improved strongly from
+its own initial state, while A reached a perfect final pool. This fixed-seed,
+jointly trained package result does not isolate gate values or establish broad
+generalization. Result and audit are in `results/PC_GATED_CARRY_RESULTS.md` and
+`runs/pc_gated_carry_v1/science_saved_audit.json`; preserve artifacts and STOP.
+## State-transfer audit registered — 2026-09-11
+
+The user clarified that writer rewrites are intentional: the earlier no-write
+variant failed to transfer state at all. The next bounded question is whether
+the current recurrent writer maps semantically equivalent identity paths to
+compatible latent states. A new stdlib/torch inference-only script compares
+four identity-path pairs at the final local1000 A/B checkpoints, followed by a
+common ADD probe. It records aggregate state distance, identity drift and probe
+logit agreement; it has zero backward/optimizer work and does not dump hidden
+tensors. One detached run is registered; no gate tuning, training retry or
+follow-up experiment is included. Results will determine whether a separate
+cycle-consistency contract is justified.
+## State-transfer audit technical launch failure and repair — 2026-09-11
+
+The first detached audit exited 1 before the accepted loader could deserialize
+anything: its required accounting sink was passed as `None`. No model forward,
+checkpoint load, training update or science artifact was produced. The failed
+status/logs remain under `runs/pc_gated_carry_state_audit_background_v1`. A
+bounded source repair supplies a no-op sink, passes py_compile and keeps the
+registered 16-forward identity-path audit unchanged. The launch-gate hash was
+updated; a replacement run, if continued, uses a fresh supervisor directory.
+## State-transfer audit ACCEPT; latent drift confirmed — 2026-09-11
+
+The repaired replacement audit completed exit0. It performed 16 inference
+forwards over four identity-path pairs per A/B final checkpoint, two checkpoint
+loads, zero backward/optimizer work, no hidden-tensor dump, and preserved model
+and adapter digests. Relative distance from initial slots after semantic
+identity paths was about 0.93–0.94. States from same-operation identity paths
+were close but nonidentical (A 0.015–0.021, B 0.002–0.025 mean relative L2),
+while two different identity implementations (`SWAP SWAP` versus `XOR XOR`)
+were much farther apart (A 0.199, B 0.215). The common ADD probe had 100%
+pairwise argmax agreement, showing that output agreement can conceal latent
+path dependence; the probe is diagnostic and outside the registered training
+scope. This confirms that writer updates are needed but not constrained as
+semantic transitions. Result: `results/PC_STATE_TRANSFER_AUDIT.md`; raw report:
+`runs/pc_gated_carry_v1/state_transfer_audit/report.json`. No new training or
+gate tuning was run. A cycle-consistency writer contract is the next candidate
+only under a new explicit protocol; STOP.
+## Projected-value cycle QA accepted after accounting repair — 2026-09-11
+
+The read-only transition factorization found exact projected-K equality and
+path-dependent projected-V differences at the common final `ADD`. The next
+bounded mechanism retains the ordinary writer and real `z_t -> z_(t+1)` state
+updates, adding a detached-target auxiliary loss only for disjoint semantic
+identity cycles. Its target is the exact per-slot projected value path
+`reader -> memory_norm -> v_proj`; no key change, KV bypass, external state
+copy, or new writer architecture is introduced.
+
+`scripts/pc_value_cycle_contract.py`, its tests, the QA runtime and
+`results/PC_PROJECTED_VALUE_CYCLE_PROTOCOL.md` are source-gated. The focused
+suite passed 9 tests and `py_compile`. QA v1 stopped before its first forward
+with `E36 parent reference mismatch`: the accepted checkpoint stores POSIX
+relative paths while the Windows loader compares a backslash path. Its
+zero-forward artifact is preserved. A narrow v2 repair scopes the existing
+Windows compatibility adapter around that load boundary; accepted source and
+checkpoint bytes are unchanged. v2 completed one endpoint load, three
+forwards/updates, six cases, twelve positions, 96 native steps, one snapshot
+reload and six cycle windows, with exact uninterrupted/reloaded equality. Its
+only failure was a final accounting expectation of two underlying
+deserializations; the accepted loader recorded three (endpoint,
+parent-reference checkpoint, snapshot). The read-only saved-artifact audit is
+accepted at `runs/pc_projected_value_cycle_v2/qa/qa_accept.json`; the
+source-only correction is `source_correction.json`. No science, screening,
+retry or coefficient sweep is included.

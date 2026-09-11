@@ -16,13 +16,13 @@ This section supersedes older workflow ordering below. Scientific difficulty doe
 
 ## Current model policy — user decision, 2026-09-10
 
-This policy supersedes older model and automatic review/delegation recommendations in this file, handoffs and logs; preserve scientific contracts and evidence gates. It is a routing preference, not a verified pricing or capability claim. Optimize **research progress per weekly quota**, including verification and repairs.
+This policy supersedes older model and automatic review/delegation recommendations in this file, handoffs and logs; preserve scientific contracts and evidence gates. Model roles describe preferred routing when delegation is justified, not a requirement to spawn. Main Astra may complete the entire task, including implementation, execution and verification, when that is more efficient. This discretion also applies to the role assignments in the experiment gates below. It is a routing preference, not a verified pricing or capability claim. Optimize **research progress per weekly quota**, including verification and repairs.
 
 - The user retains scope authority and final approval where required; there is no automatic model switch for an open root task.
 - **Astra / low** (`gpt-6-astra`, `reasoning_effort="low"`) is the main research lead and orchestrator: retain project context, make architectural and research decisions, choose experiments and synthesize results. Solve simple reasoning locally. Do not spawn another Astra for routine design/audit already within the main agent's context.
 - **Luna / xhigh** (`gpt-5.6-luna`, `reasoning_effort="xhigh"`) is the default for nontrivial implementation, debugging, bounded multi-file changes, targeted code review and implementing an accepted architectural decision.
 - **Luna / medium or high** is the operational worker for fixed-scope experiment runs, repo exploration, code search, log aggregation, metric collection, simple edits and repetitive artifact/report preparation. Use medium for straightforward work and high when operational complexity warrants it; do not use xhigh when these suffice.
-- Implementation verification belongs to Luna; scientific/architectural reasoning belongs to main Astra. Full independent review is conditional, as specified in Review Strategy.
+- When delegated, prefer Luna for bounded implementation, experiments, exploration and implementation verification; choose effort by actual difficulty. Main Astra retains scientific/architectural reasoning and may perform implementation verification itself. Full independent review is conditional, as specified in Review Strategy.
 - **Astra / medium+** is escalation only: contradictory experiment results, serious architectural uncertainty, deep comparison of plausible approaches, conceptual difficulty remaining after a reasonable bounded attempt, or a rare milestone-level scientific audit. Start at medium; increase only for a concrete unresolved need. Never use it for routine implementation/review, style, cleanup suggestions or optional refactors.
 - Only root may spawn agents. Explicitly set model and effort; use `fork_turns="none"` and the existing handoff/context mechanism with only relevant context. Children must not spawn children. Default to at most 1–2 concurrent children; use none when local completion is cheaper and reliable.
 
@@ -92,6 +92,15 @@ The coordinator owns project context and scientific decisions, and solves simple
 
 ## Cost-Efficient Delegation
 
+Delegate only when at least one concrete benefit applies:
+
+- independent work can proceed usefully in parallel;
+- implementation is large or mechanical enough to save lead context;
+- a separate bounded investigation is useful;
+- a genuinely independent second opinion is needed.
+
+Do not delegate merely because a predefined role exists. Main Astra may complete the whole task when that is more efficient. Prefer Luna for bounded implementation, experiments and exploration, with effort matched to difficulty. A delegated result does not automatically require another review agent. Do not build fixed designer -> implementer -> reviewer pipelines.
+
 Apply the current model policy above. Narrow the task before delegation, reuse existing summaries/state/handoff documents, and select Luna/medium-high for operations or simple changes and Luna/xhigh for nontrivial implementation/debugging/review. Main Astra/low makes research decisions without a duplicate design agent.
 
 ---
@@ -137,7 +146,7 @@ Default to at most **1–2 concurrent child agents**, and zero for tasks best co
 
 ## Delegation Rules
 
-Every delegated task must be narrow.
+First establish a concrete benefit under Cost-Efficient Delegation. Every delegated task must then be narrow.
 
 A good delegation specifies:
 
@@ -290,7 +299,7 @@ When a test fails, inspect the failure before blindly rerunning it.
 
 ## Review Strategy
 
-- **Implementation verification — Luna:** run relevant tests, check acceptance criteria and invariants, and report evidence. Use xhigh for nontrivial targeted code review; medium/high suffices for mechanical checks. Small changes do not require a separate reviewer.
+- **Implementation verification — main Astra or Luna when delegated:** run relevant tests, check acceptance criteria and invariants, and report evidence. Use xhigh for nontrivial targeted code review; medium/high suffices for mechanical checks. Small changes do not require a separate reviewer.
 - **Scientific/architectural reasoning — main Astra/low:** interpret evidence and assess the accepted design in existing context; do not spawn routine design/audit Astra agents.
 - **Full review — conditional:** use one bounded review after a meaningful diff or milestone, a suspicious result, or high uncertainty. Route code review to Luna and rare expensive independent scientific audits to Astra/medium under the escalation criteria.
 - **One review by default.** A second review is allowed only if the first found a substantive correctness issue; restrict it to the repair and affected invariants. Do not automatically repeat review -> fix -> review after every small edit. Style, cleanup and optional refactors do not justify extra passes.
@@ -363,7 +372,7 @@ The coordinator should continuously ask:
 
 > Does a bounded delegation improve research progress per weekly quota after context, coordination and verification costs?
 
-Delegate only if yes. Solve simple reasoning locally and reuse an existing suitable worker/context when useful; do not spawn agents merely because a cheaper model is available.
+Delegate only if yes and a concrete delegation criterion above applies. Astra retains discretion to complete the entire task itself. Solve simple reasoning locally and reuse an existing suitable worker/context when useful; do not spawn agents merely because a cheaper model is available.
 
 Also ask:
 
@@ -378,6 +387,8 @@ The objective is research progress per weekly quota, with enough reasoning and e
 ---
 
 ## Recommended Default
+
+These are routing preferences after a delegation decision, not mandatory agent roles or a fixed pipeline.
 
 - Main research lead/orchestrator: Astra/low; handles simple reasoning itself.
 - Nontrivial implementation/debugging: one bounded Luna/xhigh worker when useful.
